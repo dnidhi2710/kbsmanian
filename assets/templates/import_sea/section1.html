@@ -1,0 +1,568 @@
+<style>
+    .full button span {
+        background-color: limegreen;
+        border-radius: 32px;
+        color: black;
+    }
+
+    .partially button span {
+        background-color: orange;
+        border-radius: 32px;
+        color: black;
+    }
+</style>
+<div id="wrapper" ng-controller="createOrEditISController">
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Import Sea <small></small>
+                    </h1>
+                </div>
+            </div>
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-3">
+                        <label for="houseConsumption"><input type="checkbox" name="houseConsumption" ng-model="General.houseConsumption" id="houseConsumption" class="">&nbsp;House Consumption</label>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="Bonding"><input type="checkbox" name="Bonding" ng-model="General.Bonding" id="Bonding" class="">&nbsp;Bonding</label>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="exbond"><input type="checkbox" name="exbond" ng-model="General.exbond" id="exbond" class="">&nbsp;Ex-Bond</label>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="edi"><input type="checkbox" name="edi" ng-model="General.edi" id="edi" class="">&nbsp;EDI</label>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="bulk"><input type="checkbox" name="bulk" ng-model="General.bulk" id="bulk" class="">&nbsp;BULK</label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="col-lg-3">
+                        <label for="deec"><input type="checkbox" name="deec" ng-model="General.deec" id="deec" class="">&nbsp;DEEC</label>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="depb"><input type="checkbox" name="depb" ng-model="General.depb" id="depb" class="">&nbsp;DEPB</label>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="rms"><input type="checkbox" name="rms" ng-model="General.rms" id="rms" class="">&nbsp;RMS</label>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="openOrder"><input type="checkbox" name="openOrder" ng-model="General.openOrder" id="openOrder" class="">&nbsp;OPEN ORDER</label>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="breakBulk"><input type="checkbox" name="breakBulk" ng-model="General.breakBulk" id="breakBulk" class="">&nbsp;BREAK BULK</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="licenseNo">License Detail</label>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" name="importJobNo" id="importJobNo" ng-model="doc.licnse" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="addSeaList">
+                        <li ng-click="activeMenu(1)" ng-class="section1?'active':''">Document</li>
+                        <li ng-click="activeMenu(2)" ng-class="section2?'active':''">Customs</li>
+                        <li ng-click="activeMenu(3)" ng-class="section3?'active':''">D/O</li>
+                        <li ng-click="activeMenu(4)" ng-class="section4?'active':''">Operation</li>
+                        <li ng-click="activeMenu(5)" ng-class="section5?'active':''">Transport</li>
+                        <li ng-click="activeMenu(7)" ng-class="section7?'active':''">Feedback</li>
+                        <li ng-click="activeMenu(8)" ng-class="section8?'active':''">Delivery Receipts</li>
+                        <li ng-click="activeMenu(9)" ng-class="section9?'active':''">Expenditure Slip</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb">
+                        <li class="active">
+                            <i class="fa fa-list"></i> Add / Update import Sea for job id : {{doc.importJobNo+yearValue}}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Section 1 form -->
+                <div class="col-lg-12" ng-if="section1">
+                    <form method="post">
+                        <div class="col-md-4">
+                            <div class="col-sm-8">
+                                <div class="form-group">
+                                    <label for="import_job_no">Imp.Job no.</label>
+                                    <input type="text" name="importJobNo" id="importJobNo" ng-disabled="updateFlag" ng-model="doc.importJobNo" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <br>
+                                    <h5>{{yearValue}}</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_dated">Dated</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.importDate" is-open="importDate.open"
+                                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                    />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="importDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                                <!--         <div uib-datepicker ng-model="doc.importDate" class="well well-sm" datepicker-options="options"></div>
+                                  <input id="datepicker" type="text" data-ng-datepicker data-ng-options="datepickerOptions" data-ng-model="doc.importDate">
+                                 <input type="date" name="import_dated" id="import_dated" ng-model="doc.importDate" class="form-control">
+                            -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_party_ref">Party's Ref</label>
+                                <input type="text" name="import_party_ref" id="import_party_ref" ng-model="doc.partyRef" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="import_consignee">Consignee</label>
+                                <input type="text" name="import_consignee" id="import_consignee" ng-model="doc.consignee" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_consignee">Buff Number</label>
+                                <input type="text" name="import_consignee" id="import_consignee" ng-model="doc.buffNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_address">Address</label>
+                                <input type="text" name="import_address" id="import_address" ng-model="doc.address" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_party">H.S / B.T. A/c. Party</label>
+                                <input type="text" name="import_party" id="import_party" ng-model="doc.hsBtAcParty" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="import_supplier_name">
+                                    Supplier Name</label>
+                                <input type="text" name="import_supplier_name" ng-model="doc.supplierName" id="import_supplier_name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    Inv. No</label>
+                                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="doc.invno" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    Inv. Date.</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.invDate" is-open="invDate.open" datepicker-options="dateOptions"
+                                        ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open(2)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Minify Part -->
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_mother_vessel">
+                                    Mother Vessel</label>
+                                <input type="text" name="import_mother_vessel" id="import_mother_vessel" ng-model="doc.motherVessel" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_due">
+                                    Due</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.importDue" is-open="importDue.open"
+                                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                    />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open(3)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="import_arrival">
+                                    Arrival</label>
+                                <input type="text" name="import_arrival" id="import_arrival" ng-model="doc.importArrival" class="form-control">
+                            </div>
+                        </div>
+
+                        <!--todo-->
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_arrival">
+                                    Feeder Vessel</label>
+                                <input type="text" name="import_arrival" id="import_arrival" ng-model="doc.feederVessel" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_gld">
+                                    On</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.feederVslOn" is-open="feederVslOn.open"
+                                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                    />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open(4)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    CFS</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.cfs" class="form-control">
+                            </div>
+                        </div>
+                        <!-- /todo -->
+
+                        <!--todo-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="import_arrival">
+                                    Agents</label>
+                                <input type="text" name="import_arrival" id="import_arrival" ng-model="doc.agents" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_gld">
+                                    IGM No.</label>
+                                <input type="text" name="import_gld" id="import_gld" ng-model="doc.igmNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Date</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.igmDate" is-open="igmDate.open" datepicker-options="dateOptions"
+                                        ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open(5)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /todo -->
+
+                        <!-- Todo -->
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_mother_vessel">
+                                    Line No.</label>
+                                <input type="text" name="import_mother_vessel" id="doc.import_mother_vessel" ng-model="doc.lineNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_due">
+                                    HBL No.</label>
+                                <input type="text" name="import_due" id="import_due" ng-model="doc.hblNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="import_arrival">
+                                    Date</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.hblDate" is-open="hblDate.open" datepicker-options="dateOptions"
+                                        ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open(6)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="import_gld">
+                                    MBL</label>
+                                <input type="text" name="import_gld" id="import_gld" ng-model="doc.mbl" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Date</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.mbldate" is-open="mbldate.open" datepicker-options="dateOptions"
+                                        ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open(7)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /todo -->
+
+
+                        <table class="table table-bordered" align="center">
+                            <tr>
+                                <td>Contr Nos</td>
+                                <td>No.of Pkgs</td>
+                                <td>Contents</td>
+                                <td>Measurements</td>
+                                <td>Gross Weight</td>
+                                <td>Net Weight</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <button ng-if="doc.contains.length===0" type="button" class="btn btn-success" ng-click="addContainerObj();">
+                                            <span class="glyphicon glyphicon-plus"></span> Add Containers
+                                        </button>
+                                        <!-- <div ng-if="doc.contains.length>0" ng-repeat="data in doc.contains">
+                                            <label>{{data.containerName}} </label>
+                                        </div> -->
+                                        <button ng-if="doc.contains.length>0" type="button" class="btn btn-primary" ng-click="editContainerObj();">
+                                            <span class="glyphicon glyphicon-plus"></span> Edit Containers
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" name="packageNo" ng-model="doc.noOfPkgs" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <textarea rows="5" name="contents" ng-model="doc.contents"></textarea>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" name="measurements" ng-model="doc.measurements" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" name="grossWeight" ng-model="doc.grossWeight" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" name="netWeight" ng-model="doc.nettWeight" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--    <div class="row">
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-info" ng-click="addContainerObj();">
+                                <span class="glyphicon glyphicon-plus"></span> Add Row
+                            </button>
+                                <button type="button" class="btn btn-info" ng-if="doc.contains.length>0" ng-click="delContainerObj();">
+                                <span class="glyphicon glyphicon-minus"></span> Delete Row
+                            </button>
+                            </div>
+                        </div>
+                        -->
+                        <!-- todo -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="import_arrival">
+                                    Invoice Value</label>
+                                    <input type="text" name="import_arrival" id="import_arrival" ng-model="doc.invoiceValue" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Submit & Cancel button -->
+                        <br>
+                        <div class="row">
+                            <div class="text-center">
+                                <div class="col-md-4" ng-if="createFlag">
+                                    <input type="button" name="save" value="Save" ng-click="saveDocFields();" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-4" ng-if="updateFlag">
+                                    <input type="button" name="save" value="Update" ng-click="saveDocFields();" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="button" name="cancel" value="Cancel" class="btn btn-primary btn-block">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal fade" id="showError" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="alert alert-danger">
+                                    <strong>Error!</strong> {{errorMsg}}.
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="showAlert" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="alert alert-warning">
+                                    <strong>Alert! </strong> {{alertMsg}}.
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="showContainer" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>Add Container Details</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="import_arrival">
+                                     Number of containers</label>
+                                    <input type="number" name="import_arrival" id="import_arrival" ng-disabled="editFlag" ng-model="doc.containerNumber" min=1
+                                        max=50 ng-change="addContainerDetails()" class="form-control">
+                                </div>
+                                <div>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td> <label for="import_arrival">Name</label></td>
+                                                <td> <label for="import_arrival">GLD</label></td>
+                                                <td> <label for="import_arrival">CONTR OUT</label></td>
+                                            </tr>
+                                            <tr ng-repeat="data in doc.containerObj">
+                                                <td>
+                                                    <button type="button" class="btn btn-warning" ng-click="removeSelectedContainer(data.containerNo);">
+                                                        <span class="glyphicon glyphicon-minus"></span> 
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" ng-model="data.containerName">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="input-group">
+                                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="data.gld" is-open="data.GLDFlag.open"
+                                                            datepicker-options="dateOptions" ng-required="true" close-text="Close"
+                                                            alt-input-formats="altInputFormats" />
+                                                        <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default" ng-click="data.GLDFlag.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <p class="input-group">
+                                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="data.contrOut" is-open="data.cntroutFlag.open"
+                                                            datepicker-options="dateOptions" ng-required="true" close-text="Close"
+                                                            alt-input-formats="altInputFormats" />
+                                                        <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default" ng-click="data.cntroutFlag.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="col-md-4 pull-left">
+                                    <button type="button" class="btn btn-primary" ng-click="addAdditionalContainer();">Add Container</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3> <span class="label label-success" ng-if="addedMsg.length>0">{{addedMsg}}</span></h3>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class="btn btn-primary" ng-click="saveContainerObj()">Save</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="showSuccess" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="alert alert-success">
+                                    <strong>Success! </strong> {{successMsg}}.
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 1 form -->
+                <!-- Section 2 Forms -->
+                <clearance-section ng-if="section2" type="importSea" update-type="type" import-job-id="doc.importJobNo" clearance-obj="clearanceObj"></clearance-section>
+                <!-- End of section 2 forms -->
+                <!-- Section 3 -->
+                <sample-section ng-if="section3" type="importSea" update-type="type" import-job-id="doc.importJobNo" sample-obj="sampleObj"></sample-section>
+                <!-- End of section 3 -->
+                <!-- End of section 4-->
+                <survey-section ng-if="section4" type="importSea" update-type="type" import-job-id="doc.importJobNo" survey-obj="surveyObj"></survey-section>
+                <!-- end of section 4 -->
+                <!-- section 5 forms -->
+                <!-- End of section 5 -->
+                <!-- Section for personal -->
+                <personnel-section ng-if="section5" type="importSea" update-type="type" import-job-id="doc.importJobNo" survey-obj="personnelObj"></personnel-section>
+                <!-- Section for personal ends -->
+                <!-- section 5 forms -->
+                <other-section ng-if="section7" type="importSea" update-type="type" import-job-id="doc.importJobNo" survey-obj="othersObj"></other-section>
+                <!-- End of section 5 -->
+                <!-- End of section 5 -->
+                <delivery-receipt ng-if="section8" type="importSea" update-type="type" import-job-id="doc.importJobNo" receipt-obj="deliveryObj"></delivery-receipt>
+                
+                <expenditure-slip ng-if="section9" type="importSea" update-type="type" import-job-id="doc.importJobNo" receipt-obj="deliveryObj"></expenditure-slip>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->

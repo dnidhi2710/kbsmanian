@@ -1,0 +1,51 @@
+
+INSERT INTO import_map_transport ( impJobId,type,gcNoteNo,clearanceParticulars,transportedGCNote,transIndentedOn,transIndentedTime,transSuppliedOn,transSuppliedTime,transDelayReason,remarks ) VALUES ( '38/2017-18','sea','gcnoteNo','[{\"packages\":\"\",\"date\":\"2017-08-20T18:30:00.000Z\",\"cd\":\"\",\"$$hashKey\":\"object:35\",\"clrdPackage\":\"1\",\"balancePackage\":\"2\",\"transporter\":\"3\",\"arrangedby\":\"4\"},{\"packages\":\"\",\"date\":\"2017-08-22T18:30:00.000Z\",\"cd\":\"\",\"$$hashKey\":\"object:38\",\"clrdPackage\":\"24\",\"balancePackage\":\"42\",\"transporter\":\"42\",\"arrangedby\":\"42\"}]','transported','2017-08-23','dsad','2017-08-16','fsaf','fsafsaf','fasfsafas')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 1
+    [affected_rows] => 1
+)
+
+UPDATE import_map_transport SET impJobId = '38/2017-18',type = 'sea',gcNoteNo = 'gcnoteNo',clearanceParticulars = '[{\"packages\":\"\",\"date\":\"2017-08-20T18:30:00.000Z\",\"cd\":\"\",\"$$hashKey\":\"object:35\",\"clrdPackage\":\"1\",\"balancePackage\":\"2\",\"transporter\":\"3\",\"arrangedby\":\"4\"},{\"packages\":\"\",\"date\":\"2017-08-22T18:30:00.000Z\",\"cd\":\"\",\"$$hashKey\":\"object:38\",\"clrdPackage\":\"24\",\"balancePackage\":\"42\",\"transporter\":\"42\",\"arrangedby\":\"42\"}]',transportedGCNote = 'transported',transIndentedOn = '2017-08-23',transIndentedTime = '00:22:23',transSuppliedOn = '2017-08-16',transSuppliedTime = '00:00:00',transDelayReason = 'fsafsaf',remarks = 'fasfsafas'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_transport SET impJobId = '38/2017-18',type = 'sea',gcNoteNo = 'gcnoteNo',clearanceParticulars = '[]',transportedGCNote = 'transported',transIndentedOn = '2017-08-23',transIndentedTime = '00:22:23',transSuppliedOn = '2017-08-16',transSuppliedTime = '00:00:00',transDelayReason = 'fsafsaf',remarks = 'fasfsafas'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_transport SET impJobId = '38/2017-18',type = 'sea',gcNoteNo = 'gcnoteNo',clearanceParticulars = '[{\"packages\":\"\",\"date\":\"2017-08-12T18:30:00.000Z\",\"cd\":\"\",\"$$hashKey\":\"object:57\",\"clrdPackage\":\"cleared\",\"balancePackage\":\"balance\",\"transporter\":\"transported\",\"arrangedby\":\"Transport\"}]',transportedGCNote = 'transported',transIndentedOn = '2017-08-23',transIndentedTime = '00:22:23',transSuppliedOn = '2017-08-16',transSuppliedTime = '00:00:00',transDelayReason = 'fsafsaf',remarks = 'fasfsafas'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_transport ( impJobId,type,gcNoteNo,clearanceParticulars,transportedGCNote,transIndentedOn,transIndentedTime,transSuppliedOn,transSuppliedTime,transDelayReason,remarks ) VALUES ( 'imp','air','dfsagssdg','[{\"packages\":\"\",\"date\":\"2017-08-07T18:30:00.000Z\",\"cd\":\"\",\"$$hashKey\":\"object:3756\",\"clrdPackage\":\"gfdg\",\"balancePackage\":\"gdfg\",\"transporter\":\"sdg\",\"arrangedby\":\"gdfg\"}]','fdgfdgd','2017-08-14','gdfgd','2017-08-01','gdff','reas','rea')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 2
+    [affected_rows] => 1
+)
+
+UPDATE import_map_transport SET impJobId = 'imp',type = 'air',gcNoteNo = 'dfsagssdg',clearanceParticulars = '[{\"packages\":\"\",\"date\":\"2017-08-07T18:30:00.000Z\",\"cd\":\"\",\"$$hashKey\":\"object:3756\",\"clrdPackage\":\"gfdg\",\"balancePackage\":\"gdfg\",\"transporter\":\"sdg\",\"arrangedby\":\"gdfg\"},{\"packages\":\"\",\"date\":\"2017-08-29T18:30:00.000Z\",\"cd\":\"\",\"$$hashKey\":\"object:1321\",\"clrdPackage\":\"dhaya\",\"balancePackage\":\"test\",\"transporter\":\"test\",\"arrangedby\":\"test\"}]',transportedGCNote = 'fdgfdgd',transIndentedOn = '2017-08-14',transIndentedTime = '00:00:00',transSuppliedOn = '2017-08-01',transSuppliedTime = '00:00:00',transDelayReason = 'reas',remarks = 'rea'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_transport SET impJobId = 'imp',type = 'air',gcNoteNo = 'dfsagssdg',clearanceParticulars = '[{\"packages\":\"\",\"date\":\"2017-08-07T18:30:00.000Z\",\"cd\":\"\",\"$$hashKey\":\"object:3756\",\"clrdPackage\":\"gfdg\",\"balancePackage\":\"gdfg\",\"transporter\":\"sdg\",\"arrangedby\":\"gdfg\"}]',transportedGCNote = 'fdgfdgd',transIndentedOn = '2017-08-14',transIndentedTime = '00:00:00',transSuppliedOn = '2017-08-01',transSuppliedTime = '00:00:00',transDelayReason = 'reas',remarks = 'rea'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)

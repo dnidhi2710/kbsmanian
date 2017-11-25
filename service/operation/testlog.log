@@ -1,0 +1,226 @@
+
+INSERT INTO import_map_samples ( impJobId,type,iOrAFilledOn,iOrAFiledNo,iOrAFiledDate,iOrAFiledAmount,iOrAComparedOn,samplesCalledOn,dockClerkInstrn,calledInitial,drawnOn,calledDelayReason,submittedToCustoms,submittedDelayReason,bOrEReceivedOn,bOrEReceivedTime,bOrERecdInitial,origOpenOrderGIvenOn,origOpenOrderCmptdOn,origOpenOrderDelayReason,dupeOpenOrderGIvenOn,dupeOpenOrderCmptdOn,dupeOpenOrderDelayReason,customsChargeon,goodsClearedno,goodClearedDelay,remarks ) VALUES ( '38/2017-18','sea','iafieldon','number','','100','2017-08-16','2017-08-24','dock','intital','2017-08-25','reason','submiteed','reason','2017-08-30','time','initail','2017-08-16','2017-08-23','reaosn','2017-08-31','2017-08-30','reason','2017-08-22','2017-08-29','reason','remarks')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 8
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_survey ( impJobId,type,sOrAAppliedOn,sOrAGrantedOn,sOrAHeldOn,insAppliedOn,insGrantedOn,insHeldOn,pTAppliedOn,pTAGrantedOn,pTHeldOn ) VALUES ( '38/2017-18','sea','2017-08-15','2017-08-22','2017-08-08','2017-08-23','2017-08-24','2017-08-29','2017-08-29','2017-08-23','2017-08-23')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 9
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_samples ( impJobId,type,iOrAFilledOn,iOrAFiledNo,iOrAFiledDate,iOrAFiledAmount,iOrAComparedOn,samplesCalledOn,dockClerkInstrn,calledInitial,drawnOn,calledDelayReason,submittedToCustoms,submittedDelayReason,bOrEReceivedOn,bOrEReceivedTime,bOrERecdInitial,origOpenOrderGIvenOn,origOpenOrderCmptdOn,origOpenOrderDelayReason,dupeOpenOrderGIvenOn,dupeOpenOrderCmptdOn,dupeOpenOrderDelayReason,customsChargeon,goodsClearedno,goodClearedDelay,remarks ) VALUES ( '38/2017-18','sea','iafieldon','number','','100','2017-08-16','2017-08-24','dock','intital','2017-08-25','reason','submiteed','reason','2017-08-30','time','initail','2017-08-16','2017-08-23','reaosn','2017-08-31','2017-08-30','reason','2017-08-22','2017-08-29','reason','remarks')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 9
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_survey ( impJobId,type,sOrAAppliedOn,sOrAGrantedOn,sOrAHeldOn,insAppliedOn,insGrantedOn,insHeldOn,pTAppliedOn,pTAGrantedOn,pTHeldOn ) VALUES ( '38/2017-18','sea','2017-08-15','2017-08-22','2017-08-08','2017-08-23','2017-08-24','2017-08-29','2017-08-29','2017-08-23','2017-08-23')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 10
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_samples ( impJobId,type,iOrAFilledOn,iOrAFiledNo,iOrAFiledDate,iOrAFiledAmount,iOrAComparedOn,samplesCalledOn,dockClerkInstrn,calledInitial,drawnOn,calledDelayReason,submittedToCustoms,submittedDelayReason,bOrEReceivedOn,bOrEReceivedTime,bOrERecdInitial,origOpenOrderGIvenOn,origOpenOrderCmptdOn,origOpenOrderDelayReason,dupeOpenOrderGIvenOn,dupeOpenOrderCmptdOn,dupeOpenOrderDelayReason,customsChargeon,goodsClearedno,goodClearedDelay,remarks ) VALUES ( '38/2017-18','sea','dsfgdgdf','gdffdg','','gfdgd','2017-08-23','2017-09-07','dfgdf','gfdg','2017-08-16','gfdgd','dfgdf','dsgsdgdf','2017-08-30','time','fgdsgd','2017-08-16','2017-08-16','gsdgsd','2017-08-23','2017-08-16','gsdgsdg','2017-08-29','2017-08-16','reason','emarks')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 10
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_survey ( impJobId,type,sOrAAppliedOn,sOrAGrantedOn,sOrAHeldOn,insAppliedOn,insGrantedOn,insHeldOn,pTAppliedOn,pTAGrantedOn,pTHeldOn ) VALUES ( '38/2017-18','sea','2017-08-16','2017-08-23','2017-08-16','2017-08-16','2017-08-17','2017-08-15','2017-08-30','2017-08-24','2017-08-30')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 11
+    [affected_rows] => 1
+)
+
+UPDATE import_map_samples SET iOrAFilledOn = 'dsfgdgdf',iOrAFiledNo = 'gdffdg',iOrAFiledDate = '',iOrAFiledAmount = 'gfdgd',iOrAComparedOn = '2017-08-23',samplesCalledOn = '2017-09-07',dockClerkInstrn = 'dfgdf',calledInitial = 'gfdg',drawnOn = '2017-08-16',calledDelayReason = 'gfdgd',submittedToCustoms = 'dfgdf',submittedDelayReason = 'dsgsdgdf',bOrEReceivedOn = '2017-08-30',bOrEReceivedTime = '00:00:00',bOrERecdInitial = 'fgdsgd',origOpenOrderGIvenOn = '2017-08-16',origOpenOrderCmptdOn = '2017-08-16',origOpenOrderDelayReason = 'gsdgsd',dupeOpenOrderGIvenOn = '2017-08-23',dupeOpenOrderCmptdOn = '2017-08-16',dupeOpenOrderDelayReason = 'gsdgsdg',customsChargeon = '2017-08-29',goodsClearedno = '2017-08-16',goodClearedDelay = 'reason',remarks = 'emarks'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_survey SET sOrAAppliedOn = '2017-08-16',sOrAGrantedOn = '2017-08-23',sOrAHeldOn = '2017-08-16',insAppliedOn = '2017-08-16',insGrantedOn = '2017-08-17',insHeldOn = '2017-08-15',pTAppliedOn = '2017-08-30',pTAGrantedOn = '2017-08-24',pTHeldOn = '2017-08-30'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_samples SET iOrAFilledOn = 'dsfgdgdf',iOrAFiledNo = 'gdffdg',iOrAFiledDate = '',iOrAFiledAmount = 'gfdgd',iOrAComparedOn = '2017-08-23',samplesCalledOn = '2017-09-07',dockClerkInstrn = 'dfgdf',calledInitial = 'gfdg',drawnOn = '2017-08-16',calledDelayReason = 'gfdgd',submittedToCustoms = 'dfgdf',submittedDelayReason = 'dsgsdgdf',bOrEReceivedOn = '2017-08-30',bOrEReceivedTime = '00:00:00',bOrERecdInitial = 'fgdsgd',origOpenOrderGIvenOn = '2017-08-16',origOpenOrderCmptdOn = '2017-08-16',origOpenOrderDelayReason = 'gsdgsd',dupeOpenOrderGIvenOn = '2017-08-23',dupeOpenOrderCmptdOn = '2017-08-16',dupeOpenOrderDelayReason = 'gsdgsdg',customsChargeon = '2017-08-29',goodsClearedno = '2017-08-16',goodClearedDelay = 'reason',remarks = 'emarks'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_survey SET sOrAAppliedOn = '2017-08-16',sOrAGrantedOn = '2017-08-23',sOrAHeldOn = '2017-08-16',insAppliedOn = '2017-08-16',insGrantedOn = '2017-08-17',insHeldOn = '2017-08-15',pTAppliedOn = '2017-08-30',pTAGrantedOn = '2017-08-24',pTHeldOn = '2017-08-30'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_samples SET iOrAFilledOn = 'dsfgdgdf',iOrAFiledNo = 'gdffdg',iOrAFiledDate = '',iOrAFiledAmount = 'gfdgd',iOrAComparedOn = '2017-08-23',samplesCalledOn = '2017-09-07',dockClerkInstrn = 'dfgdf',calledInitial = 'gfdg',drawnOn = '2017-08-16',calledDelayReason = 'gfdgd',submittedToCustoms = 'dfgdf',submittedDelayReason = 'dsgsdgdf',bOrEReceivedOn = '2017-08-30',bOrEReceivedTime = '00:00:00',bOrERecdInitial = 'fgdsgd',origOpenOrderGIvenOn = '2017-08-16',origOpenOrderCmptdOn = '2017-08-16',origOpenOrderDelayReason = 'gsdgsd',dupeOpenOrderGIvenOn = '2017-08-23',dupeOpenOrderCmptdOn = '2017-08-16',dupeOpenOrderDelayReason = 'gsdgsdg',customsChargeon = '2017-08-29',goodsClearedno = '2017-08-16',goodClearedDelay = 'reason',remarks = 'emarks'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_survey SET sOrAAppliedOn = '2017-08-16',sOrAGrantedOn = '2017-08-23',sOrAHeldOn = '2017-08-16',insAppliedOn = '2017-08-16',insGrantedOn = '2017-08-17',insHeldOn = '2017-08-15',pTAppliedOn = '2017-08-30',pTAGrantedOn = '2017-08-24',pTHeldOn = '2017-08-30'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_samples SET iOrAFilledOn = 'dsfgdgdf',iOrAFiledNo = 'gdffdg',iOrAFiledDate = '2017-08-21',iOrAFiledAmount = 'gfdgd',iOrAComparedOn = '2017-08-23',samplesCalledOn = '2017-09-07',dockClerkInstrn = 'dfgdf',calledInitial = 'gfdg',drawnOn = '2017-08-16',calledDelayReason = 'gfdgd',submittedToCustoms = 'dfgdf',submittedDelayReason = 'dsgsdgdf',bOrEReceivedOn = '2017-08-30',bOrEReceivedTime = '00:00:00',bOrERecdInitial = 'fgdsgd',origOpenOrderGIvenOn = '2017-08-16',origOpenOrderCmptdOn = '2017-08-16',origOpenOrderDelayReason = 'gsdgsd',dupeOpenOrderGIvenOn = '2017-08-23',dupeOpenOrderCmptdOn = '2017-08-16',dupeOpenOrderDelayReason = 'gsdgsdg',customsChargeon = '2017-08-29',goodsClearedno = '2017-08-16',goodClearedDelay = 'reason',remarks = 'emarks'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_survey SET sOrAAppliedOn = '2017-08-16',sOrAGrantedOn = '2017-08-23',sOrAHeldOn = '2017-08-16',insAppliedOn = '2017-08-16',insGrantedOn = '2017-08-17',insHeldOn = '2017-08-15',pTAppliedOn = '2017-08-30',pTAGrantedOn = '2017-08-24',pTHeldOn = '2017-08-30'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_samples SET iOrAFilledOn = 'dsfgdgdf',iOrAFiledNo = 'gdffdg',iOrAFiledDate = '2017-08-21',iOrAFiledAmount = 'gfdgd',iOrAComparedOn = '2017-08-23',samplesCalledOn = '2017-09-07',dockClerkInstrn = 'dfgdf',calledInitial = 'gfdg',drawnOn = '2017-08-16',calledDelayReason = 'gfdgd',submittedToCustoms = 'dfgdf',submittedDelayReason = 'dsgsdgdf',bOrEReceivedOn = '2017-08-30',bOrEReceivedTime = '00:00:00',bOrERecdInitial = 'fgdsgd',origOpenOrderGIvenOn = '2017-08-16',origOpenOrderCmptdOn = '2017-08-16',origOpenOrderDelayReason = 'gsdgsd',dupeOpenOrderGIvenOn = '2017-08-23',dupeOpenOrderCmptdOn = '2017-08-16',dupeOpenOrderDelayReason = 'gsdgsdg',customsChargeon = '2017-08-29',goodsClearedno = '2017-08-16',goodClearedDelay = 'reason',remarks = 'emarks'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_survey SET sOrAAppliedOn = '2017-08-03',sOrAGrantedOn = '2017-08-24',sOrAHeldOn = '2017-09-01',insAppliedOn = '2017-08-24',insGrantedOn = '2017-09-02',insHeldOn = '2017-08-15',pTAppliedOn = '2017-08-30',pTAGrantedOn = '2017-08-24',pTHeldOn = '2017-08-30'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_samples SET iOrAFilledOn = 'dsfgdgdf',iOrAFiledNo = 'gdffdg',iOrAFiledDate = '2017-08-21',iOrAFiledAmount = 'gfdgd',iOrAComparedOn = '2017-08-23',samplesCalledOn = '2017-09-07',dockClerkInstrn = 'dfgdf',calledInitial = 'gfdg',drawnOn = '2017-08-16',calledDelayReason = 'gfdgd',submittedToCustoms = 'dfgdf',submittedDelayReason = 'dsgsdgdf',bOrEReceivedOn = '2017-08-30',bOrEReceivedTime = '00:00:00',bOrERecdInitial = 'fgdsgd',origOpenOrderGIvenOn = '2017-08-16',origOpenOrderCmptdOn = '2017-08-16',origOpenOrderDelayReason = 'gsdgsd',dupeOpenOrderGIvenOn = '2017-08-23',dupeOpenOrderCmptdOn = '2017-08-16',dupeOpenOrderDelayReason = 'gsdgsdg',customsChargeon = '2017-08-29',goodsClearedno = '2017-08-16',goodClearedDelay = 'reason',remarks = 'remarks\nshawshank redemption'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_survey SET sOrAAppliedOn = '2017-08-03',sOrAGrantedOn = '2017-08-24',sOrAHeldOn = '2017-09-01',insAppliedOn = '2017-08-24',insGrantedOn = '2017-09-02',insHeldOn = '2017-08-15',pTAppliedOn = '2017-08-30',pTAGrantedOn = '2017-08-24',pTHeldOn = '2017-08-30'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+INSERT INTO import_map_samples ( impJobId,type,iOrAFilledOn,iOrAFiledNo,iOrAFiledDate,iOrAFiledAmount,iOrAComparedOn,samplesCalledOn,dockClerkInstrn,calledInitial,drawnOn,calledDelayReason,submittedToCustoms,submittedDelayReason,bOrEReceivedOn,bOrEReceivedTime,bOrERecdInitial,origOpenOrderGIvenOn,origOpenOrderCmptdOn,origOpenOrderDelayReason,dupeOpenOrderGIvenOn,dupeOpenOrderCmptdOn,dupeOpenOrderDelayReason,customsChargeon,goodsClearedno,goodClearedDelay,remarks ) VALUES ( '39/2017-18','sea','on','number','2017-08-08','32434','2017-08-06','2017-08-22','dock','tjtiset','2017-08-16','delay','submiited','reason','2017-08-30','time','nitnia','2017-08-07','2017-08-29','reasd','2017-08-22','2017-08-31','on','2017-09-06','','','remakrs')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 11
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_survey ( impJobId,type,sOrAAppliedOn,sOrAGrantedOn,sOrAHeldOn,insAppliedOn,insGrantedOn,insHeldOn,pTAppliedOn,pTAGrantedOn,pTHeldOn ) VALUES ( '39/2017-18','sea','','','','','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_samples ( impJobId,type,iOrAFilledOn,iOrAFiledNo,iOrAFiledDate,iOrAFiledAmount,iOrAComparedOn,samplesCalledOn,dockClerkInstrn,calledInitial,drawnOn,calledDelayReason,submittedToCustoms,submittedDelayReason,bOrEReceivedOn,bOrEReceivedTime,bOrERecdInitial,origOpenOrderGIvenOn,origOpenOrderCmptdOn,origOpenOrderDelayReason,dupeOpenOrderGIvenOn,dupeOpenOrderCmptdOn,dupeOpenOrderDelayReason,customsChargeon,goodsClearedno,goodClearedDelay,remarks ) VALUES ( '39/2017-18','sea','on','number','2017-08-08','32434','2017-08-06','2017-08-22','dock','tjtiset','2017-08-16','delay','submiited','reason','2017-08-30','time','nitnia','2017-08-07','2017-08-29','reasd','2017-08-22','2017-08-31','on','2017-09-06','','','remakrs')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_survey ( impJobId,type,sOrAAppliedOn,sOrAGrantedOn,sOrAHeldOn,insAppliedOn,insGrantedOn,insHeldOn,pTAppliedOn,pTAGrantedOn,pTHeldOn ) VALUES ( '39/2017-18','sea','','','','','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_samples ( impJobId,type,iOrAFilledOn,iOrAFiledNo,iOrAFiledDate,iOrAFiledAmount,iOrAComparedOn,samplesCalledOn,dockClerkInstrn,calledInitial,drawnOn,calledDelayReason,submittedToCustoms,submittedDelayReason,bOrEReceivedOn,bOrEReceivedTime,bOrERecdInitial,origOpenOrderGIvenOn,origOpenOrderCmptdOn,origOpenOrderDelayReason,dupeOpenOrderGIvenOn,dupeOpenOrderCmptdOn,dupeOpenOrderDelayReason,customsChargeon,goodsClearedno,goodClearedDelay,remarks ) VALUES ( 'imp','air','gfgg','fdgd','2017-08-23','gdfg','2017-08-09','2017-08-23','gsd','','','','gfd','gfdgd','','','','','2017-09-07','','','','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_survey ( impJobId,type,sOrAAppliedOn,sOrAGrantedOn,sOrAHeldOn,insAppliedOn,insGrantedOn,insHeldOn,pTAppliedOn,pTAGrantedOn,pTHeldOn ) VALUES ( 'imp','air','2017-08-17','2017-08-15','2017-08-14','2017-08-23','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 14
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_samples ( impJobId,type,iOrAFilledOn,iOrAFiledNo,iOrAFiledDate,iOrAFiledAmount,iOrAComparedOn,samplesCalledOn,dockClerkInstrn,calledInitial,drawnOn,calledDelayReason,submittedToCustoms,submittedDelayReason,bOrEReceivedOn,bOrEReceivedTime,bOrERecdInitial,origOpenOrderGIvenOn,origOpenOrderCmptdOn,origOpenOrderDelayReason,dupeOpenOrderGIvenOn,dupeOpenOrderCmptdOn,dupeOpenOrderDelayReason,customsChargeon,goodsClearedno,goodClearedDelay,remarks ) VALUES ( 'imp','air','gfgg','fdgd','2017-08-23','gdfg','2017-08-09','2017-08-23','gsd','','','','gfd','gfdgd','','','','','2017-09-07','','','','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_survey ( impJobId,type,sOrAAppliedOn,sOrAGrantedOn,sOrAHeldOn,insAppliedOn,insGrantedOn,insHeldOn,pTAppliedOn,pTAGrantedOn,pTHeldOn ) VALUES ( 'imp','air','2017-08-17','2017-08-15','2017-08-14','2017-08-23','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 15
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_samples ( impJobId,type,iOrAFilledOn,iOrAFiledNo,iOrAFiledDate,iOrAFiledAmount,iOrAComparedOn,samplesCalledOn,dockClerkInstrn,calledInitial,drawnOn,calledDelayReason,submittedToCustoms,submittedDelayReason,bOrEReceivedOn,bOrEReceivedTime,bOrERecdInitial,origOpenOrderGIvenOn,origOpenOrderCmptdOn,origOpenOrderDelayReason,dupeOpenOrderGIvenOn,dupeOpenOrderCmptdOn,dupeOpenOrderDelayReason,customsChargeon,goodsClearedno,goodClearedDelay,remarks ) VALUES ( 'imp','air','gfgg','fdgd','2017-08-23','gdfg','2017-08-09','2017-08-23','gsd','','','','gfd','gfdgd','','','','','2017-09-07','','','','','2017-08-23','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 14
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_survey ( impJobId,type,sOrAAppliedOn,sOrAGrantedOn,sOrAHeldOn,insAppliedOn,insGrantedOn,insHeldOn,pTAppliedOn,pTAGrantedOn,pTHeldOn ) VALUES ( 'imp','air','2017-08-17','2017-08-15','2017-08-14','2017-08-23','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 16
+    [affected_rows] => 1
+)
+
+UPDATE import_map_samples SET iOrAFilledOn = 'gfgg',iOrAFiledNo = 'fdgd',iOrAFiledDate = '2017-08-23',iOrAFiledAmount = 'gdfg',iOrAComparedOn = '2017-08-09',samplesCalledOn = '2017-08-23',dockClerkInstrn = 'gsd',calledInitial = '',drawnOn = '2017-08-23',calledDelayReason = '',submittedToCustoms = 'gfd',submittedDelayReason = 'gfdgd',bOrEReceivedOn = '2017-08-28',bOrEReceivedTime = '00:00:00',bOrERecdInitial = '',origOpenOrderGIvenOn = '2017-08-21',origOpenOrderCmptdOn = '2017-09-07',origOpenOrderDelayReason = '',dupeOpenOrderGIvenOn = '2017-08-29',dupeOpenOrderCmptdOn = '2017-08-23',dupeOpenOrderDelayReason = '',customsChargeon = '2017-08-23',goodsClearedno = '2017-09-09',goodClearedDelay = '',remarks = ''  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_survey SET sOrAAppliedOn = '2017-08-17',sOrAGrantedOn = '2017-08-15',sOrAHeldOn = '2017-08-14',insAppliedOn = '2017-08-23',insGrantedOn = '2017-08-22',insHeldOn = '2017-08-23',pTAppliedOn = '2017-08-16',pTAGrantedOn = '2017-08-24',pTHeldOn = '2017-08-24'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)

@@ -1,0 +1,130 @@
+Array
+(
+    [impJobId] => 36/2017-18
+    [type] => sea
+    [iceGateJobNo] => gateno
+    [bOrEDetail] => 
+    [CIFValues] => cifvale
+    [landingCharges] => 
+    [BEValue] => 
+)
+Array
+(
+    [impJobId] => 36/2017-18
+    [type] => sea
+    [iceGateJobNo] => gateno
+    [bOrEDetail] => 
+    [CIFValues] => cifvale
+    [landingCharges] => 
+    [BEValue] => 
+)
+Array
+(
+    [impJobId] => 36/2017-18
+    [type] => sea
+    [iceGateJobNo] => gateno
+    [bOrEDetail] => 
+    [CIFValues] => cifvale
+    [landingCharges] => 
+    [BEValue] => 
+)
+Array
+(
+    [impJobId] => 35/2017-18
+    [type] => sea
+    [iceGateJobNo] => 1
+    [bOrEDetail] => 2
+    [CIFValues] => 3
+    [landingCharges] => 4
+    [BEValue] => 5
+)
+Array
+(
+    [impJobId] => 35/2017-18
+    [type] => sea
+    [iceGateJobNo] => 1
+    [bOrEDetail] => 2
+    [CIFValues] => 3
+    [landingCharges] => 4
+    [BEValue] => 5
+)
+Array
+(
+    [impJobId] => 35/2017-18
+    [type] => sea
+    [iceGateJobNo] => 1
+    [bOrEDetail] => 2
+    [CIFValues] => 3
+    [landingCharges] => 4
+    [BEValue] => 5
+)
+Array
+(
+    [impJobId] => 35/2017-18
+    [type] => sea
+    [iceGateJobNo] => 1
+    [bOrEDetail] => 2
+    [CIFValues] => 3
+    [landingCharges] => 4
+    [BEValue] => 5
+)
+Array
+(
+    [impJobId] => 34/2017-18
+    [type] => sea
+    [iceGateJobNo] => no
+    [bOrEDetail] => beno
+    [CIFValues] => cif
+    [landingCharges] => landing
+    [BEValue] => b/evalue
+)
+Array
+(
+    [impJobId] => 34/2017-18
+    [type] => sea
+    [iceGateJobNo] => no
+    [bOrEDetail] => beno
+    [CIFValues] => cif
+    [landingCharges] => landing
+    [BEValue] => b/evalue
+)
+Array
+(
+    [impJobId] => 38/2017-18
+    [type] => sea
+    [iceGateJobNo] => jobsno
+    [bOrEDetail] => BENo
+    [CIFValues] => CIFvalues
+    [landingCharges] => Lanifns
+    [BEValue] => Evalue
+)
+Array
+(
+    [impJobId] => imp
+    [type] => air
+    [iceGateJobNo] => jobsno
+    [bOrEDetail] => beno
+    [CIFValues] => cs
+    [landingCharges] => 100
+    [BEValue] => 
+)
+Array
+(
+    [impJobId] => imp
+    [type] => air
+    [iceGateJobNo] => jobsno
+    [bOrEDetail] => beno
+    [CIFValues] => cs
+    [landingCharges] => 100
+    [BEValue] => 
+)
+Array
+(
+    [impJobId] => imp
+    [type] => air
+    [iceGateJobNo] => jobsno
+    [bOrEDetail] => beno
+    [CIFValues] => cs
+    [landingCharges] => 100
+    [BEValue] => 
+)

@@ -1,0 +1,59 @@
+Array
+(
+    [impJobId] => 
+    [importedDate] => 
+    [partyRef] => 
+    [consignee] => 
+    [address] => 
+    [hsOrBtAccParty] => 
+    [supplier] => 
+    [invoiceNo] => 
+    [invoiceDate] => 
+    [motherVsl] => 
+    [mvDue] => 
+    [arrival] => 
+    [GLD] => 
+    [cntrOut] => 
+    [feederVsl] => 
+    [fvOn] => 
+    [CFS] => 
+    [agents] => 
+    [igmNo] => 
+    [licenseDate] => 
+    [lineNo] => 
+    [hblNo] => 
+    [hblDate] => 
+    [mbl] => 
+    [mblDate] => 
+    [invoiceValue] => 
+    [par_status] => submitted
+)
+Array
+(
+    [impJobId] => 
+    [importedDate] => 
+    [partyRef] => 
+    [consignee] => 
+    [address] => 
+    [hsOrBtAccParty] => 
+    [supplier] => 
+    [invoiceNo] => 
+    [invoiceDate] => 
+    [motherVsl] => 
+    [mvDue] => 
+    [arrival] => 
+    [GLD] => 
+    [cntrOut] => 
+    [feederVsl] => 
+    [fvOn] => 
+    [CFS] => 
+    [agents] => 
+    [igmNo] => 
+    [licenseDate] => 
+    [lineNo] => 
+    [hblNo] => 
+    [hblDate] => 
+    [mbl] => 
+    [mblDate] => 
+    [invoiceValue] => 
+)

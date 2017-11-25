@@ -1,0 +1,344 @@
+<div id="page-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-l-12">
+                <div ng-if="deleteSuccessMsg.length>0" class="panel panel-success">
+                    <div class="panel-heading">{{deleteSuccessMsg}}</div>
+                </div>
+                <div ng-if="deleteErrorMsg.length>0" class="panel panel-danger">
+                    <div class="panel-heading">{{deleteErrorMsg}}</div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="col-lg-4">
+                    <h3>Delivery Receipts</h3>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search Receipts" ng-model="search">
+                    </div>
+                </div>
+                <div class="col-lg-4 pull-right">
+                    <button class="btn btn-primary pull-right" ng-click="openReceipts(null,'create');">Create new</button>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Receipt No</th>
+                            <th>Truck No</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in getExportData  | filter: search">
+                            <td>{{data.id}}</td>
+                            <td>{{data.truckNo}}</td>
+                            <td>{{data.from}}</td>
+                            <td>{{data.to}}</td>
+                            <td><a href="javascript:;" ng-click="openReceipts(data,'update')">View/Edit</a></td>
+                            <td>
+                                <button class="btn btn-danger" ng-click="showDeleteModal(data.id)">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showReceipt" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-l-12">
+                        <div ng-if="deleteSuccessMsg.length>0" class="panel panel-success">
+                            <div class="panel-heading">{{deleteSuccessMsg}}</div>
+                        </div>
+                        <div ng-if="deleteErrorMsg.length>0" class="panel panel-danger">
+                            <div class="panel-heading">{{deleteErrorMsg}}</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-11">
+                            <center>
+                                <h4>Delivery Receipt</h4>
+                            </center>
+                        </div>
+                        <div class="col-lg-1 pull-right" ng-hide="true">
+                            <button type="button" class="btn btn-success" ng-if="updateFlag" ng-click="print();">
+                          <span class="glyphicon glyphicon-print"></span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <form class="form-horizontal">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="pull-right" for="import_gld">
+                                    Imp Job No.</label>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" name="import_gld" id="import_gld" ng-model="receipt.impJobNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="pull-right" for="import_job_no">
+                                    Date</label>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group pull-left">
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="receipt.date" is-open="receipt.bdate.open"
+                                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                    />
+                                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="receipt.bdate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="pull-right" for="import_gld">
+                                    Truck No.</label>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" name="import_gld" id="import_gld" ng-model="receipt.truckNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="pull-right" for="import_job_no">
+                                    Driver Name</label>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group pull-left">
+                                <input type="text" name="import_gld" id="import_gld" ng-model="receipt.driverName" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="pull-right" for="import_gld">
+                                    From</label>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" name="import_gld" id="import_gld" ng-model="receipt.from" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="pull-right" for="import_job_no">
+                                    To</label>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group pull-left">
+                                <input type="text" name="import_gld" id="import_gld" ng-model="receipt.to" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Marks</th>
+                                <th>No of Pkgs</th>
+                                <th>Description</th>
+                                <th>Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="data in markData">
+                                <td>
+                                    <button type="button" class="btn btn-warning" ng-click="removeSelectedContainer(data.containerNo);">
+                                                        <span class="glyphicon glyphicon-minus"></span> 
+                                                    </button>
+                                </td>
+                                <td>
+                                    <input type="text" name="import_gld" id="import_gld" ng-model="data.marks" class="form-control">
+                                </td>
+                                <td>
+                                    <input type="text" name="import_gld" id="import_gld" ng-model="data.noOfPackages" class="form-control">
+                                </td>
+                                <td>
+                                    <input type="text" name="import_gld" id="import_gld" ng-model="data.description" class="form-control">
+                                </td>
+                                <td>
+                                    <input type="text" name="import_gld" id="import_gld" ng-model="data.weight" class="form-control">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-primary" ng-click="addContainer();">
+                                                        <span class="glyphicon glyphicon-plus"></span> 
+                                                    </button>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="pull-right" for="import_gld">
+                                    BE No</label>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" name="import_gld" id="import_gld" ng-model="receipt.BENo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="pull-right" for="import_job_no">
+                                    BE Date</label>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="input-group">
+                                <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="receipt.BEDate" is-open="receipt.bedate.open"
+                                    datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                />
+                                <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="receipt.bedate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-2">
+                                <label class="pull-right" for="import_gld">
+                                    Transporter Name</label>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <input type="text" name="import_gld" id="import_gld" ng-model="receipt.transporterName" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-2">
+                                <label class="pull-right" for="import_gld">
+                                    Importer Name</label>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <input type="text" name="import_gld" id="import_gld" ng-model="receipt.importerName" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-2">
+                                <label class="pull-right" for="import_gld">
+                                    Importer GSTIN</label>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <input type="text" name="import_gld" id="import_gld" ng-model="receipt.importerGst" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-2">
+                                <label class="pull-right" for="import_gld">
+                                    Address</label>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <textarea type="text" name="import_gld" id="import_gld" ng-model="receipt.address" rows="4" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <h3><span ng-if="successMsg.length > 0" class="label label-success pull-left">{{successMsg}}</span></h3>
+                <h3>
+                    <h3><span ng-if="alertMsg.length > 0" class="label label-warning pull-left">{{alertMsg}}</span></h3>
+                    <h3><span ng-if="errorMsg.length > 0" class="label label-danger pull-left">{{errorMsg}}</span></h3>
+                    <button type="button" ng-if="createFlag" class="btn btn-primary" ng-click="saveReceipt();">Save</button>
+                    <button type="button" ng-if="updateFlag" class="btn btn-primary" ng-click="saveReceipt();">Update</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="printReceipt" ng-hide="true">
+    <div ng-include="'assets/templates/directive/header.html'"></div>
+    <center>
+        <h3>Delivery Receipt</h3>
+    </center>
+    <div class="row">
+        <div class="col-lg-6">
+            <label>No.</label>{{receipt.id}}
+        </div>
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    The company accepts no responsibility for any discrepancy in or damage to goods delivered unless the same is brought to our
+                    notice at the time of delivery inside harbour / Airport /CFS/WH. In case of any damage immediate notice
+                    should be given to the underwriters.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <label>Imp Job No :</label>{{receipt.impJobNo}}
+        </div>
+        <div class="col-lg-6">
+            <label>Date : </label>{{receipt.date}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <label>Truck No : </label>{{receipt.impJobNo}}
+        </div>
+        <div class="col-lg-6">
+            <label>Name of the driver : </label>{{receipt.date}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <label>from : /label>{{receipt.impJobNo}}
+        </div>
+        <div class="col-lg-6">
+            <label>to : </label>{{receipt.date}}
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showDelete" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="alert alert-primary">
+                    Are you sure want to delete Receipt No {{deleteId}} ?
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" ng-click="deleteReceipt(deleteId);">Delete</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

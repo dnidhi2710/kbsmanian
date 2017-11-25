@@ -1,0 +1,119 @@
+
+INSERT INTO delivery_receipts ( impJobId,type,date,truckNo,driverName,from_source,to_dest,marks,BENO,BEDate,transporterName,importerGst,importerName,address ) VALUES ( 'sdfdsfdsf','importSea','2017-09-05','truckno','dhaya','chennai','pune','[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"werit\",\"$$hashKey\":\"object:132\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]','no','2017-08-28','transno','gst','name','address')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 0
+    [affected_rows] => 1
+)
+
+INSERT INTO delivery_receipts ( impJobId,type,date,truckNo,driverName,from_source,to_dest,marks,BENO,BEDate,transporterName,importerGst,importerName,address ) VALUES ( 'sdfdsfdsf','importSea','2017-08-28','dsf','fdsfsd','fdsf','dfssd','[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"fsdf\",\"weight\":\"dsf\",\"$$hashKey\":\"object:132\",\"marks\":\"fdsfd\",\"noOfPackages\":\"fdsfdsf\"}]','fdsf','2017-09-04','fdsf','sdff','dsfsd','dfsfdsf')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 2
+    [affected_rows] => 1
+)
+
+UPDATE delivery_receipts SET impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-28',truckNo = 'dsf',driverName = 'fdsfsd',from_source = 'fdsf',to_dest = 'dfssd',marks = '[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"fsdf\",\"weight\":\"dsf\",\"$$hashKey\":\"object:132\",\"marks\":\"fdsfd\",\"noOfPackages\":\"fdsfdsf\"},{\"containerNo\":2,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"test\",\"weight\":\"test\",\"$$hashKey\":\"object:25\",\"marks\":\"test\",\"noOfPackages\":\"test\"}]',BENO = 'fdsf',BEDate = '2017-09-04',transporterName = 'fdsf',importerGst = 'sdff',importerName = 'dsfsd',address = 'dfsfdsf'  WHERE impJobId = 'sdfdsfdsf' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO delivery_receipts ( impJobId,type,date,truckNo,driverName,from_source,to_dest,marks,BENO,BEDate,transporterName,importerGst,importerName,address ) VALUES ( 'sdfdsfdsf','importSea','2017-08-27','dsad','dhaya','chennai','pune','[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"wei\",\"$$hashKey\":\"object:138\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]','dsa','2017-09-25','name','gstni','mpo','addess')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 3
+    [affected_rows] => 1
+)
+
+UPDATE delivery_receipts SET impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-27',truckNo = 'dsad',driverName = 'dhayanidhi',from_source = 'chennai',to_dest = 'pune',marks = '[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"wei\",\"$$hashKey\":\"object:138\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]',BENO = 'dsa',BEDate = '2017-09-25',transporterName = 'name',importerGst = 'gstni',importerName = 'mpo',address = 'addess'  WHERE impJobId = 'sdfdsfdsf' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 2
+)
+
+UPDATE delivery_receipts SET impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-27',truckNo = 'dsad',driverName = 'dhayanidhi',from_source = 'chennai',to_dest = 'pune',marks = '[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"weight\",\"$$hashKey\":\"object:138\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]',BENO = 'dsa',BEDate = '2017-09-25',transporterName = 'name',importerGst = 'gstni',importerName = 'mpo',address = 'addess'  WHERE impJobId = 'sdfdsfdsf' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 2
+)
+
+INSERT INTO delivery_receipts ( impJobId,type,date,truckNo,driverName,from_source,to_dest,marks,BENO,BEDate,transporterName,importerGst,importerName,address ) VALUES ( 'test','exportSea','2017-09-26','resr','dfsdf','fdsf','fsdf','[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"fsdf\",\"weight\":\"fsdfs\",\"$$hashKey\":\"object:304\",\"marks\":\"sdf\",\"noOfPackages\":\"dsf\"}]','fdsf','2017-09-18','fdsf','dsff','dsf','dsfs')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 4
+    [affected_rows] => 1
+)
+
+UPDATE delivery_receipts SET impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-27',truckNo = 'dsad',driverName = 'dhayanidhi',from_source = 'chennai',to_dest = 'delhi',marks = '[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"weight\",\"$$hashKey\":\"object:138\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]',BENO = 'dsa',BEDate = '2017-09-25',transporterName = 'name',importerGst = 'gstni',importerName = 'mpo',address = 'addess'  WHERE impJobId = 'sdfdsfdsf' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 2
+)
+
+UPDATE delivery_receipts SET impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-27',truckNo = 'dsad',driverName = 'dhayanidhi',from_source = 'chennai',to_dest = 'delhi32',marks = '[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"weight\",\"$$hashKey\":\"object:138\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]',BENO = 'dsa',BEDate = '2017-09-25',transporterName = 'name',importerGst = 'gstni',importerName = 'mpo',address = 'addess'  WHERE impJobId = 'sdfdsfdsf' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 2
+)
+
+UPDATE delivery_receipts SET id = '',impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-27',truckNo = 'dsad',driverName = 'dhayanidhi',from_source = 'chennai',to_dest = 'delhi',marks = '[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"weight\",\"$$hashKey\":\"object:138\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]',BENO = 'dsa',BEDate = '2017-09-25',transporterName = 'name',importerGst = 'gstni',importerName = 'mpo',address = 'addess'  WHERE id = '' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE delivery_receipts SET id = '',impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-27',truckNo = 'dsad',driverName = 'dhayanidhi',from_source = 'chennai',to_dest = 'delhi',marks = '[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"weight\",\"$$hashKey\":\"object:138\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]',BENO = 'dsa',BEDate = '2017-09-25',transporterName = 'name',importerGst = 'gstni',importerName = 'mpo',address = 'addess'  WHERE id = '' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE delivery_receipts SET id = '2',impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-27',truckNo = 'dsad',driverName = 'dhayanidhi',from_source = 'chennai',to_dest = 'delhi',marks = '[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"weight\",\"$$hashKey\":\"object:138\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]',BENO = 'dsa',BEDate = '2017-09-25',transporterName = 'name',importerGst = 'gstni',importerName = 'mpo',address = 'addess'  WHERE id = '2' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE delivery_receipts SET id = '2',impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-27',truckNo = 'dsad',driverName = 'dhayanidhi',from_source = 'dubai',to_dest = 'delhi',marks = '[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"desc\",\"weight\":\"weight\",\"$$hashKey\":\"object:138\",\"marks\":\"marks\",\"noOfPackages\":\"2\"}]',BENO = 'dsa',BEDate = '2017-09-25',transporterName = 'name',importerGst = 'gstni',importerName = 'mpo',address = 'addess'  WHERE id = '2' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO delivery_receipts ( impJobId,type,date,truckNo,driverName,from_source,to_dest,marks,BENO,BEDate,transporterName,importerGst,importerName,address ) VALUES ( 'sdfdsfdsf','importSea','2017-09-25','fdsf','dsf','dsffs','fdsf','[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"fds\",\"weight\":\"fdssdf\",\"$$hashKey\":\"object:136\",\"marks\":\"fsdf\",\"noOfPackages\":\"fdsf\"}]','fddfg','2017-09-18','fgddfg','gfdg','gdfgdff','gfdgdfg')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 5
+    [affected_rows] => 1
+)
+
+INSERT INTO delivery_receipts ( impJobId,type,date,truckNo,driverName,from_source,to_dest,marks,BENO,BEDate,transporterName,importerGst,importerName,address ) VALUES ( 'sdfdsfdsf','importSea','2017-09-27','fdg','gdfg','fgdg','gfdg','[{\"containerNo\":1,\"mark\":\"\",\"noOfPkgs\":\"\",\"description\":\"gfdg\",\"weight\":\"dfggdf\",\"$$hashKey\":\"object:364\",\"marks\":\"dfg\",\"noOfPackages\":\"fdgg\"}]','','2017-10-01','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 6
+    [affected_rows] => 1
+)
+
+INSERT INTO delivery_receipts ( impJobId,type,date,truckNo,driverName,from_source,to_dest,marks,BENO,BEDate,transporterName,importerGst,importerName,address ) VALUES ( 'imp','importAir','2017-10-29','1','dg','','','','','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 6
+    [affected_rows] => 1
+)

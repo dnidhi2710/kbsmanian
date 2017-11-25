@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kbs</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.datepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/angular.min.js"></script>
+    <script type="text/javascript" src="assets/js/angular-route.js"></script>
+    <script type="text/javascript" src="assets/js/angular-animate.js"></script>
+    <script type="text/javascript" src="assets/js/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="assets/js/angular-touch.min.js"></script>
+    <script type="text/javascript" src="assets/js/underscore.min.js"></script>
+    <script type="text/javascript" src="assets/js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/spin.min.js"></script>
+    <script type="text/javascript" src="assets/js/angular-spinner.js"></script>
+    <script type="text/javascript" src="assets/js/angular-bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/app.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/directive/clearanceSection.directive.js"></script>
+    <script type="text/javascript" src="assets/js/directive/surveySection.directive.js"></script>
+    <script type="text/javascript" src="assets/js/directive/sampleSection.directive.js"></script>
+    <script type="text/javascript" src="assets/js/directive/otherSection.directive.js"></script>
+    <script type="text/javascript" src="assets/js/directive/deliveryReceipt.directive.js"></script>
+    <script type="text/javascript" src="assets/js/directive/expenditureSlip.directive.js"></script>
+    <script type="text/javascript" src="assets/js/directive/personnelSection.directive.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/chaExportAir.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/Service/commonService.service.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/chaExportSea.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/Service/dbConfig.service.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/createOrEditIS.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/createOrEditIA.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/createOrEditExport.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/createOrEditExportSea.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/chaImportAir.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/chaImportSea.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/chaLogin.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/Controller/chaParent.Controller.js"></script>
+    <script type="text/javascript" src="assets/js/services.js"></script>
+</head>
+
+<body ng-app="chaWebApp">
+    <div id="wrapper" class="toggled" ng-controller="chaParentController">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" ng-class="(locationPath == '#/login')?'hide':'show'">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="javascript:;">
+                        KBS
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" ng-click="activeMenu('importSeaList',null)">Import Sea</a>
+                </li>
+                <li>
+                    <a href="javascript:;" ng-click="activeMenu('importAirList',null)">Import Air</a>
+                </li>
+                <li>
+                    <a href="javascript:;" ng-click="activeMenu('exportSeaList','sea')">Export  Sea</a>
+                </li>
+                <li>
+                    <a href="javascript:;" ng-click="activeMenu('exportAirSeaList','air')">Export Air</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div ng-view class="view-frame"></div>
+    </div>
+    <span us-spinner="{radius:10, width:8, length: 10}" spinner-key="spinner-1"></span>
+    <!-- /#wrapper -->
+</body>
+
+</html>

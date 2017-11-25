@@ -1,0 +1,1171 @@
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '36/2017-18','sea','gateno','','cifvale','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 21
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '36/2017-18','sea','','','','2017-08-28','','2017-08-20','','','','','gmno','lineno','2017-08-22','2017-08-25','','2017-08-22')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 7
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '36/2017-18','sea','2017-08-22T18:30:00.000Z','','2017-08-22','','[{\"1\":\"2017-08-17\"},{\"2\":null},{\"3\":null}]','[{\"1\":\"2017-08-13\"},{\"2\":\"2017-08-16\"},{\"3\":\"2017-08-24\"}]','[{\"1\":null},{\"2\":null},{\"3\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 7
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayToimpJobId,reason ) VALUES ( '36/2017-18','sea','2017-08-17','2017-08-24','','reasons','2017-08-23','2017-08-23','2017-08-17','','2017-08-27','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'testcustomsAssDelayToimpJobId' in 'field list'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '36/2017-18','sea','gateno','','cifvale','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 22
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '36/2017-18','sea','','','','2017-08-28','','2017-08-20','','','','','gmno','lineno','2017-08-22','2017-08-25','','2017-08-22')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 8
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '36/2017-18','sea','2017-08-22T18:30:00.000Z','','2017-08-22','','[{\"1\":\"2017-08-17\"},{\"2\":null},{\"3\":null}]','[{\"1\":\"2017-08-13\"},{\"2\":\"2017-08-16\"},{\"3\":\"2017-08-24\"}]','[{\"1\":null},{\"2\":null},{\"3\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 8
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayToimpJobId,reason ) VALUES ( '36/2017-18','sea','2017-08-17','2017-08-24','','reasons','2017-08-23','2017-08-23','2017-08-17','','2017-08-27','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'testcustomsAssDelayToimpJobId' in 'field list'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '36/2017-18','sea','gateno','','cifvale','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 23
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '36/2017-18','sea','','','','2017-08-28','','2017-08-20','','','','','gmno','lineno','2017-08-22','2017-08-25','','2017-08-22')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 9
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '36/2017-18','sea','2017-08-22T18:30:00.000Z','','2017-08-22','','[{\"1\":\"2017-08-17\"},{\"2\":null},{\"3\":null}]','[{\"1\":\"2017-08-13\"},{\"2\":\"2017-08-16\"},{\"3\":\"2017-08-24\"}]','[{\"1\":null},{\"2\":null},{\"3\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 9
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayToimpJobId,reason ) VALUES ( '36/2017-18','sea','2017-08-17','2017-08-24','','reasons','2017-08-23','2017-08-23','2017-08-17','','2017-08-27','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'testcustomsAssDelayToimpJobId' in 'field list'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '35/2017-18','sea','1','2','3','4','5')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 24
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '35/2017-18','sea','6','2017-08-31','7','2017-08-14','8','2017-07-30','9','10','','2017-09-06','','','2017-08-23','2017-08-19','','2017-07-31')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 10
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '35/2017-18','sea','2017-08-16T18:30:00.000Z','','2017-08-14','','[{\"1\":\"2017-08-17\"},{\"2\":null},{\"3\":null}]','[{\"1\":\"2017-08-16\"},{\"2\":\"2017-08-15\"},{\"3\":\"2017-08-15\"}]','[{\"1\":null},{\"2\":null},{\"3\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 10
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayToimpJobId,reason ) VALUES ( '35/2017-18','sea','','2017-08-15','','','2017-08-17','2017-08-31','2017-08-17','','2017-08-14','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'testcustomsAssDelayToimpJobId' in 'field list'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '35/2017-18','sea','1','2','3','4','5')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 25
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '35/2017-18','sea','6','2017-08-31','7','2017-08-14','8','2017-07-30','9','10','','2017-09-06','','','2017-08-23','2017-08-19','','2017-07-31')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 11
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '35/2017-18','sea','2017-08-16T18:30:00.000Z','','2017-08-14','','[{\"1\":\"2017-08-17\"},{\"2\":null},{\"3\":null}]','[{\"1\":\"2017-08-16\"},{\"2\":\"2017-08-15\"},{\"3\":\"2017-08-15\"}]','[{\"1\":null},{\"2\":null},{\"3\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 11
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayTo,reason ) VALUES ( '35/2017-18','sea','','2017-08-15','','','2017-08-17','2017-08-31','2017-08-17','','2017-08-14','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 7
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_ict ( impJobId,type,importerIctNo,importerIctRate,givenON,actualIctNo,actualIctRate,dutyAmount,ReasonNotAdmitImpIct ) VALUES ( '35/2017-18','sea','','','2017-08-22','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 5
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_penalty ( impJobId,type,amount,leviedOn,paidOn,penaltyReason ) VALUES ( '35/2017-18','sea','','2017-08-15','2017-08-23','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 5
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_license ( impJobId,type,licenceSentOn,licenceSentTime,toAuditOn,auditedOn,auditedTime,auditRecdBackOn,auditRecdBackTime,dsptdFrBEOn,dsptdFrBETime,dsptdRecdBackOn,dsptdRecdBackTime,dsptdRecdBackInitial,parcelHandedOn,parcelHandedTime,parcelHandedInitial,detentionCrftNo,detentionCrftDate,detentionCrftFrom,detentionCrftTo,detenSubmittedon,detenAppliedON,detenReasondelay,otherAgents,otherCFS,dsptdFrJobNo ) VALUES ( '35/2017-18','sea','2017-08-16T18:30:00.000Z','','2017-08-21','2017-08-23','','2017-08-14','','2017-08-26','','','','','','','','','2017-08-14','','','2017-08-22','','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Table 'kbsmanian.import_map_license' doesn't exist
+    [affected_rows] => -1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '35/2017-18','sea','1','2','3','4','5')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 26
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '35/2017-18','sea','6','2017-08-31','7','2017-08-14','8','2017-07-30','9','10','','2017-09-06','','','2017-08-23','2017-08-19','','2017-07-31')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '35/2017-18','sea','2017-08-16T18:30:00.000Z','','2017-08-14','','[{\"1\":\"2017-08-17\"},{\"2\":null},{\"3\":null}]','[{\"1\":\"2017-08-16\"},{\"2\":\"2017-08-15\"},{\"3\":\"2017-08-15\"}]','[{\"1\":null},{\"2\":null},{\"3\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayTo,reason ) VALUES ( '35/2017-18','sea','','2017-08-15','','','2017-08-17','2017-08-31','2017-08-17','','2017-08-14','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 8
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_ict ( impJobId,type,importerIctNo,importerIctRate,givenON,actualIctNo,actualIctRate,dutyAmount,ReasonNotAdmitImpIct ) VALUES ( '35/2017-18','sea','','','2017-08-22','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 6
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_penalty ( impJobId,type,amount,leviedOn,paidOn,penaltyReason ) VALUES ( '35/2017-18','sea','','2017-08-15','2017-08-23','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 6
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_licence ( impJobId,type,licenceSentOn,licenceSentTime,toAuditOn,auditedOn,auditedTime,auditRecdBackOn,auditRecdBackTime,dsptdFrBEOn,dsptdFrBETime,dsptdRecdBackOn,dsptdRecdBackTime,dsptdRecdBackInitial,parcelHandedOn,parcelHandedTime,parcelHandedInitial,detentionCrftNo,detentionCrftDate,detentionCrftFrom,detentionCrftTo,detenSubmittedon,detenAppliedON,detenReasondelay,otherAgents,otherCFS,dsptdFrJobNo ) VALUES ( '35/2017-18','sea','2017-08-16T18:30:00.000Z','','2017-08-21','2017-08-23','','2017-08-14','','2017-08-26','','','','','','','','','2017-08-14','','','2017-08-22','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 5
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '35/2017-18','sea','1','2','3','4','5')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 27
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '35/2017-18','sea','6','2017-08-31','7','2017-08-14','8','2017-07-30','9','10','','2017-09-06','','','2017-08-23','2017-08-19','','2017-07-31')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '35/2017-18','sea','2017-08-16T18:30:00.000Z','','2017-08-14','','[{\"1\":\"2017-08-17\"},{\"2\":null},{\"3\":null}]','[{\"1\":\"2017-08-16\"},{\"2\":\"2017-08-15\"},{\"3\":\"2017-08-15\"}]','[{\"1\":null},{\"2\":null},{\"3\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayTo,reason ) VALUES ( '35/2017-18','sea','','2017-08-15','','','2017-08-17','2017-08-31','2017-08-17','','2017-08-14','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 9
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_ict ( impJobId,type,importerIctNo,importerIctRate,givenON,actualIctNo,actualIctRate,dutyAmount,ReasonNotAdmitImpIct ) VALUES ( '35/2017-18','sea','','','2017-08-22','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 7
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_penalty ( impJobId,type,amount,leviedOn,paidOn,penaltyReason ) VALUES ( '35/2017-18','sea','','2017-08-15','2017-08-23','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 7
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_licence ( impJobId,type,licenceSentOn,licenceSentTime,toAuditOn,auditedOn,auditedTime,auditRecdBackOn,auditRecdBackTime,dsptdFrBEOn,dsptdFrBETime,dsptdRecdBackOn,dsptdRecdBackTime,dsptdRecdBackInitial,parcelHandedOn,parcelHandedTime,parcelHandedInitial,detentionCrftNo,detentionCrftDate,detentionCrftFrom,detentionCrftTo,detenSubmittedon,detenAppliedON,detenReasondelay,otherAgents,otherCFS,dsptdFrJobNo ) VALUES ( '35/2017-18','sea','2017-08-16T18:30:00.000Z','','2017-08-21','2017-08-23','','2017-08-14','','2017-08-26','','','','','','','','','2017-08-14','','','2017-08-22','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 6
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '34/2017-18','sea','no','beno','cif','landing','b/evalue')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 28
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '34/2017-18','sea','cusots','2017-08-15','recd','2017-08-14','called','2017-08-14','REm','recdre','recd','2017-08-22','gmno','lineo','2017-09-07','2017-08-15','no','2017-08-16')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 14
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '34/2017-18','sea','2017-08-22T18:30:00.000Z','No','2017-08-15','For','[{\"1\":\"2017-08-16\"},{\"2\":null},{\"3\":null}]','[{\"1\":\"2017-08-21\"},{\"2\":\"2017-08-22\"},{\"3\":\"2017-08-22\"}]','[{\"1\":\"for\"},{\"2\":\"for\"},{\"3\":\"For\"}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 14
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayTo,reason ) VALUES ( '34/2017-18','sea','2017-08-15','2017-08-24','2017-08-22','delay','2017-08-10','2017-08-15','2017-08-09','givento','2017-08-07','Time','form','To','reasons')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 10
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_ict ( impJobId,type,importerIctNo,importerIctRate,givenON,actualIctNo,actualIctRate,dutyAmount,ReasonNotAdmitImpIct ) VALUES ( '34/2017-18','sea','ICTNo','Rate','2017-08-29','CITNo','RAte','dutyamout','ICnosfs')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 8
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_penalty ( impJobId,type,amount,leviedOn,paidOn,penaltyReason ) VALUES ( '34/2017-18','sea','amount','2017-08-24','2017-08-29','REaosns')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 8
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_licence ( impJobId,type,licenceSentOn,licenceSentTime,toAuditOn,auditedOn,auditedTime,auditRecdBackOn,auditRecdBackTime,dsptdFrBEOn,dsptdFrBETime,dsptdRecdBackOn,dsptdRecdBackTime,dsptdRecdBackInitial,parcelHandedOn,parcelHandedTime,parcelHandedInitial,detentionCrftNo,detentionCrftDate,detentionCrftFrom,detentionCrftTo,detenSubmittedon,detenAppliedON,detenReasondelay,otherAgents,otherCFS,dsptdFrJobNo ) VALUES ( '34/2017-18','sea','2017-08-10T18:30:00.000Z','TIme','2017-08-15','2017-08-23','Timno','2017-08-08','TIMeno','2017-08-10','fdsfsd','2017-08-09','dsfds','dsffds','2017-08-30','fdsf','fsdfsd','fdsf','2017-08-28','','fsdfsd','2017-08-07','2017-08-31','fsddsfds','','','Fdsof')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 7
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '34/2017-18','sea','no','beno','cif','landing','b/evalue')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 29
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '34/2017-18','sea','cusots','2017-08-15','recd','2017-08-14','called','2017-08-14','REm','recdre','recd','2017-08-22','gmno','lineo','2017-09-07','2017-08-15','no','2017-08-16')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 15
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '34/2017-18','sea','2017-08-22T18:30:00.000Z','No','2017-08-15','For','[{\"1\":\"2017-08-16\"},{\"2\":null},{\"3\":null}]','[{\"1\":\"2017-08-21\"},{\"2\":\"2017-08-22\"},{\"3\":\"2017-08-22\"}]','[{\"1\":\"for\"},{\"2\":\"for\"},{\"3\":\"For\"}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 15
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayTo,reason ) VALUES ( '34/2017-18','sea','2017-08-15','2017-08-24','2017-08-22','delay','2017-08-10','2017-08-15','2017-08-09','givento','2017-08-07','Time','form','To','reasons')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 11
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_ict ( impJobId,type,importerIctNo,importerIctRate,givenON,actualIctNo,actualIctRate,dutyAmount,ReasonNotAdmitImpIct ) VALUES ( '34/2017-18','sea','ICTNo','Rate','2017-08-29','CITNo','RAte','dutyamout','ICnosfs')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 9
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_penalty ( impJobId,type,amount,leviedOn,paidOn,penaltyReason ) VALUES ( '34/2017-18','sea','amount','2017-08-24','2017-08-29','REaosns')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 9
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_licence ( impJobId,type,licenceSentOn,licenceSentTime,toAuditOn,auditedOn,auditedTime,auditRecdBackOn,auditRecdBackTime,dsptdFrBEOn,dsptdFrBETime,dsptdRecdBackOn,dsptdRecdBackTime,dsptdRecdBackInitial,parcelHandedOn,parcelHandedTime,parcelHandedInitial,detentionCrftNo,detentionCrftDate,detentionCrftFrom,detentionCrftTo,detenSubmittedon,detenAppliedON,detenReasondelay,otherAgents,otherCFS,dsptdFrJobNo ) VALUES ( '34/2017-18','sea','2017-08-10T18:30:00.000Z','TIme','2017-08-15','2017-08-23','Timno','2017-08-08','TIMeno','2017-08-10','fdsfsd','2017-08-09','dsfds','dsffds','2017-08-30','fdsf','fsdfsd','fdsf','2017-08-28','','fsdfsd','2017-08-07','2017-08-31','fsddsfds','','','Fdsof')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 8
+    [affected_rows] => 1
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = '',bOrEDetail = '',CIFValues = '',landingCharges = '',BEValue = ''  WHERE impJobId = '' AND type = ''
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landing',BEValue = 'b/evalue'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharges',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'cusots',jobAllotedOn = '2017-08-15',documentsRecd = 'recd',documentsRecdDate = '2017-08-14',documentdCalled = 'called',documentdDate = '2017-08-14',rem = 'REm',received = 'recdre',recdtxtarea = 'recd',BEFieldonManifest = '2017-08-22',G_MNo = 'gmno',LineNO = 'lineo',LineNoDate = '2017-09-07',BEManifestedon = '2017-08-15',BEManifestNo = 'no',BEManifestDate = '2017-08-16'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'cusots',jobAllotedOn = '2017-08-15',documentsRecd = 'recd',documentsRecdDate = '2017-08-14',documentdCalled = 'called',documentdDate = '2017-08-14',rem = 'REm',received = 'recdre',recdtxtarea = 'recd',BEFieldonManifest = '2017-08-22',G_MNo = 'gmno',LineNO = 'lineo',LineNoDate = '2017-09-07',BEManifestedon = '2017-08-15',BEManifestNo = 'no',BEManifestDate = '2017-08-16'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '2017-08-22T00:00:00.000Z',bOrEGroupNo = 'No',bOrERetrnOn = '2017-08-15',bOrEFor = 'For',bOrEPutupAppOn = '[{\"putUpOn\":\"2017-08-15\"},{\"putUpOn\":null},{\"putUpOn\":null}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":\"2017-08-15\"},{\"returnedOn\":\"2017-09-01\"},{\"returnedOn\":\"2017-08-31\"}]',bOrEPutupAppFor = '[{\"for\":\"for1\"},{\"for\":\"for2\"},{\"for\":\"for3\"}]'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '2017-08-15',dockClerkInstrnOn = '2017-08-24',drawnOn = '2017-08-22',reasonForDelay = 'delay',orderSentToGroupOn = '2017-08-10',testReportRecdOn = '2017-08-15',samplesCollectedOn = '2017-08-09',givenTo = 'givento',givenOn = '2017-08-07',givenTime = '00:00:00',testcustomsAssDelayFrom = '0000-00-00',testcustomsAssDelayTo = '0000-00-00',reason = 'reasons'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_ict SET importerIctNo = 'ICTNo',importerIctRate = 'Rate',givenON = '2017-08-29',actualIctNo = 'CITNo',actualIctRate = 'RAte',dutyAmount = 'dutyamout',ReasonNotAdmitImpIct = 'ICnosfs'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_penalty SET amount = 'amount',leviedOn = '2017-08-24',paidOn = '2017-08-29',penaltyReason = 'REaosns'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '2017-08-10T00:00:00.000Z',licenceSentTime = '00:00:00',toAuditOn = '2017-08-15',auditedOn = '2017-08-23',auditedTime = '00:00:00',auditRecdBackOn = '2017-08-08',auditRecdBackTime = '00:00:00',dsptdFrBEOn = '2017-08-10',dsptdFrBETime = '00:00:00',dsptdRecdBackOn = '2017-08-09',dsptdRecdBackTime = '00:00:00',dsptdRecdBackInitial = 'dsffds',parcelHandedOn = '2017-08-30',parcelHandedTime = '00:00:00',parcelHandedInitial = 'fsdfsd',detentionCrftNo = 'fdsf',detentionCrftDate = '2017-08-28',detentionCrftFrom = '',detentionCrftTo = 'fsdfsd',detenSubmittedon = '2017-08-07',detenAppliedON = '2017-08-31',detenReasondelay = 'fsddsfds',otherAgents = '',otherCFS = '',dsptdFrJobNo = 'Fdsof'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'cusots',jobAllotedOn = '2017-08-15',documentsRecd = 'recd',documentsRecdDate = '2017-08-14',documentdCalled = 'called',documentdDate = '2017-08-14',rem = 'REm',received = 'recdre',recdtxtarea = 'recd',BEFieldonManifest = '2017-08-22',G_MNo = 'gmno',LineNO = 'lineo',LineNoDate = '2017-09-07',BEManifestedon = '2017-08-15',BEManifestNo = 'no',BEManifestDate = '2017-08-16'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '2017-08-22T00:00:00.000Z',bOrEGroupNo = 'No',bOrERetrnOn = '2017-08-15',bOrEFor = 'For',bOrEPutupAppOn = '[{\"putUpOn\":\"2017-08-15\"},{\"putUpOn\":null},{\"putUpOn\":null}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":\"2017-08-15\"},{\"returnedOn\":\"2017-09-01\"},{\"returnedOn\":\"2017-08-31\"}]',bOrEPutupAppFor = '[{\"for\":\"for1\"},{\"for\":\"for2\"},{\"for\":\"for3\"}]'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '2017-08-15',dockClerkInstrnOn = '2017-08-24',drawnOn = '2017-08-22',reasonForDelay = 'delay',orderSentToGroupOn = '2017-08-10',testReportRecdOn = '2017-08-15',samplesCollectedOn = '2017-08-09',givenTo = 'givento',givenOn = '2017-08-07',givenTime = '00:00:00',testcustomsAssDelayFrom = '0000-00-00',testcustomsAssDelayTo = '0000-00-00',reason = 'reasons'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_ict SET importerIctNo = 'ICTNo',importerIctRate = 'Rate',givenON = '2017-08-29',actualIctNo = 'CITNo',actualIctRate = 'RAte',dutyAmount = 'dutyamout',ReasonNotAdmitImpIct = 'ICnosfs'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_penalty SET amount = 'amount',leviedOn = '2017-08-24',paidOn = '2017-08-29',penaltyReason = 'REaosns'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '2017-08-10T00:00:00.000Z',licenceSentTime = '00:00:00',toAuditOn = '2017-08-15',auditedOn = '2017-08-23',auditedTime = '00:00:00',auditRecdBackOn = '2017-08-08',auditRecdBackTime = '00:00:00',dsptdFrBEOn = '2017-08-10',dsptdFrBETime = '00:00:00',dsptdRecdBackOn = '2017-08-09',dsptdRecdBackTime = '00:00:00',dsptdRecdBackInitial = 'dsffds',parcelHandedOn = '2017-08-30',parcelHandedTime = '00:00:00',parcelHandedInitial = 'fsdfsd',detentionCrftNo = 'fdsf',detentionCrftDate = '2017-08-28',detentionCrftFrom = '',detentionCrftTo = 'fsdfsd',detenSubmittedon = '2017-08-07',detenAppliedON = '2017-08-31',detenReasondelay = 'fsddsfds',otherAgents = '',otherCFS = '',dsptdFrJobNo = 'Fdsof'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'cusots',jobAllotedOn = '2017-08-15',documentsRecd = 'recd',documentsRecdDate = '2017-08-14',documentdCalled = 'called',documentdDate = '2017-08-14',rem = 'REm',received = 'recdre',recdtxtarea = 'recd',BEFieldonManifest = '2017-08-22',G_MNo = 'gmno',LineNO = 'lineo',LineNoDate = '2017-09-07',BEManifestedon = '2017-08-15',BEManifestNo = 'no',BEManifestDate = '2017-08-16'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '2017-08-22T00:00:00.000Z',bOrEGroupNo = 'No',bOrERetrnOn = '2017-08-15',bOrEFor = 'For',bOrEPutupAppOn = '[{\"putUpOn\":\"2017-08-15\"},{\"putUpOn\":\"2017-08-31\"},{\"putUpOn\":\"2017-08-30\"}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":\"2017-08-15\"},{\"returnedOn\":\"2017-09-01\"},{\"returnedOn\":\"2017-08-31\"}]',bOrEPutupAppFor = '[{\"for\":\"for1\"},{\"for\":\"for2\"},{\"for\":\"for3\"}]'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '2017-08-15',dockClerkInstrnOn = '2017-08-24',drawnOn = '2017-08-22',reasonForDelay = 'delay',orderSentToGroupOn = '2017-08-10',testReportRecdOn = '2017-08-15',samplesCollectedOn = '2017-08-09',givenTo = 'givento',givenOn = '2017-08-07',givenTime = '00:00:00',testcustomsAssDelayFrom = '0000-00-00',testcustomsAssDelayTo = '0000-00-00',reason = 'reasons'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_ict SET importerIctNo = 'ICTNo',importerIctRate = 'Rate',givenON = '2017-08-29',actualIctNo = 'CITNo',actualIctRate = 'RAte',dutyAmount = 'dutyamout',ReasonNotAdmitImpIct = 'ICnosfs'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_penalty SET amount = 'amount',leviedOn = '2017-08-24',paidOn = '2017-08-29',penaltyReason = 'REaosns'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '2017-08-10T00:00:00.000Z',licenceSentTime = '00:00:00',toAuditOn = '2017-08-15',auditedOn = '2017-08-23',auditedTime = '00:00:00',auditRecdBackOn = '2017-08-08',auditRecdBackTime = '00:00:00',dsptdFrBEOn = '2017-08-10',dsptdFrBETime = '00:00:00',dsptdRecdBackOn = '2017-08-09',dsptdRecdBackTime = '00:00:00',dsptdRecdBackInitial = 'dsffds',parcelHandedOn = '2017-08-30',parcelHandedTime = '00:00:00',parcelHandedInitial = 'fsdfsd',detentionCrftNo = 'fdsf',detentionCrftDate = '2017-08-28',detentionCrftFrom = '',detentionCrftTo = 'fsdfsd',detenSubmittedon = '2017-08-07',detenAppliedON = '2017-08-31',detenReasondelay = 'fsddsfds',otherAgents = '',otherCFS = '',dsptdFrJobNo = 'Fdsof'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'cusots',jobAllotedOn = '2017-08-15',documentsRecd = 'recd',documentsRecdDate = '2017-08-14',documentdCalled = 'called',documentdDate = '2017-08-14',rem = 'REm',received = 'recdre',recdtxtarea = 'recd',BEFieldonManifest = '2017-08-22',G_MNo = 'gmno',LineNO = 'lineo',LineNoDate = '2017-09-07',BEManifestedon = '2017-08-15',BEManifestNo = 'no',BEManifestDate = '2017-08-16'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '2017-08-22T00:00:00.000Z',bOrEGroupNo = 'No',bOrERetrnOn = '2017-08-15',bOrEFor = 'For',bOrEPutupAppOn = '[{\"putUpOn\":\"2017-08-15\"},{\"putUpOn\":\"2017-08-31\"},{\"putUpOn\":\"2017-08-30\"}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":\"2017-08-15\"},{\"returnedOn\":\"2017-09-01\"},{\"returnedOn\":\"2017-08-31\"}]',bOrEPutupAppFor = '[{\"for\":\"for1\"},{\"for\":\"for2\"},{\"for\":\"for3\"}]'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '2017-08-15',dockClerkInstrnOn = '2017-08-24',drawnOn = '2017-08-22',reasonForDelay = 'delay',orderSentToGroupOn = '2017-08-10',testReportRecdOn = '2017-08-15',samplesCollectedOn = '2017-08-09',givenTo = 'givento',givenOn = '2017-08-07',givenTime = '00:00:00',testcustomsAssDelayFrom = '0000-00-00',testcustomsAssDelayTo = '0000-00-00',reason = 'reasons'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_ict SET importerIctNo = 'ICTNo',importerIctRate = 'Rate',givenON = '2017-08-29',actualIctNo = 'CITNo',actualIctRate = 'RAte',dutyAmount = 'dutyamout',ReasonNotAdmitImpIct = 'ICnosfs'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_penalty SET amount = 'amount',leviedOn = '2017-08-24',paidOn = '2017-08-29',penaltyReason = 'REaosns'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '2017-08-10T00:00:00.000Z',licenceSentTime = '00:00:00',toAuditOn = '2017-08-15',auditedOn = '2017-08-23',auditedTime = '00:00:00',auditRecdBackOn = '2017-08-08',auditRecdBackTime = '00:00:00',dsptdFrBEOn = '2017-08-10',dsptdFrBETime = '00:00:00',dsptdRecdBackOn = '2017-08-09',dsptdRecdBackTime = '00:00:00',dsptdRecdBackInitial = 'dsffds',parcelHandedOn = '2017-08-30',parcelHandedTime = '00:00:00',parcelHandedInitial = 'fsdfsd',detentionCrftNo = 'fdsf',detentionCrftDate = '2017-08-28',detentionCrftFrom = '',detentionCrftTo = 'fsdfsd',detenSubmittedon = '2017-08-07',detenAppliedON = '2017-08-31',detenReasondelay = 'fsddsfds',otherAgents = '',otherCFS = '',dsptdFrJobNo = 'Fdsof'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'cusots',jobAllotedOn = '2017-08-15',documentsRecd = 'recd',documentsRecdDate = '2017-08-14',documentdCalled = 'called',documentdDate = '2017-08-14',rem = 'REm',received = 'recdre',recdtxtarea = 'recd',BEFieldonManifest = '2017-08-22',G_MNo = 'gmno',LineNO = 'lineo',LineNoDate = '2017-09-07',BEManifestedon = '2017-08-15',BEManifestNo = 'no',BEManifestDate = '2017-08-16'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '2017-08-22T00:00:00.000Z',bOrEGroupNo = 'No',bOrERetrnOn = '2017-08-15',bOrEFor = 'For',bOrEPutupAppOn = '[{\"putUpOn\":\"2017-08-15\"},{\"putUpOn\":\"2017-08-31\"},{\"putUpOn\":\"2017-08-30\"}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":\"2017-08-15\"},{\"returnedOn\":\"2017-09-01\"},{\"returnedOn\":\"2017-08-31\"}]',bOrEPutupAppFor = '[{\"for\":\"for1\"},{\"for\":\"for2\"},{\"for\":\"for3\"}]'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '2017-08-15',dockClerkInstrnOn = '2017-08-24',drawnOn = '2017-08-22',reasonForDelay = 'delay',orderSentToGroupOn = '2017-08-10',testReportRecdOn = '2017-08-15',samplesCollectedOn = '2017-08-09',givenTo = 'givento',givenOn = '2017-08-07',givenTime = '00:00:00',testcustomsAssDelayFrom = '0000-00-00',testcustomsAssDelayTo = '0000-00-00',reason = 'reasons'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_ict SET importerIctNo = 'ICTNo',importerIctRate = 'Rate',givenON = '2017-08-29',actualIctNo = 'CITNo',actualIctRate = 'RAte',dutyAmount = 'dutyamout',ReasonNotAdmitImpIct = 'ICnosfs'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_penalty SET amount = 'amount',leviedOn = '2017-08-24',paidOn = '2017-08-29',penaltyReason = 'REaosns'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '2017-08-10T00:00:00.000Z',licenceSentTime = '00:00:00',toAuditOn = '2017-08-15',auditedOn = '2017-08-23',auditedTime = '00:00:00',auditRecdBackOn = '2017-08-08',auditRecdBackTime = '00:00:00',dsptdFrBEOn = '2017-08-10',dsptdFrBETime = '00:00:00',dsptdRecdBackOn = '2017-08-09',dsptdRecdBackTime = '00:00:00',dsptdRecdBackInitial = 'dsffds',parcelHandedOn = '2017-08-30',parcelHandedTime = '00:00:00',parcelHandedInitial = 'fsdfsd',detentionCrftNo = 'fdsf',detentionCrftDate = '2017-08-28',detentionCrftFrom = 'detentionFrom',detentionCrftTo = 'fsdfsd',detenSubmittedon = '2017-08-07',detenAppliedON = '2017-08-31',detenReasondelay = 'fsddsfds',otherAgents = '',otherCFS = '',dsptdFrJobNo = 'Fdsof'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'cusots',jobAllotedOn = '2017-08-15',documentsRecd = 'recd',documentsRecdDate = '2017-08-14',documentdCalled = 'called',documentdDate = '2017-08-14',rem = 'REm',received = 'recdre',recdtxtarea = 'recd',BEFieldonManifest = '2017-08-22',G_MNo = 'gmno',LineNO = 'lineo',LineNoDate = '2017-09-07',BEManifestedon = '2017-08-15',BEManifestNo = 'no',BEManifestDate = '2017-08-16'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '2017-08-22T00:00:00.000Z',bOrEGroupNo = 'No',bOrERetrnOn = '2017-08-15',bOrEFor = 'For',bOrEPutupAppOn = '[{\"putUpOn\":\"2017-08-15\"},{\"putUpOn\":\"2017-08-31\"},{\"putUpOn\":\"2017-08-30\"}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":\"2017-08-15\"},{\"returnedOn\":\"2017-09-01\"},{\"returnedOn\":\"2017-08-31\"}]',bOrEPutupAppFor = '[{\"for\":\"for1\"},{\"for\":\"for2\"},{\"for\":\"for3\"}]'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '2017-08-15',dockClerkInstrnOn = '2017-08-24',drawnOn = '2017-08-22',reasonForDelay = 'delay',orderSentToGroupOn = '2017-08-10',testReportRecdOn = '2017-08-15',samplesCollectedOn = '2017-08-09',givenTo = 'givento',givenOn = '2017-08-07',givenTime = '00:00:00',testcustomsAssDelayFrom = '0000-00-00',testcustomsAssDelayTo = '0000-00-00',reason = 'reasons'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_ict SET importerIctNo = 'ICTNo',importerIctRate = 'Rate',givenON = '2017-08-29',actualIctNo = 'CITNo',actualIctRate = 'RAte',dutyAmount = 'dutyamout',ReasonNotAdmitImpIct = 'ICnosfs'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_penalty SET amount = 'amount',leviedOn = '2017-08-24',paidOn = '2017-08-29',penaltyReason = 'REaosns'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '2017-08-10T00:00:00.000Z',licenceSentTime = '00:00:00',toAuditOn = '2017-08-15',auditedOn = '2017-08-23',auditedTime = '00:00:00',auditRecdBackOn = '2017-08-08',auditRecdBackTime = '00:00:00',dsptdFrBEOn = '2017-08-10',dsptdFrBETime = '00:00:00',dsptdRecdBackOn = '2017-08-09',dsptdRecdBackTime = '00:00:00',dsptdRecdBackInitial = 'dsffds',parcelHandedOn = '2017-08-30',parcelHandedTime = '00:00:00',parcelHandedInitial = 'fsdfsd',detentionCrftNo = 'fdsf',detentionCrftDate = '2017-08-28',detentionCrftFrom = 'detentionFrom',detentionCrftTo = 'fsdfsd',detenSubmittedon = '2017-08-07',detenAppliedON = '2017-08-31',detenReasondelay = 'fsddsfds',otherAgents = '',otherCFS = '',dsptdFrJobNo = 'Fdsof'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'no',bOrEDetail = 'beno',CIFValues = 'cifvalues',landingCharges = 'landingcharg',BEValue = 'b/evalue1'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'cusots',jobAllotedOn = '2017-08-15',documentsRecd = 'recd',documentsRecdDate = '2017-08-14',documentdCalled = 'called',documentdDate = '2017-08-14',rem = 'REm',received = 'recdre',recdtxtarea = 'recd',BEFieldonManifest = '2017-08-22',G_MNo = 'gmno',LineNO = 'lineo',LineNoDate = '2017-09-07',BEManifestedon = '2017-08-15',BEManifestNo = 'no',BEManifestDate = '2017-08-16'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '2017-08-22T00:00:00.000Z',bOrEGroupNo = 'No',bOrERetrnOn = '2017-08-15',bOrEFor = 'For',bOrEPutupAppOn = '[{\"putUpOn\":\"2017-08-15\"},{\"putUpOn\":\"2017-08-31\"},{\"putUpOn\":\"2017-08-30\"}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":\"2017-08-15\"},{\"returnedOn\":\"2017-09-01\"},{\"returnedOn\":\"2017-08-31\"}]',bOrEPutupAppFor = '[{\"for\":\"for1\"},{\"for\":\"for2\"},{\"for\":\"for3\"}]'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '2017-08-15',dockClerkInstrnOn = '2017-08-24',drawnOn = '2017-08-22',reasonForDelay = 'delay',orderSentToGroupOn = '2017-08-10',testReportRecdOn = '2017-08-15',samplesCollectedOn = '2017-08-09',givenTo = 'givento',givenOn = '2017-08-07',givenTime = '00:00:00',testcustomsAssDelayFrom = '0000-00-00',testcustomsAssDelayTo = '0000-00-00',reason = 'reasons'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_ict SET importerIctNo = 'ICTNo',importerIctRate = 'Rate',givenON = '2017-08-29',actualIctNo = 'CITNo',actualIctRate = 'RAte',dutyAmount = 'dutyamout',ReasonNotAdmitImpIct = 'ICnosfs'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_penalty SET amount = 'amount',leviedOn = '2017-08-24',paidOn = '2017-08-29',penaltyReason = 'REaosns'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '2017-08-10T00:00:00.000Z',licenceSentTime = '00:00:00',toAuditOn = '2017-08-15',auditedOn = '2017-08-23',auditedTime = '00:00:00',auditRecdBackOn = '2017-08-08',auditRecdBackTime = '00:00:00',dsptdFrBEOn = '2017-08-10',dsptdFrBETime = '00:00:00',dsptdRecdBackOn = '2017-08-09',dsptdRecdBackTime = '00:00:00',dsptdRecdBackInitial = 'dsffds',parcelHandedOn = '2017-08-30',parcelHandedTime = '00:00:00',parcelHandedInitial = 'fsdfsd',detentionCrftNo = 'fdsf',detentionCrftDate = '2017-08-28',detentionCrftFrom = 'detentionFrom',detentionCrftTo = 'fsdfsd',detenSubmittedon = '2017-08-07',detenAppliedON = '2017-08-31',detenReasondelay = 'fsddsfds',otherAgents = '',otherCFS = '',dsptdFrJobNo = 'Fdsof'  WHERE impJobId = '34/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( '38/2017-18','sea','jobsno','BENo','CIFvalues','Lanifns','Evalue')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 30
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( '38/2017-18','sea','cker','2017-08-16','recd','2017-08-07','called','2017-08-08','REm','REcd','textmsg','2017-08-16','GMNo','lneo','2017-08-21','2017-08-29','No','2017-08-15')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 16
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( '38/2017-18','sea','2017-08-01T18:30:00.000Z','No','2017-07-31','For','[{\"putUpOn\":\"2017-08-31\"},{\"putUpOn\":\"2017-08-08\"},{\"putUpOn\":\"2017-07-31\"}]','[{\"returnedOn\":\"2017-08-23\"},{\"returnedOn\":\"2017-08-29\"},{\"returnedOn\":\"2017-08-03\"}]','[{\"for\":\"FOer\"},{\"for\":\"rfs\"},{\"for\":\"fdsfd\"}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 16
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayTo,reason ) VALUES ( '38/2017-18','sea','2017-08-09','2017-08-25','2017-08-07','delay','2017-08-16','2017-08-22','2017-08-23','o','2017-08-28','0','from','To','REasons')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_ict ( impJobId,type,importerIctNo,importerIctRate,givenON,actualIctNo,actualIctRate,dutyAmount,ReasonNotAdmitImpIct ) VALUES ( '38/2017-18','sea','ICno','Rate','2017-08-29','ICTNo','Rate','dutyamou','CITNo')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 10
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_penalty ( impJobId,type,amount,leviedOn,paidOn,penaltyReason ) VALUES ( '38/2017-18','sea','AMoit','2017-08-25','2017-08-16','REasons')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 10
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_licence ( impJobId,type,licenceSentOn,licenceSentTime,toAuditOn,auditedOn,auditedTime,auditRecdBackOn,auditRecdBackTime,dsptdFrBEOn,dsptdFrBETime,dsptdRecdBackOn,dsptdRecdBackTime,dsptdRecdBackInitial,parcelHandedOn,parcelHandedTime,parcelHandedInitial,detentionCrftNo,detentionCrftDate,detentionCrftFrom,detentionCrftTo,detenSubmittedon,detenAppliedON,detenReasondelay,otherAgents,otherCFS,dsptdFrJobNo ) VALUES ( '38/2017-18','sea','2017-08-23T18:30:00.000Z','timeno','2017-08-01','2017-08-29','asdsa','2017-08-23','dasdas','2017-08-16','dasdas','2017-08-15','fdsfdsf','safasf','2017-08-09','fsdfds','fdsds','fdsfds','2017-08-30','fdsf','fsdf','2017-08-15','2017-08-23','fsdfdsfsd','','','dassad')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 9
+    [affected_rows] => 1
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'fsdafg',bOrEDetail = 'fdg',CIFValues = 'gdfg',landingCharges = 'gfdg',BEValue = 'gfdgd'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'gdfg',jobAllotedOn = '2017-08-18',documentsRecd = 'gfdg',documentsRecdDate = '2017-09-06',documentdCalled = 'called',documentdDate = '2017-08-30',rem = 'rem',received = 'recd',recdtxtarea = 'gfsdgfd',BEFieldonManifest = '2017-08-31',G_MNo = 'gfdg',LineNO = 'gfdg',LineNoDate = '2017-08-25',BEManifestedon = '2017-08-24',BEManifestNo = 'n',BEManifestDate = '2017-09-06'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '2017-08-04T18:30:00.000Z',bOrEGroupNo = 'no',bOrERetrnOn = '2017-08-08',bOrEFor = 'for',bOrEPutupAppOn = '[{\"putUpOn\":\"2017-08-10\"},{\"putUpOn\":null},{\"putUpOn\":null}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":\"2017-09-07\"},{\"returnedOn\":null},{\"returnedOn\":null}]',bOrEPutupAppFor = '[{\"for\":\"for\"},{\"for\":null},{\"for\":null}]'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '2017-08-18',dockClerkInstrnOn = '2017-08-30',drawnOn = '2017-08-21',reasonForDelay = '',orderSentToGroupOn = '2017-08-26',testReportRecdOn = '',samplesCollectedOn = '2017-08-02',givenTo = '',givenOn = '',givenTime = '',testcustomsAssDelayFrom = '',testcustomsAssDelayTo = 'fdsff',reason = ''  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_ict SET importerIctNo = '',importerIctRate = 'dsfdsg',givenON = '2017-08-20',actualIctNo = '',actualIctRate = '',dutyAmount = '',ReasonNotAdmitImpIct = ''  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_penalty SET amount = '',leviedOn = '2017-08-30',paidOn = '2017-08-23',penaltyReason = ''  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '2017-08-23T18:30:00.000Z',licenceSentTime = '',toAuditOn = '',auditedOn = '2017-08-18',auditedTime = '',auditRecdBackOn = '2017-08-14',auditRecdBackTime = '',dsptdFrBEOn = '2017-08-18',dsptdFrBETime = '',dsptdRecdBackOn = '2017-08-29',dsptdRecdBackTime = '',dsptdRecdBackInitial = '',parcelHandedOn = '',parcelHandedTime = '',parcelHandedInitial = '',detentionCrftNo = '',detentionCrftDate = '',detentionCrftFrom = '',detentionCrftTo = '',detenSubmittedon = '',detenAppliedON = '',detenReasondelay = '',otherAgents = '',otherCFS = '',dsptdFrJobNo = ''  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( 'imp','air','jobsno','beno','cs','100','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 31
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( 'imp','air','customs','2017-09-01','','2017-08-30','','2017-08-28','','','','2017-08-24','','','','2017-08-23','','2017-08-21')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 17
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( 'imp','air','2017-08-24T18:30:00.000Z','','2017-08-15','','[{\"putUpOn\":\"2017-08-18\"},{\"putUpOn\":null},{\"putUpOn\":null}]','[{\"returnedOn\":\"2017-08-08\"},{\"returnedOn\":null},{\"returnedOn\":null}]','[{\"for\":null},{\"for\":null},{\"for\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 17
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayTo,reason ) VALUES ( 'imp','air','2017-08-30','2017-08-29','2017-08-28','bus late','2017-08-31','2017-08-31','','','','','','to','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_ict ( impJobId,type,importerIctNo,importerIctRate,givenON,actualIctNo,actualIctRate,dutyAmount,ReasonNotAdmitImpIct ) VALUES ( 'imp','air','','rate','','actual ict','reate','','reaosn')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 11
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_penalty ( impJobId,type,amount,leviedOn,paidOn,penaltyReason ) VALUES ( 'imp','air','423','2017-09-06','2017-08-22','reads')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 11
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_licence ( impJobId,type,licenceSentOn,licenceSentTime,toAuditOn,auditedOn,auditedTime,auditRecdBackOn,auditRecdBackTime,dsptdFrBEOn,dsptdFrBETime,dsptdRecdBackOn,dsptdRecdBackTime,dsptdRecdBackInitial,parcelHandedOn,parcelHandedTime,parcelHandedInitial,detentionCrftNo,detentionCrftDate,detentionCrftFrom,detentionCrftTo,detenSubmittedon,detenAppliedON,detenReasondelay,otherAgents,otherCFS,dsptdFrJobNo ) VALUES ( 'imp','air','2017-08-31T18:30:00.000Z','5IME','2017-08-06','','','','','2017-08-23','','','','','','','','','2017-08-29','FSDF','FDS','2017-08-29','2017-08-31','RESAOSDF','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 10
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( 'imp','air','jobsno','beno','cs','100','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 32
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( 'imp','air','customs','2017-09-01','','2017-08-30','','2017-08-28','','','','2017-08-24','','','','2017-08-23','','2017-08-21')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 18
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( 'imp','air','2017-08-24T18:30:00.000Z','','2017-08-15','','[{\"putUpOn\":\"2017-08-18\"},{\"putUpOn\":null},{\"putUpOn\":null}]','[{\"returnedOn\":\"2017-08-08\"},{\"returnedOn\":null},{\"returnedOn\":null}]','[{\"for\":null},{\"for\":null},{\"for\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 18
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayTo,reason ) VALUES ( 'imp','air','2017-08-30','2017-08-29','2017-08-28','bus late','2017-08-31','2017-08-31','','','','','','to','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 14
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_ict ( impJobId,type,importerIctNo,importerIctRate,givenON,actualIctNo,actualIctRate,dutyAmount,ReasonNotAdmitImpIct ) VALUES ( 'imp','air','','rate','','actual ict','reate','','reaosn')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_penalty ( impJobId,type,amount,leviedOn,paidOn,penaltyReason ) VALUES ( 'imp','air','423','2017-09-06','2017-08-22','reads')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_licence ( impJobId,type,licenceSentOn,licenceSentTime,toAuditOn,auditedOn,auditedTime,auditRecdBackOn,auditRecdBackTime,dsptdFrBEOn,dsptdFrBETime,dsptdRecdBackOn,dsptdRecdBackTime,dsptdRecdBackInitial,parcelHandedOn,parcelHandedTime,parcelHandedInitial,detentionCrftNo,detentionCrftDate,detentionCrftFrom,detentionCrftTo,detenSubmittedon,detenAppliedON,detenReasondelay,otherAgents,otherCFS,dsptdFrJobNo ) VALUES ( 'imp','air','2017-08-31T18:30:00.000Z','5IME','2017-08-06','','','','','2017-08-23','','','','','','','','','2017-08-29','FSDF','FDS','2017-08-29','2017-08-31','RESAOSDF','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 11
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_clearance ( impJobId,type,iceGateJobNo,bOrEDetail,CIFValues,landingCharges,BEValue ) VALUES ( 'imp','air','jobsno','beno','cs','100','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 33
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel ( impJobId,type,customsClerk,jobAllotedOn,documentsRecd,documentsRecdDate,documentdCalled,documentdDate,rem,received,recdtxtarea,BEFieldonManifest,G_MNo,LineNO,LineNoDate,BEManifestedon,BEManifestNo,BEManifestDate ) VALUES ( 'imp','air','customs','2017-09-01','','2017-08-30','','2017-08-28','','','','2017-08-24','','','','2017-08-23','','2017-08-21')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 19
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_be ( impJobId,type,bOrEFilledAppDeptOn,bOrEGroupNo,bOrERetrnOn,bOrEFor,bOrEPutupAppOn,bOrEPutupAppRetrnOn,bOrEPutupAppFor ) VALUES ( 'imp','air','2017-08-24T18:30:00.000Z','','2017-08-15','','[{\"putUpOn\":\"2017-08-18\"},{\"putUpOn\":null},{\"putUpOn\":null}]','[{\"returnedOn\":\"2017-08-08\"},{\"returnedOn\":null},{\"returnedOn\":null}]','[{\"for\":null},{\"for\":null},{\"for\":null}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 19
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_personnel_sample ( impJobId,type,calledOn,dockClerkInstrnOn,drawnOn,reasonForDelay,orderSentToGroupOn,testReportRecdOn,samplesCollectedOn,givenTo,givenOn,givenTime,testcustomsAssDelayFrom,testcustomsAssDelayTo,reason ) VALUES ( 'imp','air','2017-08-30','2017-08-29','2017-08-28','bus late','2017-08-31','2017-08-31','','','','','','to','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 15
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_ict ( impJobId,type,importerIctNo,importerIctRate,givenON,actualIctNo,actualIctRate,dutyAmount,ReasonNotAdmitImpIct ) VALUES ( 'imp','air','','rate','','actual ict','reate','','reaosn')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_penalty ( impJobId,type,amount,leviedOn,paidOn,penaltyReason ) VALUES ( 'imp','air','423','2017-09-06','2017-08-22','reads')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_licence ( impJobId,type,licenceSentOn,licenceSentTime,toAuditOn,auditedOn,auditedTime,auditRecdBackOn,auditRecdBackTime,dsptdFrBEOn,dsptdFrBETime,dsptdRecdBackOn,dsptdRecdBackTime,dsptdRecdBackInitial,parcelHandedOn,parcelHandedTime,parcelHandedInitial,detentionCrftNo,detentionCrftDate,detentionCrftFrom,detentionCrftTo,detenSubmittedon,detenAppliedON,detenReasondelay,otherAgents,otherCFS,dsptdFrJobNo ) VALUES ( 'imp','air','2017-08-31T18:30:00.000Z','5IME','2017-08-06','','','','','2017-08-23','','','','','','','','','2017-08-29','FSDF','FDS','2017-08-29','2017-08-31','RESAOSDF','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'jobsno',bOrEDetail = 'beno',CIFValues = 'cs',landingCharges = '100',BEValue = ''  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = 'customs',jobAllotedOn = '2017-09-01',documentsRecd = 'recd',documentsRecdDate = '2017-08-30',documentdCalled = 'caled',documentdDate = '2017-08-28',rem = 'rem',received = 'recd',recdtxtarea = 'text  area',BEFieldonManifest = '2017-08-24',G_MNo = 'gmno',LineNO = 'lieno',LineNoDate = '2017-08-30',BEManifestedon = '2017-08-23',BEManifestNo = 'no',BEManifestDate = '2017-08-21'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '2017-08-24T00:00:00.000Z',bOrEGroupNo = 'no',bOrERetrnOn = '2017-08-15',bOrEFor = 'For',bOrEPutupAppOn = '[{\"putUpOn\":\"2017-08-18\"},{\"putUpOn\":\"2018-12-19\"},{\"putUpOn\":\"2017-08-08\"}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":\"2017-08-08\"},{\"returnedOn\":\"2017-08-01\"},{\"returnedOn\":\"2017-08-08\"}]',bOrEPutupAppFor = '[{\"for\":null},{\"for\":null},{\"for\":null}]'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '2017-08-30',dockClerkInstrnOn = '2017-08-29',drawnOn = '2017-08-28',reasonForDelay = 'bus late',orderSentToGroupOn = '2017-08-31',testReportRecdOn = '2017-08-31',samplesCollectedOn = '2017-08-15',givenTo = '',givenOn = '2017-08-20',givenTime = '00:00:00',testcustomsAssDelayFrom = '0000-00-00',testcustomsAssDelayTo = '0000-00-00',reason = ''  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_ict SET importerIctNo = '',importerIctRate = 'rate',givenON = '2017-08-28',actualIctNo = 'actual ict',actualIctRate = 'reate',dutyAmount = '',ReasonNotAdmitImpIct = 'reaosn'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_penalty SET amount = '423',leviedOn = '2017-09-06',paidOn = '2017-08-22',penaltyReason = 'reads'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '2017-08-31T00:00:00.000Z',licenceSentTime = '00:00:05',toAuditOn = '2017-08-06',auditedOn = '2017-08-08',auditedTime = '00:00:00',auditRecdBackOn = '2017-08-15',auditRecdBackTime = '00:00:00',dsptdFrBEOn = '2017-08-23',dsptdFrBETime = '00:00:00',dsptdRecdBackOn = '2017-09-05',dsptdRecdBackTime = '00:00:00',dsptdRecdBackInitial = '',parcelHandedOn = '2017-08-29',parcelHandedTime = '00:00:00',parcelHandedInitial = '',detentionCrftNo = '',detentionCrftDate = '2017-08-29',detentionCrftFrom = 'FSDF',detentionCrftTo = 'FDS',detenSubmittedon = '2017-08-29',detenAppliedON = '2017-08-31',detenReasondelay = 'RESAOSDF',otherAgents = '',otherCFS = '',dsptdFrJobNo = ''  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 3
+)
+
+UPDATE import_map_clearance SET iceGateJobNo = 'fdsff',bOrEDetail = 'dsdf',CIFValues = '',landingCharges = '',BEValue = ''  WHERE impJobId = 'sdfdsfdsf' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel SET customsClerk = '',jobAllotedOn = '',documentsRecd = '',documentsRecdDate = '',documentdCalled = '',documentdDate = '',rem = '',received = '',recdtxtarea = '',BEFieldonManifest = '',G_MNo = '',LineNO = '',LineNoDate = '',BEManifestedon = '',BEManifestNo = '',BEManifestDate = ''  WHERE impJobId = 'sdfdsfdsf' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_be SET bOrEFilledAppDeptOn = '',bOrEGroupNo = '',bOrERetrnOn = '',bOrEFor = '',bOrEPutupAppOn = '[{\"putUpOn\":null},{\"putUpOn\":null},{\"putUpOn\":null}]',bOrEPutupAppRetrnOn = '[{\"returnedOn\":null},{\"returnedOn\":null},{\"returnedOn\":null}]',bOrEPutupAppFor = '[{\"for\":null},{\"for\":null},{\"for\":null}]'  WHERE impJobId = 'sdfdsfdsf' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_personnel_sample SET calledOn = '',dockClerkInstrnOn = '',drawnOn = '',reasonForDelay = '',orderSentToGroupOn = '',testReportRecdOn = '',samplesCollectedOn = '',givenTo = '',givenOn = '',givenTime = '',testcustomsAssDelayFrom = '',testcustomsAssDelayTo = '',reason = ''  WHERE impJobId = 'sdfdsfdsf' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_ict SET importerIctNo = '',importerIctRate = '',givenON = '',actualIctNo = '',actualIctRate = '',dutyAmount = '',ReasonNotAdmitImpIct = ''  WHERE impJobId = 'sdfdsfdsf' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_penalty SET amount = '',leviedOn = '2017-09-11',paidOn = '',penaltyReason = ''  WHERE impJobId = 'sdfdsfdsf' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_licence SET licenceSentOn = '',licenceSentTime = '',toAuditOn = '',auditedOn = '',auditedTime = '',auditRecdBackOn = '',auditRecdBackTime = '',dsptdFrBEOn = '',dsptdFrBETime = '',dsptdRecdBackOn = '',dsptdRecdBackTime = '',dsptdRecdBackInitial = '',parcelHandedOn = '',parcelHandedTime = '',parcelHandedInitial = '',detentionCrftNo = '',detentionCrftDate = '',detentionCrftFrom = '',detentionCrftTo = '',detenSubmittedon = '',detenAppliedON = '',detenReasondelay = '',otherAgents = '',otherCFS = '',dsptdFrJobNo = ''  WHERE impJobId = 'sdfdsfdsf' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)

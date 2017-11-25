@@ -1,0 +1,455 @@
+<div class="col-lg-12">
+    <form method="post">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_Field">
+                                    I/A Field on</label>
+                <input type="text" name="import_Field" id="import_Field" ng-model="sample.IAFieldon" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_No">
+                                    Number</label>
+                <input type="text" name="import_No" id="import_No" ng-model="sample.IAFieldNo" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Date</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.IADate" is-open="IADate.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="IADate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_amount">
+                                    Amount</label>
+                <input type="text" name="import_amount" id="import_amount" ng-model="sample.amount" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="import_ia_compared_no">
+                                    I/A Compared on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.comparedOn" is-open="comparedOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="comparedOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <hr/>
+        <b>Samples</b>
+        <hr/>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_Field">
+                                    Called on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.calledOn" is-open="calledOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="calledOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_No">
+                                    Dock Clerk Instruction</label>
+                <input type="text" name="import_No" id="import_No" ng-model="sample.dockClerk" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Initial</label>
+                <input type="text" name="import_seaDate" id="import_seaDate" ng-model="sample.initial" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Drawn on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.drawnOn" is-open="drawnOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="drawnOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Reason for delay</label>
+                <input type="text" name="import_seaDate" id="import_seaDate" ng-model="sample.delayReason" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Submitted to customs</label>
+                <input type="text" name="import_seaDate" id="import_seaDate" ng-model="sample.SubmittedCustoms" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Reason for delay</label>
+                <input type="text" name="import_seaDate" id="import_seaDate" ng-model="sample.customsDelay" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    B/E Parcel Recd. on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.BEparcel" is-open="BEparcel.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="BEparcel.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Time</label>
+                <input type="text" name="import_seaDate" id="import_seaDate" ng-model="sample.Time" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Initial</label>
+                <input type="text" name="import_seaDate" id="import_seaDate" ng-model="sample.BEInitial" class="form-control">
+            </div>
+        </div>
+        <hr/>
+        <b>&nbsp;</b>
+        <hr/>
+        <!-- todo -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Original Open Order Given on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.originalOpenOrder" is-open="originalOpenOrder.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="originalOpenOrder.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Completed on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.completedOn" is-open="completedOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="completedOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Reason for Delay</label>
+                <input type="text" name="import_seaDate" id="import_seaDate" ng-model="sample.orgDelay" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Duplicate Open Order Given on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.duplicateNo" is-open="duplicateNo.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="duplicateNo.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Completed on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.duplicateCompletedon" is-open="duplicateCompletedon.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="duplicateCompletedon.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Reason for Delay</label>
+                <input type="text" name="import_seaDate" id="import_seaDate" ng-model="sample.dupeDelay" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Customs out of charge Given on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.customsChargeon" is-open="customsChargeon.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="customsChargeon.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Goods cleared on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.GoodsClearedOn" is-open="GoodsClearedOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="GoodsClearedOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Reason for Delay</label>
+                <input type="text" name="import_seaDate" id="import_seaDate" ng-model="sample.goodsDelay" class="form-control">
+            </div>
+        </div>
+        <!-- /todo -->
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="import_cout">
+                                    Remarks</label>
+                <textarea class="form-control" ng-model="sample.remarks"> </textarea>
+            </div>
+        </div>
+        <div class="col-md-12 table-responsive">
+            <table class="table">
+                <tr>
+                    <th>Survey</th>
+                    <th>Applied on</th>
+                    <th>Granted on</th>
+                    <th>Held on</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label>S/A</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.appliedONSA" is-open="appliedONSA.open"
+                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                            />
+                            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="appliedONSA.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                        </p>
+                    </td>
+                    <td>
+                        <label>S/A</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.grantedonSa" is-open="grantedonSa.open"
+                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                            />
+                            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="grantedonSa.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                        </p>
+                    </td>
+                    <td>
+                        <label>S/A</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.heldonSa" is-open="heldonSa.open"
+                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                            />
+                            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="heldonSa.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label>Ins</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.appliedonIns" is-open="appliedonIns.open"
+                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                            />
+                            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="appliedonIns.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                        </p>
+                    </td>
+                    <td>
+                        <label>Ins</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.grantedonIns" is-open="grantedonIns.open"
+                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                            />
+                            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="grantedonIns.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                        </p>
+                    </td>
+                    <td>
+                        <label>Ins</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.heldonIns" is-open="heldonIns.open"
+                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                            />
+                            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="heldonIns.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label>P.T</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.appliedonPt" is-open="appliedonPt.open"
+                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                            />
+                            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="appliedonPt.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                        </p>
+                    </td>
+                    <td>
+                        <label>P.T</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.grantedonPT" is-open="grantedonPT.open"
+                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                            />
+                            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="grantedonPT.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                        </p>
+                    </td>
+                    <td>
+                        <label>P.T</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sample.heldonPT" is-open="heldonPT.open"
+                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                            />
+                            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="heldonPT.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-12"></div>
+        <div class="col-md-12"></div>
+        <!-- Table 2 -->
+
+        <!-- Submit & Cancel button -->
+        <div class="text-center">
+            <div class="col-md-4">
+                <input type="button" name="cancel" value="Cancel" class="btn btn-primary btn-block">
+            </div>
+            <div class="col-md-4" ng-if="createFlag">
+                <input type="button" name="save" value="Save" ng-click="saveSurvey();" class="btn btn-primary btn-block">
+            </div>
+            <div class="col-md-4" ng-if="updateFlag">
+                <input type="button" name="save" value="Update" ng-click="saveSurvey();" class="btn btn-primary btn-block">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal fade" id="showSurveyError" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-danger">
+                    <strong>Error!</strong> {{errorMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showSurveyAlert" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-warning">
+                    <strong>Alert! </strong> {{alertMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showSurveySuccess" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-success">
+                    <strong>Success! </strong> {{successMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

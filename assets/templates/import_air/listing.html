@@ -1,0 +1,46 @@
+<!-- Page Content -->
+<div id="page-content-wrapper">
+    <div class="container-fluid">
+        <div ng-include="'assets/templates/directive/header.html'"></div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="pull-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search the docket" ng-model="search">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="col-lg-6">
+                    <h1>Import Air</h1>
+                </div>
+                <div class="col-lg-6">
+                    <button class="btn btn-primary pull-right" ng-click="navigate('CREATE')">Create new</button>
+                </div>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Docket No</th>
+                            <th>Date</th>
+                            <th>Consignee</th>
+                            <th>Party's Ref</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in getImportData  | filter: search">
+                            <td>{{data.job_id+yearValue}}</td>
+                            <td>{{data.import_date}}</td>
+                            <td>{{data.consignee}}</td>
+                            <td>{{data.party_ref}}</td>
+                            <td><a href="javascript:;" ng-click="navigate(data.job_id)">View More</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /#page-content-wrapper -->

@@ -1,0 +1,22 @@
+<div class="container">
+	<form method="post" name="loginForm" novalidate>
+		<div class="logincontainer">
+			<h3>Welcome to KBS Admin </h3><br/>
+			<div class="form-group">
+				<label class="text-left">Username:</label>
+				<input type="text" name="username" ng-model="login.username" class="form-control" required>
+				<div class="error-mesg-wrap text-left" ng-show="loginForm.$submitted || loginForm.username.$touched" style="">
+	                <span class="list list-inset error-msg ng-hide" ng-show="loginForm.username.$error.required">Enter the username</span>
+	            </div>
+			</div>
+			<div class="form-group">
+				<label>Password:</label>
+				<input type="password" name="password" ng-model="login.password" class="form-control" required>
+				<div class="error-mesg-wrap text-left" ng-show="loginForm.$submitted || loginForm.password.$touched" style="">
+	                <span class="list list-inset error-msg ng-hide" ng-show="loginForm.password.$error.required">Enter the password</span>
+	            </div>
+			</div>
+			<input type="submit" class="btn btn-primary" ng-click="validate(loginForm)">
+		</div>
+	</form>
+</div>

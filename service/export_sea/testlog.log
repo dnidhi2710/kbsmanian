@@ -1,0 +1,40 @@
+
+INSERT INTO export_sea ( impJobId,type,exportDate,shipper,consignee,bank,bank_notify,invoiceNo,invoiceDate,invoiceValue,grNo,grDate,rbiNo,billingNo,billingDate,exRate,flight,arrived,departure,agent,port,country,EMNo,remarks,value,FOB,FRT,INS,CIF,eaNo,lcNo,lcDate,orderNo,mateReceipt,mateDate1,mateDate2,billOfLanding,landingDate1,landingDate2,blPRT,exUS,EADate,EARS,specialInstructions,AWBNo,MAWBDate,MBLDate ) VALUES ( 'test','exportSea','2017-09-29','shipper','consigner','bank','banksfisd','24','2017-09-15','vlaue','grno','2017-09-30','RBIcode','ibilno','2017-09-29','3','sdf','sdfs','fsdf','sdfsd','sfdf','sdf','fdsf','fdsf','sdfsdfsdf','dsfdsfsd','fdsfdsfds','dsf','sfsd','sfddsf','fdsf','2017-08-30','sdfds','fdsfsd','2017-09-08','2017-09-24','fsdf','2017-09-04','2017-09-01','sdfdss','dfdsf','2017-09-18','sdfds','sdfdsf','sdfsdf','2017-09-27','2017-09-16')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'specialInstructions' in 'field list'
+    [affected_rows] => -1
+)
+
+INSERT INTO export_sea ( impJobId,type,exportDate,shipper,consignee,bank,bank_notify,invoiceNo,invoiceDate,invoiceValue,grNo,grDate,rbiNo,billingNo,billingDate,exRate,flight,arrived,departure,agent,port,country,EMNo,remarks,value,FOB,FRT,INS,CIF,eaNo,lcNo,lcDate,orderNo,mateReceipt,mateDate1,mateDate2,billOfLanding,landingDate1,landingDate2,blPRT,exUS,EADate,EARS,specialInstructions,AWBNo,MAWBDate,MBLDate ) VALUES ( 'test','exportSea','2017-09-29','shipper','consigner','bank','banksfisd','24','2017-09-15','vlaue','grno','2017-09-30','RBIcode','ibilno','2017-09-29','3','sdf','sdfs','fsdf','sdfsd','sfdf','sdf','fdsf','fdsf','sdfsdfsdf','dsfdsfsd','fdsfdsfds','dsf','sfsd','sfddsf','fdsf','2017-08-30','sdfds','fdsfsd','2017-09-08','2017-09-24','fsdf','2017-09-04','2017-09-01','sdfdss','dfdsf','2017-09-18','sdfds','sdfdsf','sdfsdf','2017-09-27','2017-09-16')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 1
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"sdf\",\"gld\":\"2017-08-29\",\"contrOut\":\"2017-08-29\",\"$$hashKey\":\"object:1002\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"fdsf\",\"gld\":\"2017-09-13\",\"contrOut\":\"2017-09-07\",\"$$hashKey\":\"object:1003\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":3,\"containerName\":\"fdsfds\",\"gld\":\"2017-09-28\",\"contrOut\":\"2017-09-27\",\"$$hashKey\":\"object:1004\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]','fdsf','dsfdsf','dsfdsf','dsfdsf','dsfdsf','exportSea','test')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 35
+    [affected_rows] => 1
+)
+
+INSERT INTO export_remarks ( impJobId,type,procedures,cargo_receipts ) VALUES ( 'test','exportSea','progress','[{\"number\":1,\"receiptDate\":\"2017-09-21\",\"truckNo\":\"1\",\"noOfPackages\":\"2\",\"godown\":\"3\",\"receipt\":{\"open\":false}}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 3
+    [affected_rows] => 1
+)
+
+INSERT INTO export_sea ( impJobId,type,exportDate,shipper,consignee,bank,bank_notify,invoiceNo,invoiceDate,invoiceValue,grNo,grDate,rbiNo,billingNo,billingDate,exRate,flight,arrived,departure,agent,port,country,EMNo,remarks,value,FOB,FRT,INS,CIF,eaNo,lcNo,lcDate,orderNo,mateReceipt,mateDate1,mateDate2,billOfLanding,landingDate1,landingDate2,blPRT,exUS,EADate,EARS,specialInstructions,AWBNo,MAWBDate,MBLDate ) VALUES ( 'test','exportSea','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Duplicate entry 'test' for key 'impJobId'
+    [affected_rows] => -1
+)

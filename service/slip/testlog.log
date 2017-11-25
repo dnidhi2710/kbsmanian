@@ -1,0 +1,184 @@
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulas,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-09-05','part','1000')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'particulas' in 'field list'
+    [affected_rows] => -1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulas,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-09-05','part','1000')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'particulas' in 'field list'
+    [affected_rows] => -1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-09-05','part','1000')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 1
+    [affected_rows] => 1
+)
+
+UPDATE expenditure_slip SET impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-09-05',particulars = 'part',amount = '1000.2'  WHERE impJobId = 'sdfdsfdsf' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-09-04','particulars','2000.2')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 2
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-08-27','af','32432')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 3
+    [affected_rows] => 1
+)
+
+UPDATE expenditure_slip SET impJobId = '2',type = 'importSea',date = '2017-09-04',particulars = 'particulars',amount = '20003'  WHERE id = '2' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE expenditure_slip SET id = '',impJobId = '1',type = 'importSea',date = '2017-09-05',particulars = 'part',amount = '1000.23'  WHERE id = '' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE expenditure_slip SET id = '',impJobId = '1',type = 'importSea',date = '2017-09-05',particulars = 'part',amount = '1000.23'  WHERE id = '' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE expenditure_slip SET id = '',impJobId = '1',type = 'importSea',date = '2017-09-05',particulars = 'part',amount = '1000.23'  WHERE id = '' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE expenditure_slip SET id = '1',impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-09-05',particulars = 'part',amount = '3000.2'  WHERE id = '1' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE expenditure_slip SET id = '3',impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-08-27',particulars = 'af',amount = '324'  WHERE id = '3' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( '0342342','importSea','2017-09-03','dhaya','2000')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 4
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( '0342342','importSea','2017-08-27','sad','asd')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 5
+    [affected_rows] => 1
+)
+
+UPDATE expenditure_slip SET id = '1',impJobId = 'sdfdsfdsf',type = 'importSea',date = '2017-09-05',particulars = 'part',amount = '300.2'  WHERE id = '1' AND type = 'importSea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-09-04','particulars','122')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 6
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-09-28','erwr','ewrrew')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 7
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-09-04','dsf','dsfsdf')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 8
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-09-05','fsdf','fsdfsd')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 9
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-09-27','particulas','1232')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 10
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'imp','importAir','2017-10-07','fd','dfgfd')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 11
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'imp','importAir','2017-11-03','dfg','fgdgfd')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 12
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'sdfdsfdsf','importSea','2017-12-08','particulars','2000')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+INSERT INTO expenditure_slip ( impJobId,type,date,particulars,amount ) VALUES ( 'imp','importAir','','gfhg','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 14
+    [affected_rows] => 1
+)

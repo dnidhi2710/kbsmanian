@@ -1,0 +1,61 @@
+
+INSERT INTO import_map_do ( impJobId,type,invoiceMode,customsClerk,dockClerk,tinNO,cstNo,gstNo,stAgentsCharges,remarks ) VALUES ( '38/2017-18','sea','{\"cif\":false,\"fob\":true,\"ci\":true,\"cf\":true}','cutsoms','dock','safsaf','saffsa','ffsaf','fasfasf','fsafaf')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 1
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_do ( impJobId,type,invoiceMode,customsClerk,dockClerk,tinNO,cstNo,gstNo,stAgentsCharges,remarks ) VALUES ( '37/2017-18','sea','{\"CIF\":true,\"FOB\":true,\"CI\":true,\"CF\":true}','customsClerkd','dockClerk','1234','cst','gst','stahentrem','remakrs')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 2
+    [affected_rows] => 1
+)
+
+UPDATE import_map_do SET impJobId = '38/2017-18',type = 'sea',invoiceMode = '{\"CIF\":false,\"FOB\":true,\"CI\":true,\"CF\":true}',customsClerk = 'cutsoms',dockClerk = 'dock',tinNO = 'safsaf',cstNo = 'saffsa',gstNo = 'ffsaf',stAgentsCharges = 'fasfasf',remarks = 'fsafaf'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_do SET impJobId = '38/2017-18',type = 'sea',invoiceMode = '{\"CIF\":true,\"FOB\":true,\"CI\":true,\"CF\":true}',customsClerk = 'cutsoms',dockClerk = 'dock',tinNO = 'TINO',cstNo = 'saffsa',gstNo = 'ffsaf',stAgentsCharges = 'fasfasf',remarks = 'fsafaf'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_do ( impJobId,type,invoiceMode,customsClerk,dockClerk,tinNO,cstNo,gstNo,stAgentsCharges,remarks ) VALUES ( '39/2017-18','sea','{\"CIF\":false,\"FOB\":true,\"CI\":true,\"CF\":false}','clerk','dock','1223','cst','gst','charges','remarks')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 3
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_do ( impJobId,type,invoiceMode,customsClerk,dockClerk,tinNO,cstNo,gstNo,stAgentsCharges,remarks ) VALUES ( 'imp','air','{\"CIF\":false,\"FOB\":true,\"CI\":true,\"CF\":true}','gdfg','dfgd','gdfg','gfdg','gdfg','gfdgdg','dfgdf')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 4
+    [affected_rows] => 1
+)
+
+UPDATE import_map_do SET impJobId = 'imp',type = 'air',invoiceMode = '{\"CIF\":true,\"FOB\":true,\"CI\":true,\"CF\":true}',customsClerk = 'gdfg',dockClerk = 'dfgd',tinNO = 'gdfg',cstNo = 'gfdg',gstNo = 'gdfg',stAgentsCharges = 'gfdgdg',remarks = 'dfgdf'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_do ( impJobId,type,invoiceMode,customsClerk,dockClerk,tinNO,cstNo,gstNo,stAgentsCharges,remarks ) VALUES ( 'sdfdsfdsf','sea','{\"CIF\":false,\"FOB\":true,\"CI\":true,\"CF\":true}','clerl','dock','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 5
+    [affected_rows] => 1
+)

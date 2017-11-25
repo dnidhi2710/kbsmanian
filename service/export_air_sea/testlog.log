@@ -1,0 +1,289 @@
+
+INSERT INTO export_air_sea ( impJobId,type,exportDate,shipper,consignee,bank,bank_notify,invoiceNo,invoiceDate,invoiceValue,grNo,grDate,rbiNo,billingNo,billingDate,exRate,flight,arrived,departure,agent,port,country,EMNo,remarks,value,FOB,FRT,INS,CIF,eaNo,lcNo,lcDate,orderNo,mateReceipt,mateDate1,mateDate2,billOfLanding,landingDate1,landingDate2,biPRT,exUS,EADate,EARS,specialInstructions,AWBNo,MAWBDate,MBLDate ) VALUES ( '123','Air','2017-08-13','shipper','consignee','bank','notify','invoiceno','2017-09-02','value','gdno','2017-09-02','rbicode','shippig','2017-08-26','exrate','flight','arriced','departured','agent','port','country','emono','remarks','value','fob','frt','ins','cis','eano','lvno','2017-08-24','orderno','mate','2017-08-22','2017-09-09','bill','2017-09-07','2017-09-09','prt','pp','2017-09-01','rs','special','aewbno','2017-08-21','2017-09-02')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'biPRT' in 'field list'
+    [affected_rows] => -1
+)
+
+INSERT INTO export_air_sea ( impJobId,type,exportDate,shipper,consignee,bank,bank_notify,invoiceNo,invoiceDate,invoiceValue,grNo,grDate,rbiNo,billingNo,billingDate,exRate,flight,arrived,departure,agent,port,country,EMNo,remarks,value,FOB,FRT,INS,CIF,eaNo,lcNo,lcDate,orderNo,mateReceipt,mateDate1,mateDate2,billOfLanding,landingDate1,landingDate2,bIPRT,exUS,EADate,EARS,specialInstructions,AWBNo,MAWBDate,MBLDate ) VALUES ( '123','Air','2017-08-13','shipper','consignee','bank','notify','invoiceno','2017-09-02','value','gdno','2017-09-02','rbicode','shippig','2017-08-26','exrate','flight','arriced','departured','agent','port','country','emono','remarks','value','fob','frt','ins','cis','eano','lvno','2017-08-24','orderno','mate','2017-08-22','2017-09-09','bill','2017-09-07','2017-09-09','prt','pp','2017-09-01','rs','special','aewbno','2017-08-21','2017-09-02')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'bIPRT' in 'field list'
+    [affected_rows] => -1
+)
+
+INSERT INTO export_air_sea ( impJobId,type,exportDate,shipper,consignee,bank,bank_notify,invoiceNo,invoiceDate,invoiceValue,grNo,grDate,rbiNo,billingNo,billingDate,exRate,flight,arrived,departure,agent,port,country,EMNo,remarks,value,FOB,FRT,INS,CIF,eaNo,lcNo,lcDate,orderNo,mateReceipt,mateDate1,mateDate2,billOfLanding,landingDate1,landingDate2,blPRT,exUS,EADate,EARS,specialInstructions,AWBNo,MAWBDate,MBLDate ) VALUES ( '123','Air','2017-08-13','shipper','consignee','bank','notify','invoiceno','2017-09-02','value','gdno','2017-09-02','rbicode','shippig','2017-08-26','exrate','flight','arriced','departured','agent','port','country','emono','remarks','value','fob','frt','ins','cis','eano','lvno','2017-08-24','orderno','mate','2017-08-22','2017-09-09','bill','2017-09-07','2017-09-09','prt','pp','2017-09-01','rs','special','aewbno','2017-08-21','2017-09-02')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 1
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"sdfds\",\"$$hashKey\":\"object:630\"},{\"containerNo\":2,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:631\"}]','fdsf','fdsff','dsf','dsfsd','dsfsd','export','1')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 31
+    [affected_rows] => 1
+)
+
+UPDATE export_air_sea SET impJobId = '123',type = 'Air',exportDate = '2017-08-13',shipper = 'shipper',consignee = 'consignee',bank = 'bank',bank_notify = 'notify',invoiceNo = 'invoiceno',invoiceDate = '2017-09-02',invoiceValue = 'value',grNo = 'gdno',grDate = '2017-09-02',rbiNo = 'rbicode',billingNo = 'shippig',billingDate = '2017-08-26',exRate = 'exrate',flight = 'flight',arrived = 'arriced',departure = 'departured',agent = 'agent',port = 'port',country = 'country',EMNo = 'emono',remarks = 'remarks',value = 'value',FOB = 'fob',FRT = 'frt',INS = 'ins',CIF = 'cis',eaNo = 'eano',lcNo = 'lvno',lcDate = '2017-08-24',orderNo = 'orderno',mateReceipt = 'mate',mateDate1 = '2017-08-22',mateDate2 = '2017-09-09',billOfLanding = 'bill',landingDate1 = '2017-09-07',landingDate2 = '2017-09-09',blPRT = 'prt',exUS = 'pp',EADate = '2017-09-01',EARS = 'rs',specialInstructions = 'specialinstructions',AWBNo = 'aewbno',MAWBDate = '2017-08-21',MBLDate = '2017-09-02'  WHERE impJobId = '123'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"sdfds\",\"$$hashKey\":\"object:630\"},{\"containerNo\":2,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:631\"}]',noOfPkgs = 'fdsf',content = 'fdsff',measurements = 'dsf',grossWeight = 'dsfsd',nettWeight = 'dsfsd',type = 'export',impJobId = '123'  WHERE impJobId = '123' AND type = 'export'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE export_air_sea SET impJobId = '123',type = 'Air',exportDate = '2017-08-13',shipper = 'shipperName',consignee = 'consignee',bank = 'bank',bank_notify = 'notify',invoiceNo = 'invoiceno',invoiceDate = '2017-09-02',invoiceValue = 'value',grNo = 'gdno',grDate = '2017-09-02',rbiNo = 'rbicode',billingNo = 'shippig',billingDate = '2017-08-26',exRate = 'exrate',flight = 'flight',arrived = 'arriced',departure = 'departured',agent = 'agent',port = 'port',country = 'country',EMNo = 'emono',remarks = 'remarks',value = 'value',FOB = 'fob',FRT = 'frt',INS = 'ins',CIF = 'cis',eaNo = 'eano',lcNo = 'lvno',lcDate = '2017-08-24',orderNo = 'orderno',mateReceipt = 'mate',mateDate1 = '2017-08-22',mateDate2 = '2017-09-09',billOfLanding = 'bill',landingDate1 = '2017-09-07',landingDate2 = '2017-09-09',blPRT = 'prt',exUS = 'pp',EADate = '2017-09-01',EARS = 'rs',specialInstructions = 'specialinstructions',AWBNo = 'aewbno',MAWBDate = '2017-08-21',MBLDate = '2017-09-02'  WHERE impJobId = '123'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"sdfds\",\"$$hashKey\":\"object:630\"},{\"containerNo\":2,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:631\"}]',noOfPkgs = 'fdsf',content = 'fdsff',measurements = 'dsf',grossWeight = 'dsfsd',nettWeight = 'dsfsd',type = 'export',impJobId = '123'  WHERE impJobId = '123' AND type = 'export'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE export_air_sea SET impJobId = '123',type = 'Air',exportDate = '2017-08-13',shipper = 'shipperName',consignee = 'consignee',bank = 'bank',bank_notify = 'notify',invoiceNo = 'invoiceno',invoiceDate = '2017-09-02',invoiceValue = 'value',grNo = 'gdno',grDate = '2017-09-02',rbiNo = 'rbicode',billingNo = 'shippig',billingDate = '2017-08-26',exRate = 'exrate',flight = 'flight',arrived = 'arriced',departure = 'departured',agent = 'agent',port = 'port',country = 'country',EMNo = 'emono',remarks = 'remarks',value = 'value',FOB = 'fob',FRT = 'frt',INS = 'ins',CIF = 'cis',eaNo = 'eano',lcNo = 'lvno',lcDate = '2017-08-24',orderNo = 'orderno',mateReceipt = 'matereceipt',mateDate1 = '2017-08-22',mateDate2 = '2017-09-09',billOfLanding = 'bill',landingDate1 = '2017-09-07',landingDate2 = '2017-09-09',blPRT = 'prt',exUS = 'pp',EADate = '2017-09-01',EARS = 'rs',specialInstructions = 'specialinstructions',AWBNo = 'aewbno',MAWBDate = '2017-08-21',MBLDate = '2017-09-02'  WHERE impJobId = '123'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"sdfds\",\"$$hashKey\":\"object:630\"},{\"containerNo\":2,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:631\"}]',noOfPkgs = 'fdsf',content = 'fdsff',measurements = 'dsf',grossWeight = 'dsfsd',nettWeight = 'dsfsd',type = 'export',impJobId = '123'  WHERE impJobId = '123' AND type = 'export'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE export_air_sea SET impJobId = '123',type = 'Air',exportDate = '2017-08-13',shipper = 'shipperName',consignee = 'consignee',bank = 'bank',bank_notify = 'notify',invoiceNo = 'invoiceno',invoiceDate = '2017-09-02',invoiceValue = 'value',grNo = 'gdno',grDate = '2017-09-02',rbiNo = 'rbicode',billingNo = 'shippig',billingDate = '2017-08-26',exRate = 'exrate',flight = 'flight',arrived = 'arriced',departure = 'departured',agent = 'agent',port = 'port',country = 'country',EMNo = 'emono',remarks = 'remarks',value = 'value',FOB = 'fob',FRT = 'frt',INS = 'ins',CIF = 'cis',eaNo = 'eano',lcNo = 'lvno',lcDate = '2017-08-24',orderNo = 'orderno',mateReceipt = 'matereceipt',mateDate1 = '2017-08-22',mateDate2 = '2017-09-09',billOfLanding = 'bill',landingDate1 = '2017-09-07',landingDate2 = '2017-09-09',blPRT = 'prt',exUS = 'pp',EADate = '2017-09-01',EARS = 'rs',specialInstructions = 'specialinstructions',AWBNo = 'aewbno',MAWBDate = '2017-08-21',MBLDate = '2017-09-02'  WHERE impJobId = '123'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"dhaya\",\"gld\":\"2017-07-31T18:30:00.000Z\",\"contrOut\":\"2017-09-01T18:30:00.000Z\",\"$$hashKey\":\"object:473\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"test\",\"gld\":\"2017-07-30T18:30:00.000Z\",\"contrOut\":\"2017-08-23T18:30:00.000Z\",\"$$hashKey\":\"object:700\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]',noOfPkgs = 'fdsf',content = 'fdsff',measurements = 'dsf',grossWeight = 'dsfsd',nettWeight = 'dsfsd',type = 'export',impJobId = '123'  WHERE impJobId = '123' AND type = 'export'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_air_sea SET impJobId = '123',type = 'Air',exportDate = '2017-08-13',shipper = 'shipperName',consignee = 'consignee',bank = 'bank',bank_notify = 'notify',invoiceNo = 'invoiceno',invoiceDate = '2017-09-02',invoiceValue = 'value',grNo = 'gdno',grDate = '2017-09-02',rbiNo = 'rbicode',billingNo = 'shippig',billingDate = '2017-08-26',exRate = 'exrate',flight = 'flight',arrived = 'arriced',departure = 'departured',agent = 'agent',port = 'port',country = 'country',EMNo = 'emono',remarks = 'remarks',value = 'value',FOB = 'fob',FRT = 'frt',INS = 'ins',CIF = 'cis',eaNo = 'eano',lcNo = 'lvno',lcDate = '2017-08-24',orderNo = 'orderno',mateReceipt = 'matereceipt',mateDate1 = '2017-08-22',mateDate2 = '2017-09-09',billOfLanding = 'bill',landingDate1 = '2017-09-07',landingDate2 = '2017-09-09',blPRT = 'prt',exUS = 'pp',EADate = '2017-09-01',EARS = 'rs',specialInstructions = 'specialinstructions',AWBNo = 'aewbno',MAWBDate = '2017-08-21',MBLDate = '2017-09-02'  WHERE impJobId = '123'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"dhaya\",\"gld\":\"2017-07-31\",\"contrOut\":\"2017-08-28\",\"$$hashKey\":\"object:473\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"test\",\"gld\":\"2017-07-03\",\"contrOut\":\"2017-08-31\",\"$$hashKey\":\"object:700\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":3,\"containerName\":\"two\",\"gld\":\"2017-09-05\",\"contrOut\":\"2017-09-29\",\"$$hashKey\":\"object:465\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]',noOfPkgs = 'fdsf',content = 'fdsff',measurements = 'dsf',grossWeight = 'dsfsd',nettWeight = 'dsfsd',type = 'export',impJobId = '123'  WHERE impJobId = '123' AND type = 'export'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO export_air_sea ( impJobId,type,exportDate,shipper,consignee,bank,bank_notify,invoiceNo,invoiceDate,invoiceValue,grNo,grDate,rbiNo,billingNo,billingDate,exRate,flight,arrived,departure,agent,port,country,EMNo,remarks,value,FOB,FRT,INS,CIF,eaNo,lcNo,lcDate,orderNo,mateReceipt,mateDate1,mateDate2,billOfLanding,landingDate1,landingDate2,blPRT,exUS,EADate,EARS,specialInstructions,AWBNo,MAWBDate,MBLDate ) VALUES ( 'fdsfsdf','exportAir','2017-09-07','gfdgdf','dfgdf','dfgfdg','dfgfd','dfgdfg','2017-09-27','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 2
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"fdgg\",\"gld\":\"2017-08-28\",\"contrOut\":\"2017-09-12\",\"$$hashKey\":\"object:242\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"fdgdf\",\"gld\":\"2017-08-30\",\"contrOut\":\"2017-09-14\",\"$$hashKey\":\"object:243\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]','gdfg','fdg','dfgdf','dfgdf','fdgfd','exportAir','fdsfsdf')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 34
+    [affected_rows] => 1
+)
+
+INSERT INTO export_remarks ( impJobId,type,procedures,cargo_receipts ) VALUES ( 'fdsfsdf','exportAir','progress','[{\"number\":1,\"receiptDate\":\"2017-09-14\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false}}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 1
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-09-14\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-20\",\"truckNo\":\"sdf\",\"noOfPackages\":\"dsf\",\"godown\":\"dsf\",\"$$hashKey\":\"object:25\",\"Date\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-09-05\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-30\",\"truckNo\":\"sdf\",\"noOfPackages\":\"dsf\",\"godown\":\"dsf\",\"$$hashKey\":\"object:25\",\"Date\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-09-30\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-30\",\"truckNo\":\"sdf\",\"noOfPackages\":\"dsf\",\"godown\":\"dsf\",\"$$hashKey\":\"object:25\",\"Date\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-09-23\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-30\",\"truckNo\":\"sdf\",\"noOfPackages\":\"dsf\",\"godown\":\"dsf\",\"$$hashKey\":\"object:25\",\"Date\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-10-01\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-30\",\"truckNo\":\"sdf\",\"noOfPackages\":\"dsf\",\"godown\":\"dsf\",\"$$hashKey\":\"object:25\",\"Date\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-10-10\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false},\"receipt\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-30\",\"truckNo\":\"sdf\",\"noOfPackages\":\"dsf\",\"godown\":\"dsf\",\"$$hashKey\":\"object:25\",\"Date\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-10-02\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false},\"receipt\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-30\",\"truckNo\":\"sdf\",\"noOfPackages\":\"dsf\",\"godown\":\"dsf\",\"$$hashKey\":\"object:25\",\"Date\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-10-04\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false},\"receipt\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-10-04\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false},\"receipt\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-10-26\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false},\"receipt\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-14\",\"truckNo\":\"data\",\"noOfPackages\":\"32\",\"godown\":\"cfs\",\"$$hashKey\":\"object:357\",\"receipt\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-10-21\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false},\"receipt\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-14\",\"truckNo\":\"data\",\"noOfPackages\":\"32\",\"godown\":\"cfs\",\"$$hashKey\":\"object:357\",\"receipt\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-10-21\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"$$hashKey\":\"object:24\",\"Date\":{\"open\":false},\"receipt\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-14\",\"truckNo\":\"data\",\"noOfPackages\":\"32\",\"godown\":\"cfs\",\"$$hashKey\":\"object:357\",\"receipt\":{\"open\":false}},{\"number\":3,\"receiptDate\":\"2017-10-08\",\"truckNo\":\"dhaya\",\"noOfPackages\":\"23\",\"godown\":\"Wh\",\"$$hashKey\":\"object:185\",\"receipt\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_air_sea SET impJobId = 'fdsfsdf',type = 'exportAir',exportDate = '2017-09-07',shipper = 'gfdgdf',consignee = 'dfgdf',bank = 'dfgfdg',bank_notify = 'dfgfd',invoiceNo = 'dfgdfg',invoiceDate = '2017-09-27',invoiceValue = '',grNo = '',grDate = '',rbiNo = '',billingNo = '',billingDate = '',exRate = '',flight = '',arrived = '',departure = '',agent = '',port = '',country = '',EMNo = '',remarks = '',value = '',FOB = '',FRT = '',INS = '',CIF = '',eaNo = '',lcNo = '',lcDate = '',orderNo = '',mateReceipt = '',mateDate1 = '',mateDate2 = '',billOfLanding = '',landingDate1 = '',landingDate2 = '',blPRT = '',exUS = '',EADate = '2017-09-13',EARS = '',specialInstructions = '',AWBNo = '',MAWBDate = '',MBLDate = ''  WHERE impJobId = 'fdsfsdf'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"fdgg\",\"gld\":\"2017-07-31\",\"contrOut\":\"2017-09-12\",\"$$hashKey\":\"object:242\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"fdgdf\",\"gld\":\"2017-08-07\",\"contrOut\":\"2017-09-14\",\"$$hashKey\":\"object:243\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]',noOfPkgs = 'gdfg',content = 'fdg',measurements = 'dfgdf',grossWeight = 'dfgdf',nettWeight = 'fdgfd',type = 'exportAir',impJobId = 'fdsfsdf'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = 'fdsfsdf',type = 'exportAir',procedures = 'progress',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-10-21\",\"truckNo\":\"trcunk\",\"noOfPackages\":\"2\",\"godown\":\"godown\",\"Date\":{\"open\":false},\"receipt\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-14\",\"truckNo\":\"data\",\"noOfPackages\":\"32\",\"godown\":\"cfs\",\"receipt\":{\"open\":false}},{\"number\":3,\"receiptDate\":\"2017-10-28\",\"truckNo\":\"dhaya\",\"noOfPackages\":\"23\",\"godown\":\"Wh\",\"receipt\":{\"open\":false}}]'  WHERE impJobId = 'fdsfsdf' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO export_remarks ( impJobId,type,procedures,cargo_receipts ) VALUES ( '123','exportAir','procedures','[{\"number\":1,\"receiptDate\":\"2017-09-13\",\"truckNo\":\"truckno\",\"noOfPackages\":\"No1\",\"godown\":\"godown\",\"receipt\":{\"open\":false}}]')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 2
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = '123',type = 'exportAir',procedures = 'procedures',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-09-13\",\"truckNo\":\"truckno\",\"noOfPackages\":\"No1\",\"godown\":\"godown\",\"receipt\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-13\",\"truckNo\":\"truckno1\",\"noOfPackages\":\"no2\",\"godown\":\"cfs\",\"receipt\":{\"open\":false}}]'  WHERE impJobId = '123' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_remarks SET impJobId = '123',type = 'exportAir',procedures = 'procedures\n1.test\n2.test\n3.test',cargo_receipts = '[{\"number\":1,\"receiptDate\":\"2017-09-13\",\"truckNo\":\"truckno\",\"noOfPackages\":\"No1\",\"godown\":\"godown\",\"receipt\":{\"open\":false}},{\"number\":2,\"receiptDate\":\"2017-09-13\",\"truckNo\":\"truckno1\",\"noOfPackages\":\"no2\",\"godown\":\"cfs\",\"receipt\":{\"open\":false}}]'  WHERE impJobId = '123' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE export_air_sea SET impJobId = '123',type = 'exportAir',exportDate = '2017-08-13',shipper = 'shipperName',consignee = 'consignee',bank = 'bank',bank_notify = 'notify',invoiceNo = 'invoiceno',invoiceDate = '2017-09-02',invoiceValue = 'value',grNo = 'gdno',grDate = '2017-09-02',rbiNo = 'rbicode',billingNo = 'shippig',billingDate = '2017-08-26',exRate = 'exrate',flight = 'flight',arrived = 'arriced',departure = 'departured',agent = 'agent',port = 'port',country = 'country',EMNo = 'emono',remarks = 'remarks',value = 'value',FOB = 'fob',FRT = 'frt',INS = 'ins',CIF = 'cis',eaNo = 'eano',lcNo = 'lvno',lcDate = '2017-08-24',orderNo = 'orderno',mateReceipt = 'matereceipt',mateDate1 = '2017-08-22',mateDate2 = '2017-09-09',billOfLanding = 'bill',landingDate1 = '2017-09-07',landingDate2 = '2017-09-09',blPRT = 'prt',exUS = 'pp',EADate = '2017-09-01',EARS = 'rs',specialInstructions = 'specialinstructions',AWBNo = 'aewbno',MAWBDate = '2017-08-21',MBLDate = '2017-09-02'  WHERE impJobId = '123'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"daya\",\"gld\":\"2017-09-14\",\"contrOut\":\"2017-10-06\",\"$$hashKey\":\"object:67\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"test\",\"gld\":\"2017-09-21\",\"contrOut\":\"2017-09-30\",\"$$hashKey\":\"object:68\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]',noOfPkgs = 'test',content = 'test',measurements = 'test',grossWeight = 'test',nettWeight = 'test',type = 'exportAir',impJobId = '123'  WHERE impJobId = '123' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE export_air_sea SET impJobId = '123',type = 'exportAir',exportDate = '2017-08-13',shipper = 'shipperName',consignee = 'consignee',bank = 'bank',bank_notify = 'notify',invoiceNo = 'invoiceno',invoiceDate = '2017-09-02',invoiceValue = 'value',grNo = 'gdno',grDate = '2017-09-02',rbiNo = 'rbicode',billingNo = 'shippig',billingDate = '2017-08-26',exRate = 'exrate',flight = 'flight',arrived = 'arriced',departure = 'departured',agent = 'agent',port = 'port',country = 'country',EMNo = 'emono',remarks = 'remarks',value = 'value',FOB = 'fob',FRT = 'frt',INS = 'ins',CIF = 'cis',eaNo = 'eano',lcNo = 'lvno',lcDate = '2017-08-24',orderNo = 'orderno',mateReceipt = 'matereceipt',mateDate1 = '2017-08-22',mateDate2 = '2017-09-09',billOfLanding = 'bill',landingDate1 = '2017-09-07',landingDate2 = '2017-09-09',blPRT = 'prt',exUS = 'pp',EADate = '2017-09-01',EARS = 'rs',specialInstructions = 'specialinstructions',AWBNo = 'aewbno',MAWBDate = '2017-08-21',MBLDate = '2017-09-02'  WHERE impJobId = '123'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"sfsdfsdf\",\"gld\":\"2017-10-05\",\"contrOut\":\"2017-09-28\",\"$$hashKey\":\"object:313\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"sdsf\",\"gld\":\"2017-09-23\",\"contrOut\":\"2017-09-30\",\"$$hashKey\":\"object:314\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]',noOfPkgs = '',content = '',measurements = '',grossWeight = '',nettWeight = '',type = 'exportAir',impJobId = '123'  WHERE impJobId = '123' AND type = 'exportAir'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+INSERT INTO export_air_sea ( impJobId,type,exportDate,shipper,consignee,bank,bank_notify,invoiceNo,invoiceDate,invoiceValue,grNo,grDate,rbiNo,billingNo,billingDate,exRate,flight,arrived,departure,agent,port,country,EMNo,remarks,value,FOB,FRT,INS,CIF,eaNo,lcNo,lcDate,orderNo,mateReceipt,mateDate1,mateDate2,billOfLanding,landingDate1,landingDate2,blPRT,exUS,EADate,EARS,specialInstructions,AWBNo,MAWBDate,MBLDate ) VALUES ( 'fdsfsdf','exportAir','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Duplicate entry 'fdsfsdf' for key 'impJobId'
+    [affected_rows] => -1
+)

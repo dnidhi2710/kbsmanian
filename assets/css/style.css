@@ -1,0 +1,36 @@
+
+
+/*custom css */
+ul.addSeaList li {
+    width: 180px;
+    /* height: 250px; */
+    border: 1px solid #ccc;
+    list-style-type: none;
+    float: left;
+    display: inline-block;
+    padding: 18px;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    /* line-height: 7.2em; */
+    font-size: 1.1em;
+}
+ul.addSeaList li.active {
+    background-color: #efefef;
+}
+ul.addSeaList li a{
+    text-decoration: none;
+    color: #000;
+}
+.logincontainer {
+    margin-left: 20%;
+    margin-top: 250px;
+    border: 1px solid #ccc;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+.error-mesg-wrap {
+    color: #f00;
+}

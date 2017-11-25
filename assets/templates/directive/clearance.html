@@ -1,0 +1,821 @@
+<!-- Section 2 Forms -->
+<div class="col-lg-12">
+    <form method="post">
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="import_CIF_VALUE">
+                                    ICE - Gate Jobs No. </label>
+                    <input type="text" id="iceGateNo" ng-model="clearance.gateNo" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="import_CIF_VALUE">
+                                    B/E No. & Dt.</label>
+                    <input type="text" id="iceGateNo" ng-model="clearance.BEnoDt" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_CIF_VALUE">
+                                    C.I.F Values</label>
+                <input type="text" name="import_CIF_VALUE" id="import_CIF_VALUE" ng-model="clearance.cif" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_landing_charges">
+                                    Landing Charges</label>
+                <input type="text" name="import_landing_charges" id="import_landing_charges" ng-model="clearance.landingCharges" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_BE_VALUE">
+                                    B/E Value</label>
+                <input type="text" name="import_BE_VALUE" id="import_BE_VALUE" ng-model="clearance.BEValue" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="import_job_no">Custom Clerk</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.customClerk" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="import_job_no">JOB Alloted on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.jobAllotedon" is-open="jobAlloted.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="jobAlloted.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+               <!-- <input type="date" name="import_job_no" id="import_job_no" ng-model="personnel.jobAllotedon" class="form-control">
+            -->
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="import_job_no">Document Recd</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.documentRecord" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="import_job_no">Date</label>
+                   <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.docRecDate" is-open="docRecDate.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="docRecDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+              <!--  <input type="date" name="import_job_no" id="import_job_no" ng-model="personnel.docRecDate" class="form-control">
+            -->
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="import_job_no">Document Called</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.docCalled" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="import_job_no">Date</label>
+                   <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.docCalledDate" is-open="docCalledDate.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="docCalledDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="import_job_no">Rem</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.rem" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="import_job_no">Recd</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.recrd" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <textarea name="import_job_no" id="import_job_no" ng-model="personnel.recrdtxtarea" class="form-control"></textarea>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">B/E Field on Manifest on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.fieldOnManifest" is-open="fieldOnManifest.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="fieldOnManifest.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">G.M No</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.GMNO" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Line No</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.lineNO" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Date</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.lineNoDate" is-open="lineNoDate.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="lineNoDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">B/E Manifested on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.manifestedOn" is-open="manifestedOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="manifestedOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">No</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.manifestNo" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Date</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.manifestedonDate" is-open="manifestedonDate.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="manifestedonDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <hr/><b>&nbsp;</b>
+        <hr/>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">B/E Field on Appraising Dept on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.appraisingDptOn" is-open="appraisingDptOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="appraisingDptOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">No</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.appraisingNo" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Date</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.appraisingDate" is-open="appraisingDate.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="appraisingDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="import_job_no">For</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.appraiseFor" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">B/E Put up to Appraiser on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.BEAppraiser" is-open="BEAppraiser.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="BEAppraiser.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Returned on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.BEreturnedon" is-open="BEreturnedon.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="BEreturnedon.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">For</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.BEputUPfor" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">B/E Put up to Appraiser on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.BEAppraiser2" is-open="BEAppraiser2.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="BEAppraiser2.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Returned on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.BEreturnedon2" is-open="BEreturnedon2.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="BEreturnedon2.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">For</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.BEputUPfor2" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">B/E Put up to Appraiser on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.BEAppraiser3" is-open="BEAppraiser3.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="BEAppraiser3.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Returned on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.BEreturnedon3" is-open="BEreturnedon3.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="BEreturnedon3.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">For</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.BEputUPfor3" class="form-control">
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <h4 class="text-center">Samples</h4>
+        <hr/>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Called on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.calledOnsamples" is-open="calledOnsamples.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="calledOnsamples.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Dock Clerk Instructed on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.docClerkInstrOn" is-open="docClerkInstrOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="docClerkInstrOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Drawn On</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.drawnOn" is-open="drawnOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="drawnOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="import_job_no">Reason for delay</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.drawnReasonDelay" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="import_job_no">Order sent to group on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.orderSentTogrp" is-open="orderSentTogrp.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="orderSentTogrp.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="import_job_no">Test report recd on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.testReportRecdNo" is-open="testReportRecdNo.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="testReportRecdNo.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Samples collected on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.samplesCollOn" is-open="samplesCollOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="samplesCollOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Given to </label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.givenTo" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">on </label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="personnel.givenOn" is-open="givenOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="givenOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Time </label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.givenTime" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Test Customs Assessing delay from </label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.testCustomsDelay" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">TO </label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.customsDelayto" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Reasons </label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="personnel.customsReason" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Importer's I.C.T. No</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.importedICTno" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Rate</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.importedRate" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Given on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.importedGivenOn" is-open="importedGivenOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="importedGivenOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Actual I.C.T. No</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.actualICT" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Rate</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.ICTrate" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Duty Amount</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.dutyAMount" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="import_job_no">Reasons for Not Admitting Importer's I.C.T. No</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.notAdmittingReasons" class="form-control">
+            </div>
+        </div>
+
+        <hr/>
+        <h4 class="text-center">Penalty</h4>
+        <hr/>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Amount</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.penalityAmount" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Levied on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.leviedOn" is-open="leviedOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="leviedOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Paid on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.paidOn" is-open="paidOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="paidOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="import_job_no">Reasons</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.penalityReasons" class="form-control">
+            </div>
+        </div>
+
+        <hr/><b>&nbsp;</b>
+        <hr/>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Licence sent to group on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.licenseSent" is-open="licenseSent.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="licenseSent.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Time</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.LicenseTime" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">To Adult on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.ToAdultOn" is-open="ToAdultOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="ToAdultOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Audited on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.auditedOn" is-open="auditedOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="auditedOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Time</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.AuditedTime" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Recd. Back on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.recordBackOn" is-open="recordBackOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="recordBackOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Time</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.recrdBackTime" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Despatched From B.E. on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.dispatchedFrom" is-open="dispatchedFrom.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="dispatchedFrom.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">For Job No.Imp</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.forJobNo" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Time</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.DespatchedTime" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Received Back on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.receivedbackOn" is-open="receivedbackOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="receivedbackOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Time</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.receivecTime" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Initial</label>
+                <input type="text" name="import_job_no" ng-model="others.receivedInitial" id="import_job_no" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">B.E Parcel Handed  On</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.BEParcelOn" is-open="BEParcelOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="BEParcelOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Time</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.BEParcelTime" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Initial</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.BEParcelInitial" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Detention Certificate No</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.detentionCertNo" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">Date</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.dcDate" is-open="dcDate.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="dcDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">From</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.dcFrom" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_job_no">To</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.dcTo" class="form-control">
+            </div>
+        </div>
+        <hr/><b>&nbsp;</b>
+        <hr/>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Applied on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.dcAppliedon" is-open="dcAppliedon.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="dcAppliedon.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Submitted on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="others.dcSubmittedOn" is-open="dcSubmittedOn.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="dcSubmittedOn.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_job_no">Reason for Delay</label>
+                <input type="text" name="import_job_no" id="import_job_no" ng-model="others.dcReasonDelay" class="form-control">
+            </div>
+        </div>
+        <!-- Submit & Cancel button -->
+        <div class="text-center">
+            <div class="col-md-4">
+                <input type="button" name="cancel" value="Cancel" class="btn btn-primary btn-block">
+            </div>
+            <div class="col-md-4" ng-if="createFlag">
+                <input type="button" name="save" value="Save" ng-click="saveClearanceFields();" class="btn btn-primary btn-block">
+            </div>
+            <div class="col-md-4" ng-if="updateFlag">
+                <input type="button" name="save" value="Update" ng-click="saveClearanceFields();" class="btn btn-primary btn-block">
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal fade" id="showClearanceError" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="alert alert-danger">
+                    <strong>Error!</strong> {{errorMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showClearanceAlert" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-warning">
+                    <strong>Alert! </strong> {{alertMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showClearanceSuccess" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-success">
+                    <strong>Success! </strong> {{successMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

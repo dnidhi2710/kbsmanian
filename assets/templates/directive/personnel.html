@@ -1,0 +1,175 @@
+<div class="col-lg-12">
+    <form method="post">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_Inv_Dt">
+                                   Our G.C Note No.</label>
+                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="transport.ourGCNote" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="import_Inv_Dt">
+                                    Transporter's G.C Note No.</label>
+                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="transport.transGCNote" class="form-control">
+            </div>
+        </div>
+        <table class="table table-bordered" align="center">
+            <tr>
+                <td>Date</td>
+                <td>Cleared Packages</td>
+                <td>Balance Packages</td>
+                <td>Transporter</td>
+                <td>Transport Arranged by</td>
+            </tr>
+            <tr ng-repeat="data in transport.clrparticulars">
+                <td>
+                    <p class="input-group">
+                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="data.date" is-open="date.open" datepicker-options="dateOptions"
+                            ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                        <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="date.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                    </p>
+                </td>
+                <td>
+                    <input type="text" name="package1" id="package1" ng-model="data.clrdPackage" class="font-control">
+                </td>
+                <td>
+                    <input type="text" name="package1" id="package1" ng-model="data.balancePackage" class="font-control">
+                </td>
+                <td>
+                    <input type="text" name="package1" id="package1" ng-model="data.transporter" class="font-control">
+                </td>
+                <td>
+                    <input type="text" name="package1" id="package1" ng-model="data.arrangedby" class="font-control">
+                </td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col-lg-3">
+                <button type="button" class="btn btn-info" ng-click="addClearanceObj();">
+                                <span class="glyphicon glyphicon-plus"></span> Add Row
+                            </button>
+                <button type="button" class="btn btn-info" ng-if="transport.clrparticulars.length>0" ng-click="delClearanceObj();">
+                                <span class="glyphicon glyphicon-minus"></span> Delete Row
+                            </button>
+            </div>
+        </div>
+        <hr/>
+        <b>Transport</b>
+        <hr/>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_Field">
+                                    Indented on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="transport.indentedon" is-open="indentedon.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="indentedon.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_No">
+                                    Time</label>
+                <input type="text" name="import_No" id="import_No" ng-model="transport.indentedTime" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_seaDate">
+                                    Supplied on</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="transport.suppliedon" is-open="suppliedon.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="suppliedon.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="import_No">
+                                    Time</label>
+                <input type="text" name="import_No" id="import_No" ng-model="transport.suppliedTime" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="import_cout">
+                                    Reason for Delay</label>
+                <textarea class="form-control" ng-model="transport.supplyDelay"></textarea>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="import_cout">
+                                    Remarks</label>
+                <textarea class="form-control" ng-model="transport.surveyRemarks"></textarea>
+            </div>
+        </div>
+        <!-- Submit & Cancel button -->
+        <div class="text-center">
+            <div class="col-md-4">
+                <input type="button" name="cancel" value="Cancel" class="btn btn-primary btn-block">
+            </div>
+            <div class="col-md-4" ng-if="createFlag">
+                <input type="button" name="save" value="Save" ng-click="savePersonnel();" class="btn btn-primary btn-block">
+            </div>
+            <div class="col-md-4" ng-if="updateFlag">
+                <input type="button" name="save" value="Update" ng-click="savePersonnel();" class="btn btn-primary btn-block">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal fade" id="showPersonnelError" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="alert alert-danger">
+                    <strong>Error!</strong> {{errorMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showPersonnelAlert" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="alert alert-warning">
+                    <strong>Alert! </strong> {{alertMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showPersonnelSuccess" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="alert alert-success">
+                    <strong>Success! </strong> {{successMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

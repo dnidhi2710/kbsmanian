@@ -1,0 +1,899 @@
+
+    <div id="wrapper">
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            (Back)Import Air <small></small>
+                        </h1>
+                    </div>
+                </div>
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="addSeaList">
+                            <li ng-click="activeMenu(1)" ng-class="section1?'active':''">Doc No.</li>
+                            <li ng-click="activeMenu(2)" ng-class="section2?'active':''">Clearance</li>
+                            <li ng-click="activeMenu(3)" ng-class="section3?'active':''">Samples / Open Order</li>
+                            <li ng-click="activeMenu(4)" ng-class="section4?'active':''">Survey</li>
+                            <li ng-click="activeMenu(5)" ng-class="section5?'active':''">Remarks</li>
+                            <li ng-click="activeMenu(6)" ng-class="section6?'active':''">Personnel</li>
+                            <li ng-click="activeMenu(7)" ng-class="section7?'active':''">Others</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-list"></i> Add / Update import air
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Section 1 form -->
+                    <div class="col-lg-12" ng-if="section1">
+                        <form method="post">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Imp.Job no.</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_dated">Import Dated</label>
+                                    <input type="text" name="import_dated" id="import_dated" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_party_ref">Party's Ref</label>
+                                    <input type="text" name="import_party_ref" id="import_party_ref" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="import_consignee">Consignee</label>
+                                    <input type="text" name="import_consignee" id="import_consignee" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="import_address">Address</label>
+                                    <input type="text" name="import_address" id="import_address" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="import_party">H.S / B.T. A/c. Party</label>
+                                    <input type="text" name="import_party" id="import_party" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_supplier_name">
+                                    Supplier Name</label>
+                                    <input type="text" name="import_supplier_name" id="import_supplier_name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_Inv_Dt">
+                                    Inv. No & Dt.</label>
+                                    <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" class="form-control">
+                                </div>
+                            </div>
+                            <!-- Minify Part -->
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="import_mother_vessel">
+                                    Mother Vessel</label>
+                                    <input type="text" name="import_mother_vessel" id="import_mother_vessel" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="import_due">
+                                    Due</label>
+                                    <input type="text" name="import_due" id="import_due" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="import_arrival">
+                                    Arrival</label>
+                                    <input type="text" name="import_arrival" id="import_arrival" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="import_gld">
+                                    GLD</label>
+                                    <input type="text" name="import_gld" id="import_gld" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                    Contr Out</label>
+                                    <input type="text" name="import_cout" id="import_cout" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                    Remarks</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                            
+                            <table class="table table-bordered" align="center">
+                                <tr>    
+                                    <td>Contr Nos</td>
+                                    <td>No.of Pkgs</td>
+                                    <td>Contents</td>
+                                    <td>Measurements</td>
+                                    <td>Gross Weight</td>
+                                    <td>Net Weight</td>
+                                </tr>
+                                <tr>    
+                                    <td>
+                                        <div class="form-group">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Submit & Cancel button -->
+                            <div class="text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <input type="button" name="cancel" value="cancel" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Section 1 form -->
+                    <!-- Section 2 Forms -->
+                    <div class="col-lg-12"  ng-if="section2">
+                        <form method="post">
+                            <table class="table table-bordered" align="center">
+                                <tr>
+                                    <td colspan="3">Clearance Particulars</td>
+                                    <td rowspan="20">ICE - Gate Jobs No. <br/>B/E No. & Dt. <br/>Our G.C Note No. <br/> Transporter's G.C Note No.</td>
+                                </tr>
+                                <tr>    
+                                    <td>Pkgs</td>
+                                    <td>Date</td>
+                                    <td>Cleared / Delivered</td>
+                                </tr>
+                                <tr>    
+                                    <td>
+                                        <input type="text" name="package1" id="package1" class="font-control">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="package1" id="package1" class="font-control">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="package1" id="package1" class="font-control">
+                                    </td>
+                                </tr>
+                                <tr>    
+                                    <td>
+                                        <input type="text" name="package1" id="package1" class="font-control">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="package1" id="package1" class="font-control">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="package1" id="package1" class="font-control">
+                                    </td>
+                                </tr>
+                                <tr>    
+                                    <td>
+                                        <input type="text" name="package1" id="package1" class="font-control">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="package1" id="package1" class="font-control">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="package1" id="package1" class="font-control">
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="clearfix"></div>
+                            
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_CIF_VALUE">
+                                    C.I.F Values</label>
+                                    <input type="text" name="import_CIF_VALUE" id="import_CIF_VALUE" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_landing_charges">
+                                    Landing Charges</label>
+                                    <input type="text" name="import_landing_charges" id="import_landing_charges" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_BE_VALUE">
+                                    B/E Value</label>
+                                    <input type="text" name="import_BE_VALUE" id="import_BE_VALUE" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                    Remarks</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <!-- Submit & Cancel button -->
+                            <div class="text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <input type="button" name="cancel" value="cancel" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End of section 2 forms -->
+                    <!-- Section 3 -->  
+                    <div class="col-lg-12"  ng-if="section3">
+                        <form method="post">                            
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="import_Field">
+                                    I/A Field on</label>
+                                    <input type="text" name="import_Field" id="import_Field" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="import_No">
+                                    Number</label>
+                                    <input type="text" name="import_No" id="import_No" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="import_seaDate">
+                                    Date</label>
+                                    <input type="text" name="import_seaDate" id="import_seaDate" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="import_amount">
+                                    Amount</label>
+                                    <input type="text" name="import_amount" id="import_amount" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="import_ia_compared_no">
+                                    I/A Compared on</label>
+                                    <input type="text" name="import_ia_compared_no" id="import_ia_compared_no" class="form-control">
+                                </div>
+                            </div>
+                            <hr/>
+                            <b>Samples</b>
+                            <hr/>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_Field">
+                                    Caleed on</label>
+                                    <input type="text" name="import_Field" id="import_Field" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_No">
+                                    Dock Clerk Instruuction on</label>
+                                    <input type="text" name="import_No" id="import_No" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_seaDate">
+                                    Initial</label>
+                                    <input type="text" name="import_seaDate" id="import_seaDate" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_seaDate">
+                                    Drawn on</label>
+                                    <input type="text" name="import_seaDate" id="import_seaDate" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_seaDate">
+                                    Reason for delay</label>
+                                    <input type="text" name="import_seaDate" id="import_seaDate" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_seaDate">
+                                    Submitted to customs</label>
+                                    <input type="text" name="import_seaDate" id="import_seaDate" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_seaDate">
+                                    Reason for delay</label>
+                                    <input type="text" name="import_seaDate" id="import_seaDate" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_seaDate">
+                                    B/E Parcel Recd. on</label>
+                                    <input type="text" name="import_seaDate" id="import_seaDate" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_seaDate">
+                                    Time</label>
+                                    <input type="text" name="import_seaDate" id="import_seaDate" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_seaDate">
+                                    Initial</label>
+                                    <input type="text" name="import_seaDate" id="import_seaDate" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                    Remarks</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <!-- Submit & Cancel button -->
+                            <div class="text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <input type="button" name="cancel" value="cancel" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End of section 3 -->
+                    <!-- End of section 4-->
+                    <div class="col-lg-12" ng-if="section4">
+                        <form method="post">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                        <th>Survey</th>
+                                        <th>Applied on</th>
+                                        <th>Granted on</th>
+                                        <th>Held on</th>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <label>S/A</label>
+                                            <input type="text" name="package1" id="package1" class="form-control">
+                                        </td>
+                                        <td>
+                                            <label>S/A</label>
+                                            <input type="text" name="package1" id="package1" class="form-control">
+                                        </td>
+                                        <td>
+                                            <label>S/A</label>
+                                            <input type="text" name="package1" id="package1" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <label>Ins</label>
+                                            <input type="text" name="package1" id="package1" class="form-control">
+                                        </td>
+                                        <td>
+                                            <label>Ins</label>
+                                            <input type="text" name="package1" id="package1" class="form-control">
+                                        </td>
+                                        <td>
+                                            <label>Ins</label>
+                                            <input type="text" name="package1" id="package1" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <label>P.T</label>
+                                            <input type="text" name="package1" id="package1" class="form-control">
+                                        </td>
+                                        <td>
+                                            <label>P.T</label>
+                                            <input type="text" name="package1" id="package1" class="form-control">
+                                        </td>
+                                        <td>
+                                            <label>P.T</label>
+                                            <input type="text" name="package1" id="package1" class="form-control">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- Table 2 -->
+                            
+                            <!-- Submit & Cancel button -->
+                            <div class="text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <input type="button" name="cancel" value="cancel" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                    Remarks</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end of section 4 -->
+                    <!-- section 5 forms -->
+                    <div class="col-lg-12" ng-if="section5">
+                        <form method="post">                            
+                            <div class="form-group">
+                                <label>Remarks</label>
+                                <textarea class="form-control" name="Remarks"></textarea>
+                            </div>
+                            <!-- Submit & Cancel button -->
+                            <div class="text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <input type="button" name="cancel" value="cancel" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End of section 5 -->
+
+                    <!-- Section for personal -->
+                    <div class="col-lg-12" ng-if="section6">
+                        <form method="post">
+                            <h4 class="text-center">Personnel</h4>
+                            <hr/>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                <label for="import_job_no">Custom Clerk</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                <label for="import_job_no">JOB Alloted on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                <label for="import_job_no">Document Recd</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                <label for="import_job_no">Date</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                <label for="import_job_no">Document Called</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                <label for="import_job_no">Date</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                <label for="import_job_no">Rem</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                <label for="import_job_no">Recd</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea name="import_job_no" id="import_job_no" class="form-control"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">B/E Field on Manifest on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">G.M No</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">Line No</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">Date</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">B/E Manifested on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">No</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Date</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">B/E Field on Appraising Dept on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">No</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Date</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <br/>
+                            <hr/>
+                            <h4 class="text-center">Samples</h4>
+                            <hr/>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Called on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Dock Clerk Instructed on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Drawn On</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                <label for="import_job_no">Reason for delay</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                <label for="import_job_no">Order sent to group on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                <label for="import_job_no">Test report recd on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">Samples collected on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">Given to </label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">on </label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">Time </label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Test customes assessing delay from </label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">TO </label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Reason </label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <!-- Submit & Cancel button -->
+                            <div class="text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <input type="button" name="cancel" value="cancel" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </form>                        
+                    </div>
+                    <!-- Section for personal ends -->
+                    <!-- section 5 forms -->
+                    <div class="col-lg-12" ng-if="section7">
+                        <form method="post">  
+                            <h4 class="text-center">Penality</h4>
+                            <hr/>                          
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Amount</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>                      
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Levied on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>               
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Paid on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>   
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Licence sent to group on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>              
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Rate</label>
+                                    <textarea name="import_job_no" id="import_job_no" class="form-control"></textarea> 
+                                </div>
+                            </div>          
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Rate</label>
+                                    <textarea name="import_job_no" id="import_job_no" class="form-control"></textarea> 
+                                </div>
+                            </div>         
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">Actual I.C.T No.</label>
+                                    <textarea name="import_job_no" id="import_job_no" class="form-control"></textarea> 
+                                </div>
+                            </div>      
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">Time</label>
+                                    <textarea name="import_job_no" id="import_job_no" class="form-control"></textarea> 
+                                </div>
+                            </div>    
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">Recd. Back on</label>
+                                    <textarea name="import_job_no" id="import_job_no" class="form-control"></textarea> 
+                                </div>
+                            </div>     
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="import_job_no">Recd. Back on</label>
+                                    <textarea name="import_job_no" id="import_job_no" class="form-control"></textarea> 
+                                </div>
+                            </div>   
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Despatched From B.E on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>  
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">For Job No.Imp</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>  
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Time</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div> 
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">REceived Back on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>  
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Time</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>  
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Initial</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>  
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">B.E Parcel Handed on</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>    
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Time</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div>   
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="import_job_no">Initial</label>
+                                    <input type="text" name="import_job_no" id="import_job_no" class="form-control">
+                                </div>
+                            </div> 
+                            <div class="col-md-12">
+                                <table class="table table-bordered" align="center">
+                                    <tr>    
+                                        <td>AGENT</td>
+                                        <td>CFS</td>
+                                    </tr>
+                                    <tr>    
+                                        <td>
+                                            <div class="form-group">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>      
+                            <!-- Submit & Cancel button -->
+                            <div class="text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <input type="button" name="cancel" value="cancel" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- End of section 5 -->
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->

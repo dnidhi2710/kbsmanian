@@ -1,0 +1,51 @@
+
+INSERT INTO import_map_feedback ( impJobId,type,yardName,yardAddress,containerType,noOfContainer,emptyPlot,offLoadDate,containerDamage,stAgentStatus,billingStatus ) VALUES ( '38/2017-18','sea','yardname','sadtedd','typoe','324','emorty','2017-08-15','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 1
+    [affected_rows] => 1
+)
+
+UPDATE import_map_feedback SET yardName = 'gzgg',yardAddress = 'cgfh',containerType = 'hdhdhh',noOfContainer = 'dhhdh',emptyPlot = 'hfg',offLoadDate = '2017-09-02',containerDamage = '',stAgentStatus = '',billingStatus = ''  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_feedback SET yardName = 'sads',yardAddress = 'sdfs',containerType = 'fdsfs',noOfContainer = 'fdss',emptyPlot = 'fsdf',offLoadDate = '2017-08-24',containerDamage = 'true',stAgentStatus = 'true',billingStatus = 'true'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_feedback SET yardName = 'sads',yardAddress = 'sdfs',containerType = 'fdsfs',noOfContainer = 'fdss',emptyPlot = 'fsdf',offLoadDate = '2017-09-01',containerDamage = 'true',stAgentStatus = 'true',billingStatus = 'true'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_feedback SET yardName = 'sads',yardAddress = 'sdfs',containerType = 'fdsfs',noOfContainer = 'fdss',emptyPlot = 'fsdf',offLoadDate = '2017-09-01',containerDamage = 'true',stAgentStatus = 'false',billingStatus = 'true'  WHERE impJobId = '38/2017-18' AND type = 'sea'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_feedback ( impJobId,type,yardName,yardAddress,containerType,noOfContainer,emptyPlot,offLoadDate,containerDamage,stAgentStatus,billingStatus ) VALUES ( 'imp','air','fdsfsd','fsd','fsd','fsdffd','sdffs','2017-09-01','true','true','true')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 2
+    [affected_rows] => 1
+)
+
+UPDATE import_map_feedback SET yardName = 'fdsfsd',yardAddress = 'fsd',containerType = 'fsd',noOfContainer = 'fsdffd',emptyPlot = 'sdffs',offLoadDate = '2017-09-01',containerDamage = 'true',stAgentStatus = 'false',billingStatus = 'true'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)

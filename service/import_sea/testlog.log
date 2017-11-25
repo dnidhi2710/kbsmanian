@@ -1,0 +1,384 @@
+
+INSERT INTO pre_arrival_request ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,par_status ) VALUES ( '','','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => 
+    [affected_rows] => 
+)
+
+INSERT INTO pre_arrival_request ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue ) VALUES ( '','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Table 'kbsmanian.pre_arrival_request' doesn't exist
+    [affected_rows] => -1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue ) VALUES ( '','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 16
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue ) VALUES ( '','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Duplicate entry '' for key 'impJobId'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_sea ( invoiceValue ) VALUES ( '')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 18
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea (  ) VALUES ( '')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Column count doesn't match value count at row 1
+    [affected_rows] => -1
+)
+
+INSERT INTO import_sea (  ) VALUES ( '')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Column count doesn't match value count at row 1
+    [affected_rows] => -1
+)
+
+INSERT INTO import_sea ( 02/2017-18,2017-08-25,partyref,consignee,address,,suppliername,invno,mothervessel,agents,invoicevalue ) VALUES ( '02/2017-18','2017-08-25','partyref','consignee','address','','suppliername','invno','mothervessel','agents','invoicevalue')
+Output : Array
+(
+    [status] => failed
+    [error_details] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '02/2017-18,2017-08-25,partyref,consignee,address,,suppliername,invno,mothervesse' at line 1
+    [affected_rows] => -1
+)
+
+INSERT INTO import_sea ( invoiceValue ) VALUES ( '')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 19
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue ) VALUES ( '','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Duplicate entry '' for key 'impJobId'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue ) VALUES ( '02/2017-18','2017-08-25','partyref','consignee','address','','suppliername','invno','2017-08-25','mothervessel','','','','','','','','agents','','','','','','','','invoicevalue')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 21
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue ) VALUES ( '02/2017-18','2017-08-25','partyref','consignee','address','','suppliername','invno','2017-08-25','mothervessel','','0000-00-00 20:18:00','','','','','','agents','','','','','','','','invoicevalue')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Duplicate entry '02/2017-18' for key 'impJobId'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue ) VALUES ( '03/2017-18','2017-08-22','partyref','consignee','add','haprtity','supp','inv1','2017-08-25','mothervells','2017-08-26','0000-00-00 17:27:00','gld','cotout','feeder','2017-08-24','cfs','agents','ign1','2017-08-25','','HBLno','2017-08-24','MBlNo','2017-08-25','200')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 23
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue ) VALUES ( '','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 24
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue ) VALUES ( '','','','','','','','','','','','','','','','','','','','','','','','','','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 25
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-24','partyref','consigner','add','hapary','suppleier','1','2017-09-01','mother','2017-08-24','','GLd','contout','feeder','2017-08-26','cfs','agnets','2','2017-08-24','lineon','HBLno','2017-08-23','MBl','2017-08-24','Invoicevalue','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 26
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-24','partyref','consigner','add','hapary','suppleier','1','2017-09-01','mother','2017-08-24','','GLd','contout','feeder','2017-08-26','cfs','agnets','2','2017-08-24','lineon','HBLno','2017-08-23','MBl','2017-08-24','Invoicevalue','')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 27
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-25','','test','addres','','','','','','','','gld','','','','','','','','','','','','','','{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":true,\"deec\":false,\"depb\":false,\"rms\":true,\"openOrder\":true,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 28
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-01','partyref','consingee','address','HSparty','suppliername','inv','2017-08-25','mother','2017-08-25','0000-00-00 01:01:00','GLD','contout','feeder','2017-08-26','CFS','agents','3','2017-08-31','lineno','HBLno','2017-08-29','MBL','2017-08-31','value','{\"Bonding\":false,\"houseConsumption\":true,\"exbond\":true,\"edi\":false,\"bulk\":true,\"deec\":true,\"depb\":false,\"rms\":true,\"openOrder\":false,\"breakBulk\":true}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 29
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-31','party','cosignee','addres','btparty','supplier','324','2017-08-31','mother','2017-08-31','10.30','GLD','cotout','feeder','2017-08-24','CFS','agentd','3','2017-08-31','lineno','HBLno','2017-08-22','MBlno','2017-08-31','2000','{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":false,\"edi\":true,\"bulk\":false,\"deec\":false,\"depb\":true,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 30
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-16','partyRef','consignee','ddre','party','supplier','invvno','2017-09-01','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 31
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-09-01','ref','consingee','address','acparty','supplier','no','2017-08-31','moeterb','2017-08-08','arrival','Gld','contout','feeder','2017-08-24','CFs','agents','ifnmo','2017-08-17','Lino','HBLno','2017-08-29','MBLno','2017-08-17','Vlaeue','{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":true,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 32
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-09-01','ddsadsa','','','','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 33
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-17','partyref','consf','ada','','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 34
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"dasd\",\"$$hashKey\":\"object:181\"},{\"containerNo\":2,\"containerName\":\"dasd\",\"$$hashKey\":\"object:182\"},{\"containerNo\":3,\"containerName\":\"asd\",\"$$hashKey\":\"object:183\"}]','das','asd','dasd','dasd','asd','','34')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 18
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-17','partyref','consf','ada','','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 35
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"dasd\",\"$$hashKey\":\"object:181\"},{\"containerNo\":2,\"containerName\":\"dasd\",\"$$hashKey\":\"object:182\"},{\"containerNo\":3,\"containerName\":\"asd\",\"$$hashKey\":\"object:183\"}]','das','asd','dasd','dasd','asd','','35')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 19
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-17','dsfsdf','sdf','csdfsdf','sdfsdf','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 36
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '','','','','','','sea','36')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 20
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-13','parties','consignee','address','hsparty','supp','122','2017-08-17','moehte','2017-08-27','ariral','gld','contr','feeder','2017-08-27','cfs','agents','igmno','2017-08-25','lineno','hblo','2017-08-22','mbl','2017-08-26','1000','{\"Bonding\":true,\"houseConsumption\":true,\"exbond\":false,\"edi\":true,\"bulk\":false,\"deec\":true,\"depb\":true,\"rms\":false,\"openOrder\":true,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 37
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"container1\",\"$$hashKey\":\"object:833\"},{\"containerNo\":2,\"containerName\":\"container2\",\"$$hashKey\":\"object:834\"}]','2','3','4','5','6','sea','37')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 21
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-24','party','consingee','address','HSparty','supplierName','No','2017-08-29','mother','2017-08-23','Arrival','GLD','contew','feeder','2017-08-23','CFS','AFEfs','ifsnfdk','2017-08-24','lino','BL','2017-08-21','MBL','2017-08-09','gfdgdg','{\"Bonding\":true,\"houseConsumption\":true,\"exbond\":true,\"edi\":true,\"bulk\":true,\"deec\":true,\"depb\":true,\"rms\":true,\"openOrder\":true,\"breakBulk\":true}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 38
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"sfsd\",\"$$hashKey\":\"object:835\"},{\"containerNo\":2,\"containerName\":\"dsf\",\"$$hashKey\":\"object:836\"},{\"containerNo\":3,\"containerName\":\"fdsff\",\"$$hashKey\":\"object:837\"},{\"containerNo\":4,\"containerName\":\"sdf\",\"$$hashKey\":\"object:838\"}]','fsdfs','fdsfs','fdsf','fdsf','fsdf','sea','38')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 22
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '','2017-08-02','partyref','consignee','address','ac party','supplier','no','2017-08-25','mother','2017-08-31','00:20:12','gldc','controur','feeder','2017-08-09','dcs','fdsf','dsfsdf','2017-09-08','fds','fdsf','2017-08-29','fds','2017-09-02','23334','{\"Bonding\":false,\"houseConsumption\":true,\"exbond\":true,\"edi\":false,\"bulk\":true,\"deec\":false,\"depb\":true,\"rms\":false,\"openOrder\":true,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 39
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:862\"},{\"containerNo\":2,\"containerName\":\"fsdf\",\"$$hashKey\":\"object:863\"},{\"containerNo\":3,\"containerName\":\"sfdf\",\"$$hashKey\":\"object:864\"},{\"containerNo\":4,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:865\"}]','fsdf','fdsf','fhgertrter','rthrthh','rhert','sea','39')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 23
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '01/2017-18','2017-08-23','party','consignee','address','acparty','suplier','sdfs','2017-08-22','','','','','','','','','','','','','','','','','gfdgd','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 40
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"sfdf\",\"$$hashKey\":\"object:294\"},{\"containerNo\":2,\"containerName\":\"sdfs\",\"$$hashKey\":\"object:295\"},{\"containerNo\":3,\"containerName\":\"fsd\",\"$$hashKey\":\"object:296\"}]','fsdgdf','fdgdfg','gfdg','gfdgf','dg','sea','40')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 24
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( 'vmnbvn','2017-09-07','vj','nhn','nbmgn','mnghj','vvb','vhj','2017-08-16','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 41
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '','','','','','','sea','41')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 25
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '02/2017-18','2017-08-24','party','consignee','address','ac party','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 42
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '','','','','','','sea','42')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 26
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,licenseDetail,buffNo,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '0342342','derail','budfno','2017-09-13','partyre','','adsad','sdfsdfs','dfdsf','','','','','','','','','','','','','','','','','','','','{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":true,\"edi\":false,\"bulk\":false,\"deec\":true,\"depb\":true,\"rms\":true,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 43
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"sdfdsf\",\"gld\":\"2017-08-29\",\"contrOut\":\"2017-09-28\",\"$$hashKey\":\"object:197\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"fsdf\",\"gld\":\"2017-08-29\",\"contrOut\":\"2017-09-30\",\"$$hashKey\":\"object:198\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":3,\"containerName\":\"fdsfds\",\"gld\":\"2017-09-26\",\"contrOut\":\"2017-09-26\",\"$$hashKey\":\"object:199\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]','dsfdsf','sdfdsf','fdsf','fdsf','sdfdsf','sea','43')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 32
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,licenseDetail,buffNo,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( 'sdfdsfdsf','fdsfdsfsdf','fdsfdsf','2017-09-05','dsfdsf','sdfds','dsfdsf','sdfsdf','dsfsdf','fdsfsd','2017-09-14','dsfds','2017-09-20','adsadsf','','','dsfsdf','2017-09-21','dsfsdfdsf','fds','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 44
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"dsfsdf\",\"gld\":\"2017-09-04\",\"contrOut\":\"2017-09-20\",\"$$hashKey\":\"object:1799\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"xcvxcv\",\"gld\":\"2017-08-29\",\"contrOut\":\"2017-09-14\",\"$$hashKey\":\"object:1800\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]','cxvxcv','cxvx','vxcv','fds','sdfdsf','sea','sdfdsfdsf')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 33
+    [affected_rows] => 1
+)
+
+INSERT INTO import_sea ( impJobId,licenseDetail,buffNo,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( 'sdfdsfdsf','','','','','','','','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Duplicate entry 'sdfdsfdsf' for key 'impJobId'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_sea ( impJobId,licenseDetail,buffNo,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,motherVsl,mvDue,arrival,GLD,cntrOut,feederVsl,fvOn,CFS,agents,igmNo,licenseDate,lineNo,hblNo,hblDate,mbl,mblDate,invoiceValue,jobType ) VALUES ( '768','','','','','','','','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 45
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '','','','','','','sea','768')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 36
+    [affected_rows] => 1
+)

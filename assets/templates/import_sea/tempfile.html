@@ -1,0 +1,103 @@
+doc remaining 
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_gld"><input type="checkbox" name="import_gld" id="import_gld" ng-model="doc.CIF" class="">&nbsp;CIF</label>
+                                <label for="import_gld"><input type="checkbox" name="import_gld" id="import_gld" ng-model="doc.FOB" class="">&nbsp;FOB</label>
+                                <label for="import_gld"><input type="checkbox" name="import_gld" id="import_gld" ng-model="doc.CI" class="">&nbsp;CI</label>
+                                <label for="import_gld"><input type="checkbox" name="import_gld" id="import_gld" ng-model="doc.CF" class="">&nbsp;CF</label>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Customs Clerk</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.customsClerk" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Dock Clerk</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.dockClerk" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_supplier_name">
+                                    TIN No.</label>
+                                <input type="text" name="import_supplier_name" id="import_supplier_name" ng-model="doc.tinNO" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    CST No.</label>
+                                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="doc.cstNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    GST No.</label>
+                                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="doc.gstNo" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    ST Agents Charges</label>
+                                <textarea class="form-control" ng-model="doc.stAgentCharges"></textarea>
+                            </div>
+                        </div>
+                        <!-- /todo -->
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Remarks</label>
+                                <textarea class="form-control" ng-model="doc.remarks"></textarea>
+                            </div>
+                        </div>
+
+clearance remaining
+        <table class="table table-bordered" align="center">
+            <tr>
+                <td>Date</td>
+                <td>Cleared Packages</td>
+                <td>Balance Packages</td>
+                <td>Transporter</td>
+                <td>Transport Arranged by</td>
+            </tr>
+            <tr ng-repeat="data in clearance.clrparticulars">
+                <td>
+                    <input type="text" name="package1" id="package1" ng-model="data.date" class="font-control">
+                </td>
+                <td>
+                    <input type="date" name="package1" id="package1" ng-model="data.clrdPackage" class="font-control">
+                </td>
+                <td>
+                    <input type="text" name="package1" id="package1" ng-model="data.balancePackage" class="font-control">
+                </td>
+                <td>
+                    <input type="text" name="package1" id="package1" ng-model="data.transporter" class="font-control">
+                </td>
+                <td>
+                    <input type="text" name="package1" id="package1" ng-model="data.arrangedby" class="font-control">
+                </td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col-lg-3">
+                <button type="button" class="btn btn-info" ng-click="addClearanceObj();">
+                                <span class="glyphicon glyphicon-plus"></span> Add Row
+                            </button>
+                <button type="button" class="btn btn-info" ng-if="clearance.clrparticulars.length>0" ng-click="delClearanceObj();">
+                                <span class="glyphicon glyphicon-minus"></span> Delete Row
+                            </button>
+            </div>
+        </div>
+
+

@@ -1,0 +1,122 @@
+<div class="col-lg-12">
+    <form method="post">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_cif"><input type="checkbox" name="import_cif" id="import_cif" ng-model="doc.CIF" class="">&nbsp;CIF</label>
+                                <label for="import_fob"><input type="checkbox" name="import_fob" id="import_fob" ng-model="doc.FOB" class="">&nbsp;FOB</label>
+                                <label for="import_ci"><input type="checkbox" name="import_ci" id="import_ci" ng-model="doc.CI" class="">&nbsp;CI</label>
+                                <label for="import_cf"><input type="checkbox" name="import_cf" id="import_cf" ng-model="doc.CF" class="">&nbsp;CF</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Customs Clerk</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.customsClerk" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Dock Clerk</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.dockClerk" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_supplier_name">
+                                    TIN No.</label>
+                                <input type="text" name="import_supplier_name" id="import_supplier_name" ng-model="doc.tinNO" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    CST No.</label>
+                                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="doc.cstNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    GST No.</label>
+                                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="doc.gstNo" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    ST Agents Charges</label>
+                                <textarea class="form-control" ng-model="doc.stAgentCharges"></textarea>
+                            </div>
+                        </div>
+                        <!-- /todo -->
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Remarks</label>
+                                <textarea class="form-control" ng-model="doc.remarks"></textarea>
+                            </div>
+                        </div>
+
+        <!-- Submit & Cancel button -->
+        <div class="text-center">
+            <div class="col-md-4">
+                <input type="button" name="cancel" value="Cancel" class="btn btn-primary btn-block">
+            </div>
+            <div class="col-md-4" ng-if="createFlag">
+                <input type="button" name="save" value="Save" ng-click="saveSamples();" class="btn btn-primary btn-block">
+            </div>
+             <div class="col-md-4" ng-if="updateFlag">
+                <input type="button" name="save" value="Update" ng-click="saveSamples();" class="btn btn-primary btn-block">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal fade" id="showSampleError" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-danger">
+                    <strong>Error!</strong> {{errorMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showSampleAlert" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-warning">
+                    <strong>Alert! </strong> {{alertMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showSampleSuccess" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-success">
+                    <strong>Success! </strong> {{successMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

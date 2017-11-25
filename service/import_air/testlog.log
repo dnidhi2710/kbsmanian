@@ -1,0 +1,202 @@
+
+INSERT INTO import_air ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,flightDtls,dueDate,arrival,gdd,lfd,advisedBy,advisedOn,shed,warehouse,licenseNo,value,balance,agents,igmNo,licenseDate,mawbNo,hawbNo,doNo,doDate,invoiceValue,jobType ) VALUES ( '02/2018-17','2017-08-16','par','scsdv','','part','supp','323','2017-08-24','fight','2017-08-24','arruval','gdd','slfsdf','asdfs','2017-08-10','sged','ware','','','balcne','','','','mawb','hawb','do','2017-08-20','fdsfdsf','{\"Bonding\":true,\"houseConsumption\":true,\"exbond\":true,\"edi\":true,\"bulk\":true,\"deec\":true,\"depb\":true,\"rms\":true,\"openOrder\":true,\"breakBulk\":true}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 23
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '','','','','','','','23')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 27
+    [affected_rows] => 1
+)
+
+INSERT INTO import_air ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,flightDtls,dueDate,arrival,gdd,lfd,advisedBy,advisedOn,shed,warehouse,licenseNo,value,balance,agents,igmNo,licenseDate,mawbNo,hawbNo,doNo,doDate,invoiceValue,jobType ) VALUES ( 'impjobnsd','2017-08-11','dsfsd','fdsf','','dsf','fdsfs','dsfsd','2017-08-09','fdsf','2017-08-17','dsfsd','fdsf','fds','fdsfsd','2017-08-10','fdsf','fdsf','','','fdsf','','','','sfds','fdsfs','sdff','2017-08-13','fdsfdsfds','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 24
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:668\"},{\"containerNo\":2,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:669\"}]','fdsf','fdsf','fdsf','fdsf','fsdfsdf','sea','24')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 28
+    [affected_rows] => 1
+)
+
+INSERT INTO import_air ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,flightDtls,dueDate,arrival,gdd,lfd,advisedBy,advisedOn,shed,warehouse,licenseNo,value,balance,agents,igmNo,licenseDate,mawbNo,hawbNo,doNo,doDate,invoiceValue,jobType ) VALUES ( '1231','2017-08-11','dsfsd','fdsf','','dsf','fdsfs','dsfsd','2017-08-09','fdsf','2017-08-17','dsfsd','fdsf','fds','fdsfsd','2017-08-10','fdsf','fdsf','','','fdsf','','','','sfds','fdsfs','sdff','2017-08-13','fdsfdsfds','{\"Bonding\":true,\"houseConsumption\":true,\"exbond\":true,\"edi\":true,\"bulk\":true,\"deec\":true,\"depb\":true,\"rms\":true,\"openOrder\":true,\"breakBulk\":true}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 25
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:668\"},{\"containerNo\":2,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:669\"}]','fdsf','fdsf','fdsf','fdsf','fsdfsdf','sea','25')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 29
+    [affected_rows] => 1
+)
+
+UPDATE import_air SET impJobId = '1231',importedDate = '2017-08-11',partyRef = 'dsfsd',consignee = 'fdsf',address = 'address',hsOrBtAccParty = 'dsf',supplier = 'fdsfs',invoiceNo = 'dsfsd',invoiceDate = '2017-08-09',flightDtls = 'fdsf',dueDate = '2017-08-17',arrival = '0000-00-00 00:00:00',gdd = 'fdsf',lfd = 'fds',advisedBy = 'fdsfsd',advisedOn = '2017-08-10',shed = 'fdsf',warehouse = 'fdsf',licenseNo = '2121',value = 'value',balance = 'fdsf',mawbNo = 'sfds',hawbNo = 'fdsfs',hawbDate = '',doNo = 'sdff',doDate = '2017-08-13',invoiceValue = 'fdsfdsfds',jobType = '{\"Bonding\":true,\"houseConsumption\":true,\"exbond\":true,\"edi\":true,\"bulk\":true,\"deec\":true,\"depb\":true,\"rms\":true,\"openOrder\":true,\"breakBulk\":true}'  WHERE impJobId = '1231' AND type = 'air'
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'type' in 'where clause'
+    [affected_rows] => -1
+)
+
+UPDATE import_air SET impJobId = '1231',importedDate = '2017-08-11',partyRef = 'dsfsd',consignee = 'fdsf',address = 'address',hsOrBtAccParty = 'dsf',supplier = 'fdsfs',invoiceNo = 'dsfsd',invoiceDate = '2017-08-09',flightDtls = 'fdsf',dueDate = '2017-08-17',arrival = '0000-00-00 00:00:00',gdd = 'fdsf',lfd = 'fds',advisedBy = 'fdsfsd',advisedOn = '2017-08-10',shed = 'fdsf',warehouse = 'fdsf',licenseNo = '2121',value = 'value',balance = 'fdsf',mawbNo = 'sfds',hawbNo = 'fdsfs',hawbDate = '',doNo = 'sdff',doDate = '2017-08-13',invoiceValue = 'fdsfdsfds',jobType = '{\"Bonding\":true,\"houseConsumption\":true,\"exbond\":true,\"edi\":true,\"bulk\":true,\"deec\":true,\"depb\":true,\"rms\":true,\"openOrder\":true,\"breakBulk\":true}'  WHERE impJobId = '1231' AND type = 'air'
+Output : Array
+(
+    [status] => failed
+    [error_details] => Unknown column 'type' in 'where clause'
+    [affected_rows] => -1
+)
+
+UPDATE import_air SET impJobId = '1231',importedDate = '2017-08-11',partyRef = 'dsfsd',consignee = 'fdsf',address = 'address',hsOrBtAccParty = 'dsf',supplier = 'fdsfs',invoiceNo = 'dsfsd',invoiceDate = '2017-08-09',flightDtls = 'fdsf',dueDate = '2017-08-17',arrival = '0000-00-00 00:00:00',gdd = 'fdsf',lfd = 'fds',advisedBy = 'fdsfsd',advisedOn = '2017-08-10',shed = 'fdsf',warehouse = 'fdsf',licenseNo = '2121',value = 'value',balance = 'fdsf',mawbNo = 'sfds',hawbNo = 'fdsfs',hawbDate = '',doNo = 'sdff',doDate = '2017-08-13',invoiceValue = 'fdsfdsfds',jobType = '{\"Bonding\":true,\"houseConsumption\":true,\"exbond\":true,\"edi\":true,\"bulk\":true,\"deec\":true,\"depb\":true,\"rms\":true,\"openOrder\":true,\"breakBulk\":true}'  WHERE impJobId = '1231'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"dha\",\"$$hashKey\":\"object:44\"},{\"containerNo\":2,\"containerName\":\"sdfsdf\",\"$$hashKey\":\"object:45\"}]',noOfPkgs = 'fsdf',content = 'sdff',measurements = 'sdf',grossWeight = 'fsdff',nettWeight = 'sdf'  WHERE impJobId = '1231' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_air SET impJobId = '1231',importedDate = '2017-08-11',partyRef = 'dsfsd',consignee = 'fdsf',address = 'address',hsOrBtAccParty = 'dsf',supplier = 'fdsfs',invoiceNo = 'dsfsd',invoiceDate = '2017-08-09',flightDtls = 'fdsf',dueDate = '2017-08-17',arrival = '0000-00-00 00:00:00',gdd = 'fdsf',lfd = 'fds',advisedBy = 'fdsfsd',advisedOn = '2017-08-10',shed = 'fdsf',warehouse = 'fdsf',licenseNo = '2121',value = 'value',balance = 'fdsf',mawbNo = 'sfds',hawbNo = 'fdsfs',hawbDate = '',doNo = 'sdff',doDate = '2017-08-13',invoiceValue = 'fdsfdsfds',jobType = '{\"Bonding\":true,\"houseConsumption\":true,\"exbond\":true,\"edi\":true,\"bulk\":true,\"deec\":true,\"depb\":true,\"rms\":true,\"openOrder\":true,\"breakBulk\":true}'  WHERE impJobId = '1231'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"dha\",\"$$hashKey\":\"object:44\"},{\"containerNo\":2,\"containerName\":\"sdfsdf\",\"$$hashKey\":\"object:45\"}]',noOfPkgs = 'fsdf',content = 'sdff',measurements = 'sdf',grossWeight = 'fsdff',nettWeight = 'sdf'  WHERE impJobId = '1231' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+INSERT INTO import_air ( impJobId,importedDate,partyRef,consignee,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,flightDtls,dueDate,arrival,gdd,lfd,advisedBy,advisedOn,shed,warehouse,licenseNo,value,balance,mawbNo,hawbNo,hawbDate,doNo,doDate,invoiceValue,jobType ) VALUES ( 'imp','2017-08-31','party','cisdf','adsad','axoa','syplice','jbcsd','2017-08-24','fsdfd','2017-08-16','dsfsf','fasff','sf','dsfsd','2017-08-10','fsdfsd','ffdsfdf','sdfsdf','sdfsfsdf','sdfsdf','','sfsdf','2017-08-21','fdsf','2017-09-01','fdsfsdfs','{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":false,\"edi\":true,\"bulk\":false,\"deec\":true,\"depb\":false,\"rms\":true,\"openOrder\":false,\"breakBulk\":true}')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 26
+    [affected_rows] => 1
+)
+
+INSERT INTO import_map_contents ( contrNos,noOfPkgs,content,measurements,grossWeight,nettWeight,type,impJobId ) VALUES ( '[{\"containerNo\":1,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:940\"},{\"containerNo\":2,\"containerName\":\"sdf\",\"$$hashKey\":\"object:941\"}]','fsdfs','fsdf','fsdf','fsdf','fds','air','imp')
+Output : Array
+(
+    [status] => success
+    [last_insert_id] => 30
+    [affected_rows] => 1
+)
+
+UPDATE import_air SET impJobId = 'imp',importedDate = '2017-08-31',partyRef = 'party',consignee = 'cisdf',address = 'adsad',hsOrBtAccParty = 'axoa',supplier = 'syplice',invoiceNo = 'jbcsd',invoiceDate = '2017-08-24',flightDtls = 'fsdfd',dueDate = '2017-08-16',arrival = '0000-00-00 00:00:00',gdd = 'fasff',lfd = 'sf',advisedBy = 'dsfsd',advisedOn = '2017-08-10',shed = 'fsdfsd',warehouse = 'ffdsfdf',licenseNo = 'o',value = 'vlaue',balance = 'sdfsdf',mawbNo = '4214',hawbNo = 'sfsdf',hawbDate = '2017-08-21',doNo = 'fdsf',doDate = '2017-09-01',invoiceValue = 'fdsfsdfs',jobType = '{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":false,\"edi\":true,\"bulk\":false,\"deec\":true,\"depb\":false,\"rms\":true,\"openOrder\":false,\"breakBulk\":true}'  WHERE impJobId = 'imp'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"fdsf\",\"$$hashKey\":\"object:940\"},{\"containerNo\":2,\"containerName\":\"sdf\",\"$$hashKey\":\"object:941\"}]',noOfPkgs = 'fsdfs',content = 'fsdf',measurements = 'fsdf',grossWeight = 'fsdf',nettWeight = 'fds'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_air SET impJobId = 'imp',importedDate = '2017-08-31',partyRef = 'party',consignee = 'cisdf',address = 'adsad',hsOrBtAccParty = 'axoa',supplier = 'syplice',invoiceNo = 'jbcsd',invoiceDate = '2017-08-24',flightDtls = 'fsdfd',dueDate = '2017-08-16',arrival = '0000-00-00 00:00:00',gdd = 'fasff',lfd = 'sf',advisedBy = 'dsfsd',advisedOn = '2017-08-10',shed = 'fsdfsd',warehouse = 'ffdsfdf',licenseNo = 'o',value = 'vlaue',balance = 'sdfsdf',mawbNo = '4214',hawbNo = 'sfsdf',hawbDate = '2017-08-21',doNo = 'fdsf',doDate = '2017-09-01',invoiceValue = 'fdsfsdfs',jobType = '{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":false,\"edi\":true,\"bulk\":false,\"deec\":true,\"depb\":false,\"rms\":true,\"openOrder\":false,\"breakBulk\":true}'  WHERE impJobId = 'imp'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"fsf\",\"$$hashKey\":\"object:21\"},{\"containerNo\":2,\"containerName\":\"dgdfg\",\"$$hashKey\":\"object:22\"},{\"containerNo\":3,\"containerName\":\"gddfg\",\"$$hashKey\":\"object:23\"}]',noOfPkgs = 'fsdfs',content = 'fsdf',measurements = 'fsdf',grossWeight = 'fsdf',nettWeight = 'fds'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_air SET impJobId = 'imp',importedDate = '2017-08-31',partyRef = 'party',consignee = 'cisdf',licenseDetail = '',buffNo = '',address = 'adsad',hsOrBtAccParty = 'axoa',supplier = 'syplice',invoiceNo = 'jbcsd',invoiceDate = '2017-08-24',flightDtls = 'fsdfd',dueDate = '2017-08-16',arrival = '0000-00-00 00:00:00',gdd = 'fasff',lfd = 'sf',advisedBy = 'dsfsd',advisedOn = '2017-08-10',shed = 'fsdfsd',warehouse = 'ffdsfdf',licenseNo = 'o',value = 'vlaue',balance = 'sdfsdf',mawbNo = '4214',hawbNo = 'sfsdf',hawbDate = '2017-08-21',doNo = 'fdsf',doDate = '2017-09-01',invoiceValue = 'fdsfsdfs',jobType = '{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":false,\"edi\":true,\"bulk\":false,\"deec\":true,\"depb\":false,\"rms\":true,\"openOrder\":false,\"breakBulk\":true}'  WHERE impJobId = 'imp'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"fsf\",\"$$hashKey\":\"object:21\"},{\"containerNo\":2,\"containerName\":\"dgdfg\",\"$$hashKey\":\"object:22\"},{\"containerNo\":3,\"containerName\":\"gddfg\",\"$$hashKey\":\"object:23\"}]',noOfPkgs = 'fsdfs',content = 'fsdf',measurements = 'fsdf',grossWeight = 'fsdf',nettWeight = 'fds'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_air SET impJobId = 'imp',importedDate = '2017-08-31',partyRef = 'party',consignee = 'cisdf',licenseDetail = '',buffNo = '',address = 'adsad',hsOrBtAccParty = 'axoa',supplier = 'syplice',invoiceNo = 'jbcsd',invoiceDate = '2017-08-24',flightDtls = 'fsdfd',dueDate = '2017-08-16',arrival = '0000-00-00 00:00:00',gdd = 'fasff',lfd = 'sf',advisedBy = 'dsfsd',advisedOn = '2017-08-10',shed = 'fsdfsd',warehouse = 'ffdsfdf',licenseNo = 'o',value = 'vlaue',balance = 'sdfsdf',mawbNo = '4214',hawbNo = 'sfsdf',hawbDate = '2017-08-21',doNo = 'fdsf',doDate = '2017-09-01',invoiceValue = 'fdsfsdfs',jobType = '{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":false,\"edi\":true,\"bulk\":false,\"deec\":true,\"depb\":false,\"rms\":true,\"openOrder\":false,\"breakBulk\":true}'  WHERE impJobId = 'imp'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"fsf\",\"$$hashKey\":\"object:21\",\"gld\":\"2017-09-04\",\"contrOut\":\"2017-08-29\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"dgdfg\",\"$$hashKey\":\"object:22\",\"gld\":\"2017-09-04\",\"contrOut\":\"2017-09-21\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":3,\"containerName\":\"gddfg\",\"$$hashKey\":\"object:23\",\"gld\":\"2017-09-04\",\"contrOut\":\"2017-09-05\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]',noOfPkgs = 'fsdfs',content = 'fsdf',measurements = 'fsdf',grossWeight = 'fsdf',nettWeight = 'fds'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_air SET impJobId = 'imp',importedDate = '2017-08-31',partyRef = 'party',consignee = 'cisdf',licenseDetail = 'licensedetail',buffNo = 'buffno',address = 'adsad',hsOrBtAccParty = 'axoa',supplier = 'syplice',invoiceNo = 'jbcsd',invoiceDate = '2017-08-24',flightDtls = 'fsdfd',dueDate = '2017-08-16',arrival = '0000-00-00 00:00:00',gdd = 'fasff',lfd = 'sf',advisedBy = 'dsfsd',advisedOn = '2017-08-10',shed = 'fsdfsd',warehouse = 'ffdsfdf',licenseNo = 'o',value = 'vlaue',balance = 'sdfsdf',mawbNo = '4214',hawbNo = 'sfsdf',hawbDate = '2017-08-21',doNo = 'fdsf',doDate = '2017-09-01',invoiceValue = 'fdsfsdfs',jobType = '{\"Bonding\":true,\"houseConsumption\":false,\"exbond\":false,\"edi\":true,\"bulk\":false,\"deec\":true,\"depb\":false,\"rms\":true,\"openOrder\":false,\"breakBulk\":true}'  WHERE impJobId = 'imp'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+UPDATE import_map_contents SET contrNos = '[{\"containerNo\":1,\"containerName\":\"fsf\",\"$$hashKey\":\"object:21\",\"gld\":\"2017-09-04\",\"contrOut\":\"2017-08-29\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":2,\"containerName\":\"dgdfg\",\"$$hashKey\":\"object:22\",\"gld\":\"2017-09-04\",\"contrOut\":\"2017-09-21\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}},{\"containerNo\":3,\"containerName\":\"gddfg\",\"$$hashKey\":\"object:23\",\"gld\":\"2017-09-04\",\"contrOut\":\"2017-09-05\",\"GLDFlag\":{\"open\":false},\"cntroutFlag\":{\"open\":false}}]',noOfPkgs = 'fsdfs',content = 'fsdf',measurements = 'fsdf',grossWeight = 'fsdf',nettWeight = 'fds'  WHERE impJobId = 'imp' AND type = 'air'
+Output : Array
+(
+    [status] => success
+    [affected_rows] => 0
+)
+
+INSERT INTO import_air ( impJobId,importedDate,partyRef,consignee,licenseDetail,buffNo,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,flightDtls,dueDate,arrival,gdd,lfd,advisedBy,advisedOn,shed,warehouse,licenseNo,value,balance,mawbNo,hawbNo,hawbDate,doNo,doDate,invoiceValue,jobType ) VALUES ( 'imp','','','','','','','','','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Duplicate entry 'imp' for key 'impJobId'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_air ( impJobId,importedDate,partyRef,consignee,licenseDetail,buffNo,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,flightDtls,dueDate,arrival,gdd,lfd,advisedBy,advisedOn,shed,warehouse,licenseNo,value,balance,mawbNo,hawbNo,hawbDate,doNo,doDate,invoiceValue,jobType ) VALUES ( 'imp','','','','','','','','','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Duplicate entry 'imp' for key 'impJobId'
+    [affected_rows] => -1
+)
+
+INSERT INTO import_air ( impJobId,importedDate,partyRef,consignee,licenseDetail,buffNo,address,hsOrBtAccParty,supplier,invoiceNo,invoiceDate,flightDtls,dueDate,arrival,gdd,lfd,advisedBy,advisedOn,shed,warehouse,licenseNo,value,balance,mawbNo,hawbNo,hawbDate,doNo,doDate,invoiceValue,jobType ) VALUES ( 'imp','','','','','','','','','','','','','','','','','','','','','','','','','','','','','{\"Bonding\":false,\"houseConsumption\":false,\"exbond\":false,\"edi\":false,\"bulk\":false,\"deec\":false,\"depb\":false,\"rms\":false,\"openOrder\":false,\"breakBulk\":false}')
+Output : Array
+(
+    [status] => failed
+    [error_details] => Duplicate entry 'imp' for key 'impJobId'
+    [affected_rows] => -1
+)

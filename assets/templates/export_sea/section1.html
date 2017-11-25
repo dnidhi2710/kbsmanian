@@ -1,0 +1,710 @@
+<div id="wrapper">
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Export Sea
+                    </h1>
+                </div>
+            </div>
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="addSeaList">
+                        <li ng-click="activeMenu(1)" ng-class="section1?'active':''">Job No.</li>
+                        <li ng-click="activeMenu(2)" ng-class="section2?'active':''">Remarks</li>
+                        <li ng-click="activeMenu(3)" ng-class="section3?'active':''">Delivery Receipts</li>
+                        <li ng-click="activeMenu(4)" ng-class="section4?'active':''">Expenditure Slip</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb">
+                        <li class="active">
+                            <i class="fa fa-list"></i> Add / Update Export Sea for {{doc.importJobNo+yearValue}}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Section 1 form -->
+                <div class="col-lg-12" ng-if="section1">
+                    <form method="post">
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="sel1">Select Type : </label>{{typeName}}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-sm-8">
+                                <div class="form-group">
+                                    <label for="import_job_no">Job no. Exp</label>
+                                    <input type="text" name="import_job_no" ng-model="doc.importJobNo" id="import_job_no" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <br>
+                                    <h5>{{yearValue}}</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_dated">Dated</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.importDate" is-open="importDate.open"
+                                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                    />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="importDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_party_ref">Shipper</label>
+                                <input type="text" name="import_party_ref" id="import_party_ref" ng-model="doc.shipper" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_consignee">Consignee</label>
+                                <input type="text" name="import_consignee" id="import_consignee" ng-model="doc.consignee" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_address">Bank</label>
+                                <input type="text" name="import_address" id="import_address" ng-model="doc.bank" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_party">Bank / Notify</label>
+                                <input type="text" name="import_party" id="import_party" ng-model="doc.bank_notify" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_supplier_name">
+                                    Invoice No.</label>
+                                <input type="text" name="import_supplier_name" id="import_supplier_name" ng-model="doc.invoiceNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    Inv. Dt.</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.invoiceDate" is-open="invoiceDate.open"
+                                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                    />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="invoiceDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    Value</label>
+                                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="doc.value" class="form-control">
+                            </div>
+                        </div>
+                        <!-- Minify Part -->
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_mother_vessel">
+                                    G.R.No</label>
+                                <input type="text" name="import_mother_vessel" id="import_mother_vessel" ng-model="doc.grNo" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    Inv. No & Dt.</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.grDate" is-open="grDate.open" datepicker-options="dateOptions"
+                                        ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="grDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    RBI Code No</label>
+                                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="doc.rbiCode" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_mother_vessel">
+                                    Shipping Bill No</label>
+                                <input type="text" name="import_mother_vessel" id="import_mother_vessel" ng-model="doc.billNo" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    Dt.</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.billDate" is-open="billDate.open"
+                                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                    />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="billDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_Inv_Dt">
+                                    Ex. Rate</label>
+                                <input type="text" name="import_Inv_Dt" id="import_Inv_Dt" ng-model="doc.exchangeRate" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_due">
+                                    Flight</label>
+                                <input type="text" name="import_due" id="import_due" ng-model="doc.flight" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_arrival">
+                                    Arrived</label>
+                                <input type="text" name="import_arrival" id="import_arrival" ng-model="doc.arrived" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_gld">
+                                    Departured</label>
+                                <input type="text" name="import_gld" id="import_gld" ng-model="doc.departured" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Agent</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.agent" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_arrival">
+                                    Port</label>
+                                <input type="text" name="import_arrival" id="import_arrival" ng-model="doc.port" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_gld">
+                                    Country</label>
+                                <input type="text" name="import_gld" id="import_gld" ng-model="doc.country" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    E.M.No</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.emNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Remarks</label>
+                                <textarea class="form-control" ng-model="doc.remarks"></textarea>
+                            </div>
+                        </div>
+                        <table class="table table-bordered" align="center">
+                            <tr>
+                                <td>Marks & Nos</td>
+                                <td>No.of Pkgs</td>
+                                <td>Contents</td>
+                                <td>Measurements</td>
+                                <td>Gross Weight</td>
+                                <td>Net Weight</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <button ng-if="doc.contains.length===0" type="button" class="btn btn-success" ng-click="addContainerObj();">
+                                            <span class="glyphicon glyphicon-plus"></span> Add Containers
+                                        </button>
+                                        <!--<div ng-if="doc.contains.length>0" ng-repeat="data in doc.contains">
+                                            <label>{{data.containerName}} </label>
+                                        </div>-->
+                                        <button ng-if="doc.contains.length>0" type="button" class="btn btn-primary" ng-click="editContainerObj();">
+                                            <span class="glyphicon glyphicon-plus"></span> Edit Containers
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" name="packageNo" ng-model="doc.noOfPkgs" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <textarea rows="5" name="contents" ng-model="doc.contents"></textarea>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" name="measurements" ng-model="doc.measurements" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" name="grossWeight" ng-model="doc.grossWeight" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" name="netWeight" ng-model="doc.nettWeight" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    Value</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.value1" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    FOB:</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.fob" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    FRT:</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.frt" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    INS:</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.ins" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    CIF</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.cif" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="import_cout">
+                                    E.A No:</label>
+                                <input type="text" name="import_cout" id="import_cout" ng-model="doc.eaNo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="col-md-12">&nbsp;</div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        L/C No:</label>
+                                    <input type="text" name="import_cout" id="import_cout" ng-model="doc.lcNo" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Dt.</label>
+                                    <p class="input-group">
+                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.lcDate" is-open="lcDate.open" datepicker-options="dateOptions"
+                                            ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                        <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="lcDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Order No:</label>
+                                    <input type="text" name="import_cout" id="import_cout" ng-model="doc.orderNo" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Mate Receipt No:</label>
+                                    <input type="text" name="import_cout" id="import_cout" ng-model="doc.receiptNo" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Dt.</label>
+                                    <p class="input-group">
+                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.receiptDate1" is-open="receiptDate1.open"
+                                            datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                        />
+                                        <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="receiptDate1.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Dt:</label>
+                                    <p class="input-group">
+                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.receiptDate2" is-open="receiptDate2.open"
+                                            datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                        />
+                                        <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="receiptDate2.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Bill of Landing No:</label>
+                                    <input type="text" name="import_cout" id="import_cout" ng-model="doc.landingNo" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Dt.</label>
+                                    <p class="input-group">
+                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.billDate1" is-open="billDate1.open"
+                                            datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                        />
+                                        <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="billDate1.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Dt:</label>
+                                    <p class="input-group">
+                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.billDate2" is-open="billDate2.open"
+                                            datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                        />
+                                        <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="billDate2.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- -->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        B/L PRT:</label>
+                                    <input type="text" name="import_cout" id="import_cout" ng-model="doc.prt" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        PP / CC Ex @ US $.</label>
+                                    <input type="text" name="import_cout" id="import_cout" ng-model="doc.exUS" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Dt.</label>
+                                    <p class="input-group">
+                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.exchangeDate" is-open="exchangeDate.open"
+                                            datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                        />
+                                        <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="exchangeDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="import_cout">
+                                        Rs.</label>
+                                    <input type="text" name="import_cout" id="import_cout" ng-model="doc.rupees" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="import_cout">Special Instructions :</label>
+                                <textarea class="form-control" ng-model="doc.splInstructions"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="import_job_no">AWB No.</label>
+                                        <input type="text" name="import_job_no" id="import_job_no" ng-model="doc.awbNo" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="import_dated">MAWB/HAWB Date:</label>
+                                        <p class="input-group">
+                                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.mawbDate" is-open="mawbDate.open"
+                                                datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                            />
+                                            <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="mawbDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="import_party_ref">MBL/HBL Date:</label>
+                                        <p class="input-group">
+                                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="doc.mblDate" is-open="mblDate.open" datepicker-options="dateOptions"
+                                                ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                            <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="mblDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <!-- Submit & Cancel button -->
+                        <div class="text-center">
+                            <div class="col-md-4" ng-if="createFlag">
+                                <input type="button" name="save" value="Save" ng-click="saveDocFields();" class="btn btn-primary btn-block">
+                            </div>
+                            <div class="col-md-4" ng-if="updateFlag">
+                                <input type="button" name="save" value="Update" ng-click="saveDocFields();" class="btn btn-primary btn-block">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" name="cancel" value="Cancel" class="btn btn-primary btn-block">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal fade" id="showError" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="alert alert-danger">
+                                    <strong>Error!</strong> {{errorMsg}}.
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="showAlert" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="alert alert-warning">
+                                    <strong>Alert! </strong> {{alertMsg}}.
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="showContainer" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>Add Container Details</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="import_arrival">
+                                     Number of containers</label>
+                                    <input type="number" name="import_arrival" id="import_arrival" ng-disabled="editFlag" ng-model="doc.containerNumber" min=1
+                                        max=50 ng-change="addContainerDetails()" class="form-control">
+                                </div>
+                                <div>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td> <label for="import_arrival">Name</label></td>
+                                                <td> <label for="import_arrival">GLD</label></td>
+                                                <td> <label for="import_arrival">CONTR OUT</label></td>
+                                            </tr>
+                                            <tr ng-repeat="data in doc.containerObj">
+                                                <td>
+                                                    <button type="button" class="btn btn-warning" ng-click="removeSelectedContainer(data.containerNo);">
+                                                        <span class="glyphicon glyphicon-minus"></span> 
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" ng-model="data.containerName">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="input-group">
+                                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="data.gld" is-open="data.GLDFlag.open"
+                                                            datepicker-options="dateOptions" ng-required="true" close-text="Close"
+                                                            alt-input-formats="altInputFormats" />
+                                                        <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default" ng-click="data.GLDFlag.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <p class="input-group">
+                                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="data.contrOut" is-open="data.cntroutFlag.open"
+                                                            datepicker-options="dateOptions" ng-required="true" close-text="Close"
+                                                            alt-input-formats="altInputFormats" />
+                                                        <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default" ng-click="data.cntroutFlag.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="col-md-4 pull-left">
+                                    <button type="button" class="btn btn-primary" ng-click="addAdditionalContainer();">Add Container</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3> <span class="label label-success" ng-if="addedMsg.length>0">{{addedMsg}}</span></h3>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class="btn btn-primary" ng-click="saveContainerObj()">Save</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="showSuccess" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="alert alert-success">
+                                    <strong>Success! </strong> {{successMsg}}.
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section 5 forms -->
+                <div class="col-lg-12" ng-if="section2">
+                    <form method="post">
+                        <div class="form-group">
+                            <label>Procedures/Progress</label>
+                            <textarea rows="8" class="form-control" ng-model="doc.progress" name="Remarks"></textarea>
+                        </div>
+                        <h4>Cargo Receipts</h4>
+                        <table class="table table-bordered" align="center">
+                            <tr>
+                                <td></td>
+                                <td>DATE</td>
+                                <td>Transporter Truck No.</td>
+                                <td>No.Of Packages</td>
+                                <td>Godown / CFS / WH</td>
+                            </tr>
+                            <tr ng-repeat="data in cargoReceipts">
+                                <td>
+                                    <button type="button" class="btn btn-warning" ng-click="removeSelectedCargo(data.number);">
+                                    <span class="glyphicon glyphicon-minus"></span> 
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <p class="input-group">
+                                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="data.receiptDate" is-open="data.receipt.open"
+                                                datepicker-options="dateOptions" close-text="Close" alt-input-formats="altInputFormats"
+                                            />
+                                            <span class="input-group-btn">
+                                             <button type="button" class="btn btn-default" ng-click="data.receipt.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" ng-model="data.truckNo" id="data.truckNo" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" ng-model="data.noOfPackages" id="data.noOfpackages" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" ng-model="data.godown" id="data.godown" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="col-md-12 pull-left">
+                            <button type="button" class="btn btn-primary" ng-click="addAdditionalCargo();">Add Cargo</button>
+                        </div>
+                        <hr>
+                        <!-- Submit & Cancel button -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="button" name="cancel" value="cancel" class="btn btn-primary btn-block">
+                            </div>
+                            <div class="col-md-4" ng-if="remarkCreateFlag">
+                                <input type="submit" name="submit" value="Save" ng-click="saveRemarkFields();" class="btn btn-primary btn-block">
+                            </div>
+                            <div class="col-md-4" ng-if="!remarkCreateFlag">
+                                <input type="submit" name="submit" value="Update" ng-click="saveRemarkFields();" class="btn btn-primary btn-block">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End of section 5 -->
+                <delivery-receipt ng-if="section3" type="exportSea" update-type="type" import-job-id="doc.importJobNo" receipt-obj="deliveryObj"></delivery-receipt>
+
+                <expenditure-slip ng-if="section4" type="exportSea" update-type="type" import-job-id="doc.importJobNo" receipt-obj="deliveryObj"></expenditure-slip>
+
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->

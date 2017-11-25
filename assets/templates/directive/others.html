@@ -1,0 +1,143 @@
+<div class="col-lg-12">
+    <form method="post">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="email">Job No: </label>{{"   "+importJobId}}
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="email">Yard:</label>
+                <input type="text" ng-model="feedback.yardName" class="form-control" placeholder="Yard Name" id="email"><br>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <textarea class="form-control" ng-model="feedback.yardAddress" placeholder="Yard Address" id="address"></textarea>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="email">Container Type:</label>
+                <input type="text" ng-model="feedback.cntrtype" class="form-control" id="email">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="email">No of Container:</label>
+                <input type="text" class="form-control" ng-model="feedback.noOfContainer" id="email">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="email">Empty Plot:</label>
+                <input type="text" ng-model="feedback.emptyPlot" class="form-control" id="email">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="email">Empty Off Load Date:</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="feedback.loadDate" is-open="loadDate.open"
+                        datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="loadDate.open='true'"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="email">Container Damage:</label>
+                <label class="radio-inline">
+                    <input type="radio" name="damage" ng-model="feedback.damage" value="true">Yes 
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="damage" ng-model="feedback.damage" value="false">No
+               </label>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="email">S.T Agent Final Bill Received Status:</label>
+                <label class="radio-inline">
+                    <input type="radio" name="status" ng-model="feedback.status" value="true">Yes 
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="status" ng-model="feedback.status" value="false">No
+               </label>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="email">Submit for Billing:</label>
+                <label class="radio-inline">
+                    <input type="radio" name="billing" ng-model="feedback.submitForBilling" value="true">Yes 
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="billing" ng-model="feedback.submitForBilling" value="false">No
+               </label>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <input type="button" name="cancel" value="Cancel" class="btn btn-primary btn-block">
+            </div>
+            <div class="col-md-4" ng-if="createFlag">
+                <input type="button" name="save" value="Save" ng-click="saveOthers();" class="btn btn-primary btn-block">
+            </div>
+            <div class="col-md-4" ng-if="updateFlag">
+                <input type="button" name="save" value="Update" ng-click="saveOthers();" class="btn btn-primary btn-block">
+            </div>
+
+            <div class="col-md-2"></div>
+        </div>
+    </form>
+</div>
+<div class="modal fade" id="showOtherError" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-danger">
+                    <strong>Error!</strong> {{errorMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showOtherAlert" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-warning">
+                    <strong>Alert! </strong> {{alertMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="showOtherSuccess" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="alert alert-success">
+                    <strong>Success! </strong> {{successMsg}}.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
